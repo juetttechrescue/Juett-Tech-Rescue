@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juett Tech Rescue</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark:#1f3b25;
+  --green:#2e5a33;
+  --soft:#eaf3e5;
+  --cream:#f7f8f1;
+}
+
+body {
+  margin:0;
+  font-family:"DM Sans",sans-serif;
+  background:var(--cream);
+  color:#243927;
+}
+
+/* HEADER */
+.header {
+  background:white;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  width:80px;
+  height:80px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.logo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.title {
+  font-family:"Playfair Display";
+  font-size:26px;
+  font-weight:800;
+}
+
+.sub {
+  font-size:12px;
+  letter-spacing:2px;
+  color:#6a7b6e;
+}
+
+/* NAV */
+.nav {
+  background:var(--soft);
+  padding:14px;
+  text-align:center;
+}
+
+.nav a {
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:800;
+  color:var(--dark);
+}
+
+/* HERO */
+.hero {
+  background:var(--dark);
+  color:white;
+  padding:60px 20px;
+}
+
+.hero h1 {
+  font-family:"Playfair Display";
+  font-size:44px;
+  margin:0;
+}
+
+.hero p {
+  margin-top:16px;
+  opacity:.9;
+}
+
+.buttons {
+  margin-top:24px;
+  display:flex;
+  gap:12px;
+}
+
+.btn {
+  padding:12px 20px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:800;
+}
+
+.primary {
+  background:white;
+  color:var(--dark);
+}
+
+.outline {
+  border:1px solid white;
+  color:white;
+}
+
+/* SECTION */
+.section {
+  padding:60px 20px;
+}
+
+.section-title {
+  font-family:"Playfair Display";
+  font-size:40px;
+}
+
+/* FORM */
+.form {
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  max-width:600px;
+}
+
+input, select, textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+button {
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:999px;
+  background:var(--dark);
+  color:white;
+  font-weight:800;
+}
+
+/* CONTACT */
+.contact {
+  background:var(--soft);
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
+/* FACT */
+.fact {
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.divider {
+  height:16px;
+  background:var(--soft);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">
+    <img src="https://i.imgur.com/8Km9tLL.png">
+  </div>
+  <div>
+    <div class="title">Juett Tech Rescue</div>
+    <div class="sub">BOULDER, CO</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <a href="#how">How It Works</a>
+  <a href="#form">Schedule</a>
+  <a href="#impact">Impact</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Declutter Your Electronic Waste, Responsibly.</h1>
+  <p>We come to your door and make sure your electronics are reused or recycled, not landfilled.</p>
+
+  <div class="buttons">
+    <a href="#form" class="btn primary">Book a Pickup Now!</a>
+    <a href="#impact" class="btn outline">See Impact</a>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section" id="how">
+  <div class="section-title">How It Works</div>
+
+  <p><b>1. Schedule Online</b><br>
+  Fill out the pickup form and tell us what e-waste you have.</p>
+
+  <p><b>2. We Come to You</b><br>
+  We arrive at your Boulder-area address and collect your electronics door to door.</p>
+
+  <p><b>3. Recycled or Reused</b><br>
+  All e-waste is responsibly processed, and reusable items are repurposed when possible.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- FORM -->
+<div class="section" id="form">
+  <div class="section-title">Schedule a Pickup</div>
+
+  <div class="form">
+
+    <div class="contact">
+      <b>Contact Us</b><br>
+      📧 juetttechrescue@gmail.com<br>
+      📞 719-900-9720<br>
+      📱 @juetttechrescueboulder_
+    </div>
+
+    <form action="https://formspree.io/f/myknpeyk" method="POST">
+
+      <input type="text" name="name" placeholder="Amazing Customer" required>
+
+      <input type="text" name="address" placeholder="1234 Pearl Street" required>
+
+      <select name="pickup" required>
+        <option value="">Preferred Pickup Day & Time</option>
+
+        <optgroup label="Monday-Friday">
+          <option>Monday 6:30 PM</option>
+          <option>Tuesday 6:30 PM</option>
+          <option>Wednesday 6:30 PM</option>
+          <option>Thursday 6:30 PM</option>
+          <option>Friday 6:30 PM</option>
+        </optgroup>
+
+        <optgroup label="Saturday">
+          <option>7AM-9AM</option>
+          <option>9AM-11AM</option>
+          <option>11AM-1PM</option>
+          <option>1PM-3PM</option>
+          <option>3PM-5PM</option>
+          <option>5PM-7PM</option>
+        </optgroup>
+
+        <optgroup label="Sunday">
+          <option>7AM-9AM</option>
+          <option>9AM-11AM</option>
+          <option>11AM-1PM</option>
+          <option>1PM-3PM</option>
+          <option>3PM-5PM</option>
+          <option>5PM-7PM</option>
+        </optgroup>
+
+      </select>
+
+      <textarea name="items" placeholder="What electronics do you have?"></textarea>
+
+      <button type="submit">Book Pickup</button>
+
+    </form>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- IMPACT -->
+<div class="section" id="impact">
+  <div class="section-title">Impact</div>
+  <p>29 Pickups Completed</p>
+  <p>723 lbs E-Waste Diverted</p>
+</div>
+
+<!-- FACT -->
+<div class="fact">
+  <h2>Did You Know?</h2>
+  <p>E-waste represents 2% of landfill volume but 70% of toxic waste.</p>
+</div>
+
+</body>
+</html>
