@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,10 +145,11 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .why-box .why-body p:last-child{margin:0;}
 .why-eg{margin-top:14px;background:var(--gbg);border-radius:11px;padding:13px 15px;}
 .why-eg-title{font-size:0.8rem;font-weight:700;color:var(--gd);margin-bottom:9px;}
-.why-eg-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;font-size:0.84rem;color:var(--text);border-bottom:1px solid rgba(0,0,0,.06);}
-.why-eg-row.hl{font-weight:700;color:var(--gd);}
-.why-eg-row .amt{white-space:nowrap;font-weight:700;}
-.why-eg-row .amt small{font-weight:400;color:var(--muted);font-size:0.72rem;}
+.why-eg-opt{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);}
+.why-eg-label{font-size:0.82rem;font-weight:700;color:var(--text);margin-bottom:3px;}
+.why-eg-opt.hl .why-eg-label{color:var(--gd);}
+.why-eg-cost{font-size:0.84rem;color:var(--muted);line-height:1.5;}
+.why-eg-cost strong{font-size:1.1rem;color:var(--gd);margin-right:5px;}
 .why-eg-foot{margin-top:10px;font-size:0.82rem;font-weight:600;color:var(--gd);line-height:1.5;}
 /* WHAT WE TAKE */
 .take-card{background:var(--white);border-radius:16px;padding:22px 20px;box-shadow:0 2px 12px rgba(0,0,0,.05);}
@@ -431,8 +433,14 @@ p, li, h1, h2, h3, h4 { color: inherit; }
       <p>Even with it, you still come out ahead. Dropping these items off yourself can run around $1 per pound in facility fees, and you&rsquo;d have to haul the heavy, fragile electronics there on your own. We pick everything up at your door and make sure it&rsquo;s recycled responsibly.</p>
       <div class="why-eg">
         <div class="why-eg-title">Example: One large old flat screen TV (90 lbs)</div>
-        <div class="why-eg-row"><span>Drop it off yourself</span><span class="amt">$90 <small>+ haul it there</small></span></div>
-        <div class="why-eg-row hl"><span>With Juett Tech Rescue</span><span class="amt">$60 <small>picked up at your door along with other bundled e-waste</small></span></div>
+        <div class="why-eg-opt">
+          <div class="why-eg-label">Drop it off yourself</div>
+          <div class="why-eg-cost"><strong>$90</strong> in drop-off fees &mdash; and you haul it there yourself.</div>
+        </div>
+        <div class="why-eg-opt hl">
+          <div class="why-eg-label">With Juett Tech Rescue</div>
+          <div class="why-eg-cost"><strong>$60</strong> &mdash; the $40 flat pickup fee + $20 TV surcharge, picked up at your door along with your other e-waste.</div>
+        </div>
         <div class="why-eg-foot">You save $30 &mdash; a third of the cost &mdash; and never have to lift or drive that TV anywhere.</div>
       </div>
     </div>
