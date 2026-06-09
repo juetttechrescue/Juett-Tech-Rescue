@@ -142,6 +142,13 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .why-box .why-body{padding:0 18px 16px 51px;}
 .why-box .why-body p{font-size:0.85rem;color:var(--muted);line-height:1.6;margin:0 0 10px;}
 .why-box .why-body p:last-child{margin:0;}
+.why-eg{margin-top:14px;background:var(--gbg);border-radius:11px;padding:13px 15px;}
+.why-eg-title{font-size:0.8rem;font-weight:700;color:var(--gd);margin-bottom:9px;}
+.why-eg-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;font-size:0.84rem;color:var(--text);border-bottom:1px solid rgba(0,0,0,.06);}
+.why-eg-row.hl{font-weight:700;color:var(--gd);}
+.why-eg-row .amt{white-space:nowrap;font-weight:700;}
+.why-eg-row .amt small{font-weight:400;color:var(--muted);font-size:0.72rem;}
+.why-eg-foot{margin-top:10px;font-size:0.82rem;font-weight:600;color:var(--gd);line-height:1.5;}
 /* WHAT WE TAKE */
 .take-card{background:var(--white);border-radius:16px;padding:22px 20px;box-shadow:0 2px 12px rgba(0,0,0,.05);}
 .take-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:6px;}
@@ -420,8 +427,14 @@ p, li, h1, h2, h3, h4 { color: inherit; }
   <details class="why-box">
     <summary><span class="q">?</span>Why do some items cost extra on top of the flat fee?<span class="pm">+</span></summary>
     <div class="why-body">
-      <p>Items like TVs and monitors are far more expensive and hazardous to process than everyday electronics &mdash; certified recyclers charge by the pound to safely handle the leaded and CRT glass inside them. The small surcharge simply covers that extra processing cost.</p>
-      <p>Even with it, you still come out ahead. Dropping these items off yourself can run around $1 per pound in facility fees, and you&rsquo;d have to haul the heavy, fragile pieces there on your own. We pick everything up at your door and make sure it&rsquo;s recycled responsibly through a certified partner.</p>
+      <p>TVs and Monitors are far more expensive and hazardous to process than other electronics. The small surcharge simply covers that extra processing cost.</p>
+      <p>Even with it, you still come out ahead. Dropping these items off yourself can run around $1 per pound in facility fees, and you&rsquo;d have to haul the heavy, fragile electronics there on your own. We pick everything up at your door and make sure it&rsquo;s recycled responsibly.</p>
+      <div class="why-eg">
+        <div class="why-eg-title">Example: One large old TV</div>
+        <div class="why-eg-row"><span>Drop it off yourself</span><span class="amt">~$93 <small>+ haul it there</small></span></div>
+        <div class="why-eg-row hl"><span>With Juett Tech Rescue</span><span class="amt">$75 <small>picked up at your door along with other bundled e-waste</small></span></div>
+        <div class="why-eg-foot">You save roughly $18 &mdash; and never have to lift or drive that TV anywhere.</div>
+      </div>
     </div>
   </details>
 
