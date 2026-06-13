@@ -693,7 +693,7 @@ p, li, h1, h2, h3, h4 { color: inherit; }
     </form>
     <div id="success">
       <h3>&#10003; Pickup Requested!</h3>
-      <p>We'll be in touch shortly to confirm. <a href="#schedule" style="color:var(--gm);font-weight:600;text-decoration:underline;">Contact us</a> with any questions.</p>
+      <p>We'll be in touch shortly to confirm. <a href="#schedule" style="color:var(--gm);font-weight:600;text-decoration:underline;">Contact us</a> with any questions :)</p>
     </div>
   </div>
 </section>
@@ -710,7 +710,7 @@ p, li, h1, h2, h3, h4 { color: inherit; }
       </div>
     </div>
     <p class="atext">I am a rising junior at CU Boulder studying economics and political science. During my first semester of sophomore year, I took an Environmental Sustainability and Features course, where I learned about the serious effects of e-waste on our environment when electronics are disposed of improperly.</p>
-    <p class="atext">After researching what options existed in Boulder, I found a real gap. There was no affordable, convenient service focused specifically targeting electronic-waste management. Most people are left choosing between hauling their electronics to a drop-off facility themselves and potentially paying processing fees, or paying significantly more for a general waste management service that doesn't prioritize e-waste recycling to come pick it up. I started Juett Tech Rescue to fix that: a simple $40 flat-fee pickup with certified e-waste recycling, built for Boulder residents. We are proud to be the only waste management service in Boulder focusing specifically on electronic waste management.</p>
+    <p class="atext">After researching what options existed in Boulder, I found a real gap. There was no affordable, convenient service focused specifically on e-waste management. Most people are left choosing between hauling their electronics to a drop-off facility themselves and potentially paying processing fees, or paying significantly more for a general waste management service that doesn't prioritize e-waste recycling to come pick it up. I started Juett Tech Rescue to fix that: a simple $40 flat-fee pickup with certified e-waste recycling, built for Boulder residents. We are proud to be the only waste management service in Boulder focusing specifically on electronic waste management.</p>
     <p class="atext">The facts are striking: the world generates over 50 million metric tons of electronic waste every year, making it the fastest-growing solid waste stream on the planet. According to the <a href="https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx" target="_blank" style="color:var(--gm);text-decoration:underline;">Global E-Waste Monitor 2024</a>, only 22.3% of e-waste is formally recycled globally. When electronics end up in landfills, toxic materials such as lead, mercury, and cadmium leach into the soil and groundwater, posing serious risks to both human health and local ecosystems. The <a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)" target="_blank" style="color:var(--gm);text-decoration:underline;">World Health Organization</a> has identified improper e-waste disposal as a growing public health concern, particularly for communities near informal recycling sites. At the same time, rare and valuable metals like gold, silver, and cobalt are permanently lost rather than being recovered and reused.</p>
     <p class="atext">The goal of this business is to make electronic waste recycling accessible for Boulder County residents by tackling the issue head-on and closing the gap in convenience and affordability. I am also committed to giving back: a percentage of profits from every pickup is donated to <a href="https://www.ban.org" target="_blank" style="color:var(--gm);text-decoration:underline;">Basel Action Network (BAN)</a>, a nonprofit dedicated to fighting illegal e-waste dumping and advocating for responsible recycling worldwide.</p>
   </div>
@@ -982,6 +982,7 @@ document.getElementById("pform").addEventListener("submit",async function(e){
     if(res.ok){
       document.getElementById("pform").style.display="none";
       document.getElementById("success").style.display="block";
+      document.getElementById("success").scrollIntoView({behavior:"smooth",block:"center"});
       // Also log to Google Script if connected
       try{ await fetch(SCRIPT,{method:"POST",body:JSON.stringify(payload)}); }catch(e){}
       try{ const r=await fetch(SCRIPT); taken=await r.json(); }catch(e){}
