@@ -1187,7 +1187,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 #sprout-launch:hover{background:var(--gm);transform:translateY(-2px);}
 #sprout-launch .sleaf{width:28px;height:28px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #sprout-launch.hidden{display:none;}
-#sprout-panel{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:9001;width:372px;max-width:calc(100vw - 24px);height:560px;max-height:calc(100vh - 96px);background:var(--white);border-radius:18px;box-shadow:0 14px 50px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;}
+#sprout-panel{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:9001;width:372px;max-width:calc(100vw - 24px);height:560px;max-height:calc(100dvh - 96px);background:var(--white);border-radius:18px;box-shadow:0 14px 50px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;}
 #sprout-panel.open{display:flex;}
 .sprout-head{background:var(--gd);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:11px;}
 .sprout-head .sleaf{width:38px;height:38px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
@@ -1213,7 +1213,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 .sprout-send:hover{background:var(--gm);}
 .sprout-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
 @media(prefers-reduced-motion:reduce){#sprout-launch{transition:none;}}
-@media(max-width:430px){#sprout-panel{right:8px;left:8px;width:auto;bottom:8px;height:calc(100vh - 78px);}}
+@media(max-width:430px){#sprout-panel{right:8px;left:8px;width:auto;bottom:8px;height:calc(100dvh - 78px);}}
+@media(max-width:600px){input[type=text],input[type=tel],input[type=email],input[type=number],select,textarea,#sprout-in{font-size:16px !important;}}
 </style>
 
 <button id="sprout-launch" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="sprout-panel">
