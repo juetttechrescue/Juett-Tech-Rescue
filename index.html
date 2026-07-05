@@ -303,6 +303,37 @@ p, li, h1, h2, h3, h4 { color: inherit; }
 <body>
 <a href="#how" class="skip-link">Skip to main content</a>
 
+<!-- TEMPORARY CLOSURE BANNER: delete this div after July 11 -->
+<div role="status" style="position:relative;background:#8a5a00;color:#fff;text-align:center;padding:10px 16px;font-size:0.9rem;font-weight:600;line-height:1.5;">
+  We're Closed July 5&ndash;11: No Pickups are available this week. Booking reopens for dates starting July 12th!
+  <button type="button" id="close-why-btn" aria-expanded="false" aria-controls="close-why-pop" aria-label="Why are we closed?" onclick="toggleCloseWhy(event)" style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:6px;vertical-align:-4px;border:1.5px solid #fff;border-radius:50%;background:transparent;color:#fff;font-size:0.78rem;font-weight:800;font-family:inherit;line-height:1;cursor:pointer;touch-action:manipulation;">?</button>
+  <div id="close-why-pop" role="dialog" aria-label="Why we're closed" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9500;width:min(340px, calc(100vw - 32px));background:#fff;color:#333;text-align:left;font-weight:400;font-size:0.84rem;line-height:1.55;border:1.5px solid #c9a45a;border-radius:11px;padding:13px 15px;box-shadow:0 8px 26px rgba(0,0,0,.22);">
+    <strong style="display:block;margin-bottom:4px;color:#8a5a00;">Why Are We Closed?</strong>
+    We're taking this weekend off to honor the Fourth of July. Through the following week, pickups are paused while we process the last few weeks' worth of electronics headed for refurbishment. We're also getting ready to vend the weekend of the 17th: surprise announcement coming soon!
+  </div>
+</div>
+<script>
+function toggleCloseWhy(e){
+  e.stopPropagation();
+  var pop=document.getElementById('close-why-pop'), btn=document.getElementById('close-why-btn');
+  var open=pop.style.display==='block';
+  pop.style.display=open?'none':'block';
+  btn.setAttribute('aria-expanded', String(!open));
+}
+document.addEventListener('click', function(e){
+  var pop=document.getElementById('close-why-pop'), btn=document.getElementById('close-why-btn');
+  if(pop && pop.style.display==='block' && !pop.contains(e.target) && e.target!==btn){
+    pop.style.display='none'; btn.setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape'){
+    var pop=document.getElementById('close-why-pop'), btn=document.getElementById('close-why-btn');
+    if(pop && pop.style.display==='block'){ pop.style.display='none'; btn.setAttribute('aria-expanded','false'); btn.focus(); }
+  }
+});
+</script>
+
 <!-- NAV -->
 <nav>
   <div class="nav-top">
@@ -458,7 +489,7 @@ p, li, h1, h2, h3, h4 { color: inherit; }
         <div class="why-eg-title">Example Pickup:</div>
         <div class="why-eg-opt">
           <div class="why-eg-label">Do it yourself</div>
-          <div class="why-eg-cost"><strong>~$25&ndash;$35+</strong> plus a small facility fee: drop-off centers bill flat-screens by the pound (CHaRM is about $0.59/lb). Then it&rsquo;s your afternoon: load the car, drive across town, wait in line, sort, and haul the heavy TV yourself. Want data wiped? That&rsquo;s a separate trip or fee. Anything still working loses its resale value unless you list it.</div>
+          <div class="why-eg-cost"><strong>~$25&ndash;$35+</strong> plus a small facility fee: drop-off centers bill flat-screens by the pound (CHaRM is about $0.59/lb). Then it&rsquo;s your afternoon: load the car, drive across town, wait in line, sort, and haul the heavy TV yourself. Want data wiped? That&rsquo;s potentially a separate trip or fee. Anything still working loses its resale value.</div>
         </div>
         <div class="why-eg-opt">
           <div class="why-eg-label">A general junk &amp; waste hauler</div>
@@ -650,7 +681,7 @@ p, li, h1, h2, h3, h4 { color: inherit; }
         <div class="mode-tabs" id="service-tabs" role="group" aria-label="Pickup type">
           <button type="button" class="mtab on" id="svc-res" aria-pressed="true" onclick="setService('residential')">Residential</button>
           <button type="button" class="mtab" id="svc-bundle" aria-pressed="false" onclick="setService('bundle')">Bundle (10+)</button>
-          <button type="button" class="mtab" id="svc-biz" aria-pressed="false" onclick="setService('business')">Business</button>
+          <button type="button" class="mtab" id="svc-biz" aria-pressed="false" onclick="setService('business')">Commercial</button>
         </div>
         <input type="hidden" id="fservice" value="residential">
         <span id="svc-hint" style="display:block;font-size:0.79rem;color:var(--muted);line-height:1.5;margin-top:4px;">$50 base pickup for a single residence &mdash; everything but TVs and monitors is included.</span>
@@ -719,8 +750,7 @@ p, li, h1, h2, h3, h4 { color: inherit; }
           <div class="wd-note">
             <h4><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:5px;vertical-align:middle"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Weekday Pickup: 5:30&ndash;7:30 PM</h4>
             <div class="warn-box">
-              <strong><svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px;vertical-align:middle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>One Pickup Per Day: First to Book Gets It</strong>
-              If a Day Is Already Booked, It Will Show as Unavailable Below.
+              <strong><svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px;vertical-align:middle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>If a Day/Time-slot Is Already Booked, It Will Show as Unavailable Below.</strong>
             </div>
             <select id="wd-select" aria-label="Choose a weekday pickup date">
               <option value="">Choose a date...</option>
@@ -731,6 +761,9 @@ p, li, h1, h2, h3, h4 { color: inherit; }
 
         <!-- WEEKEND -->
         <div class="panel" id="we-panel">
+          <div class="warn-box">
+            <strong><svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px;vertical-align:middle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>If a Day/Time-slot Is Already Booked, It Will Show as Unavailable Below.</strong>
+          </div>
           <select id="we-day" aria-label="Choose a weekend pickup date" onchange="loadSlots()" style="margin-bottom:10px;">
             <option value="">Select a date...</option>
           </select>
@@ -883,6 +916,14 @@ p, li, h1, h2, h3, h4 { color: inherit; }
 // Replace with your Google Apps Script URL after completing setup
 const SCRIPT = "https://script.google.com/macros/s/AKfycbwzdfHfAtNmrqdBe9CMlWXCll3nYs19wxvVTWPW06eYgps4lw9kQhaWeVIpfJISDGdq/exec";
 
+// TEMPORARY CLOSURE: block all bookings July 5–11, 2026. Delete this block (and its two uses below) after July 11.
+const CLOSED_FROM = new Date(2026, 6, 5);  // July 5, 2026
+const CLOSED_TO   = new Date(2026, 6, 11); // July 11, 2026
+function isClosedDate(d) {
+  const x = new Date(d); x.setHours(0,0,0,0);
+  return x >= CLOSED_FROM && x <= CLOSED_TO;
+}
+
 // Populate weekday dates — This Week + Next Week only, auto-refreshes weekly
 function populateWeekdayDates() {
   const sel = document.getElementById('wd-select');
@@ -900,18 +941,18 @@ function populateWeekdayDates() {
     return thisMonday;
   }
 
-  for(let w = 0; w < 2; w++) {
+  for(let w = 0, shown = 0; w < 6 && shown < 2; w++) {
     const monday = getWeekMonday(w);
     const weekDates = [];
     for(let i = 0; i < 5; i++) {
       const d = new Date(monday);
       d.setDate(monday.getDate() + i);
-      if(d > today) weekDates.push(new Date(d));
+      if(d > today && !isClosedDate(d)) weekDates.push(new Date(d));
     }
     if(weekDates.length === 0) continue;
 
     const group = document.createElement('optgroup');
-    group.label = w === 0 ? '── This Week ──' : '── Next Week ──';
+    group.label = w === 0 ? '── This Week ──' : (w === 1 ? '── Next Week ──' : '── Week of ' + months[monday.getMonth()] + ' ' + monday.getDate() + ' ──');
 
     weekDates.forEach(d => {
       const label = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate();
@@ -924,6 +965,7 @@ function populateWeekdayDates() {
       group.appendChild(opt);
     });
     sel.appendChild(group);
+    shown++;
   }
 }
 
@@ -943,20 +985,20 @@ function populateWeekendDates() {
     return d;
   }
 
-  for(let w = 0; w < 2; w++) {
+  for(let w = 0, shown = 0; w < 6 && shown < 2; w++) {
     const sat = getSaturday(w);
     const sun = new Date(sat);
     sun.setDate(sat.getDate() + 1);
 
     const weekendDates = [];
-    // Only add if strictly in the future
-    if(sat > today) weekendDates.push(new Date(sat));
-    if(sun > today) weekendDates.push(new Date(sun));
+    // Only add if strictly in the future and not inside the closure window
+    if(sat > today && !isClosedDate(sat)) weekendDates.push(new Date(sat));
+    if(sun > today && !isClosedDate(sun)) weekendDates.push(new Date(sun));
 
     if(weekendDates.length === 0) continue;
 
     const group = document.createElement('optgroup');
-    group.label = w === 0 ? '── This Weekend ──' : '── Next Weekend ──';
+    group.label = w === 0 ? '── This Weekend ──' : (w === 1 ? '── Next Weekend ──' : '── Weekend of ' + months[sat.getMonth()] + ' ' + sat.getDate() + ' ──');
 
     weekendDates.forEach(d => {
       const dayName = d.getDay() === 6 ? 'Saturday' : 'Sunday';
@@ -970,6 +1012,7 @@ function populateWeekendDates() {
       group.appendChild(opt);
     });
     sel.appendChild(group);
+    shown++;
   }
 }
 
@@ -1314,7 +1357,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 </script>
 <!-- ============ SPROUT: SITE HELPER (self-contained, no API key, no backend) ============ -->
 <style>
-#sprout-launch{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:9000;display:flex;align-items:center;gap:9px;background:var(--gd);color:#fff;border:none;border-radius:30px;padding:12px 18px 12px 13px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;box-shadow:0 6px 22px rgba(0,0,0,.22);cursor:pointer;transition:transform .15s ease,background .15s ease;}
+#sprout-launch{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:9000;display:flex;align-items:center;gap:9px;background:var(--gd);color:#fff;border:none;border-radius:30px;padding:12px 18px 12px 13px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;box-shadow:0 6px 22px rgba(0,0,0,.22);cursor:pointer;transition:transform .15s ease,background .15s ease;touch-action:manipulation;}
 #sprout-launch:hover{background:var(--gm);transform:translateY(-2px);}
 #sprout-launch .sleaf{width:30px;height:30px;background:#fff;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #sprout-launch.hidden{display:none;}
@@ -1338,7 +1381,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 .sprout-chip{background:var(--white);border:1.5px solid var(--gl);color:var(--gd);border-radius:18px;padding:6px 12px;font-size:0.79rem;font-weight:600;cursor:pointer;font-family:inherit;}
 .sprout-chip:hover{background:var(--gbg);}
 .sprout-inrow{display:flex;gap:8px;padding:10px 12px 12px;background:var(--cream);}
-.sprout-inrow input{flex:1;border:1.5px solid var(--gl);border-radius:22px;padding:10px 15px;font-size:0.9rem;font-family:inherit;color:var(--text);background:#fff;}
+.sprout-inrow input{flex:1;border:1.5px solid var(--gl);border-radius:22px;padding:10px 15px;font-size:16px;font-family:inherit;color:var(--text);background:#fff;touch-action:manipulation;}
+#sprout-panel,#sprout-panel *{touch-action:manipulation;}
 .sprout-inrow input:focus{outline:3px solid var(--gold);outline-offset:1px;border-color:var(--gold);}
 .sprout-send{background:var(--gd);color:#fff;border:none;border-radius:50%;width:42px;height:42px;flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;}
 .sprout-send:hover{background:var(--gm);}
