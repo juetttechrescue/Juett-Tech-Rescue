@@ -304,9 +304,12 @@ p, li, h1, h2, h3, h4 { color: inherit; }
 <a href="#how" class="skip-link">Skip to main content</a>
 
 <script>
-/* PERMANENT: always start at the top of the page on load/refresh */
+/* PERMANENT: every page load/refresh lands at the top (hero), never mid-page */
 if('scrollRestoration' in history){history.scrollRestoration='manual';}
+if(location.hash){history.replaceState(null,'',location.pathname+location.search);}
+window.scrollTo(0,0);
 window.addEventListener('pageshow',function(){window.scrollTo(0,0);});
+window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(0,0);},0);});
 </script>
 
 <!-- TEMPORARY CLOSURE BANNER: delete this div after July 11 -->
