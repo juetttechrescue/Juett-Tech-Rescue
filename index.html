@@ -220,7 +220,7 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .fl{font-size:0.67rem;text-transform:uppercase;letter-spacing:1.3px;font-weight:600;color:var(--muted);display:block;margin-bottom:5px;}
 input[type=text],input[type=tel],input[type=email],input[type=number],select,textarea{width:100%;padding:13px 15px;border:1.5px solid #e0e0d8;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:0.87rem;color:var(--text);background:var(--white);transition:border-color .2s;appearance:none;-webkit-appearance:none;}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
-input::placeholder,textarea::placeholder{color:#bbb;}
+input::placeholder,textarea::placeholder{color:#bbb;font-size:0.82rem;}
 inputinput:focus,select:focus,textarea:focus{outline:none;border-color:var(--gm);}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
 textarea{resize:vertical;min-height:88px;}
@@ -303,9 +303,15 @@ p, li, h1, h2, h3, h4 { color: inherit; }
 <body>
 <a href="#how" class="skip-link">Skip to main content</a>
 
+<script>
+/* PERMANENT: always start at the top of the page on load/refresh */
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.addEventListener('pageshow',function(){window.scrollTo(0,0);});
+</script>
+
 <!-- TEMPORARY CLOSURE BANNER: delete this div after July 11 -->
 <div role="status" style="position:relative;background:#8a5a00;color:#fff;text-align:center;padding:10px 16px;font-size:0.9rem;font-weight:600;line-height:1.5;">
-  <strong style="color:#ffe08a;font-weight:800;letter-spacing:.02em;">WE ARE CLOSED July 5&ndash;11</strong>: No Pickups are available this week. Booking reopens for dates starting <a href="#book" style="color:#fff;text-decoration:underline;text-underline-offset:2px;font-weight:700;">July 12th</a>!
+  <strong style="color:#ffe08a;font-weight:800;letter-spacing:.02em;">WE ARE CLOSED July 5&ndash;11</strong>: No Pickups are available this week. Booking reopens for dates starting July 12th! <a href="#book" style="color:#fff;font-style:italic;font-weight:500;font-size:0.8rem;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;">pre-book now</a>
   <button type="button" id="close-why-btn" aria-expanded="false" aria-controls="close-why-pop" aria-label="Why are we closed?" onclick="toggleCloseWhy(event)" style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:6px;vertical-align:-1px;border:1.5px solid #fff;border-radius:50%;background:transparent;color:#fff;font-size:0.78rem;font-weight:800;font-family:inherit;line-height:1;cursor:pointer;touch-action:manipulation;">?</button>
   <div id="close-why-pop" role="dialog" aria-label="Why we're closed" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9500;width:min(340px, calc(100vw - 32px));background:#fff;color:#333;text-align:left;font-weight:400;font-size:0.84rem;line-height:1.55;border:1.5px solid #c9a45a;border-radius:11px;padding:13px 15px;box-shadow:0 8px 26px rgba(0,0,0,.22);">
     <strong style="display:block;margin-bottom:4px;color:#8a5a00;">Why Are We Closed?</strong>
