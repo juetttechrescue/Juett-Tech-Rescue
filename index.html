@@ -478,7 +478,7 @@ document.addEventListener('keydown', function(e){
     </div>
     <div class="ptier">
       <div class="ptier-name">Neighborhood Bundles</div>
-      <div class="ptier-price"><span class="ptier-amt ptier-amt-word">$5&ndash;10</span><span class="ptier-unit">off per home</span></div>
+      <div class="ptier-price"><span class="ptier-amt ptier-amt-word"><span class="ptier-cur">$</span>5&ndash;10</span><span class="ptier-unit">off per home</span></div>
       <p class="ptier-desc">Every participating home in one cul-de-sac, condo, block, or complex saves, on one shared trip. <b>5&ndash;10 households:</b> $20 small / $45 standard. <b>10+ households:</b> $20 small / $40 standard.</p>
     </div>
     <div class="ptier">
@@ -632,7 +632,7 @@ document.addEventListener('keydown', function(e){
 <section class="sec bg-cream" id="schedule">
   <div class="slabel">Get in Touch</div>
   <div class="stitle">Ready to clear out your old tech?</div>
-  <p class="ssub">Fill out the form below ANY TIME and we'll be in touch shortly to confirm your pickup. Or reach out directly, we're happy to answer any questions! And feel free to contact us with feedback on our website or services too; we're always looking to improve.</p>
+  <p class="ssub">Fill out the form below ANY TIME and we'll be in touch shortly to confirm your pickup. Or reach out directly, we're happy to answer any questions! And feel free to contact us with feedback on our website or services too; we're always looking to improve. Potential partner wanting to reach out? We'd love to hear from you as well!</p>
 
   <div style="background:var(--gbg);border:1.5px solid #c3d6c3;border-radius:14px;padding:13px 15px;margin-bottom:22px;">
     <div style="font-family:'Roboto Mono',monospace;font-size:0.8rem;letter-spacing:.07em;text-transform:uppercase;color:var(--gd);font-weight:700;margin-bottom:9px;">Cities we serve &middot; Boulder &amp; communities around a 20-mile radius</div>
@@ -1091,7 +1091,7 @@ function setService(v){
   var h=document.getElementById("svc-hint");
   var bsr=document.getElementById("bundle-size-row");
   if(bsr) bsr.style.display=(v==="bundle")?"block":"none";
-  if(v==="small"){ h.textContent="$25 for a small load \u2014 cables, phones, tablets, smartwatches, adapters, or a small appliance, in one bag or box. No TVs or monitors. Travel fee still applies."; }
+  if(v==="small"){ h.textContent="$25 for a small load \u2014 cables, phones, tablets, smartwatches, adapters, or a small appliance, in one bag or box. No TVs or monitors."; }
   else if(v==="residential"){ h.textContent="$50 base pickup for a single residence \u2014 everything but TVs and monitors is included."; }
   else if(v==="bundle"){ h.textContent="Every home in the group saves, on one shared trip with no travel fee: small loads are $20; standard loads are $45 with 5\u201310 households or $40 with 10+."; }
   else { h.textContent="Offices, schools & bulk volume \u2014 we'll reply with a custom quote. Mention in the instructions below if you need a Certificate of Recycling."; }
