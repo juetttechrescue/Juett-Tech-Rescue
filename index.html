@@ -314,11 +314,11 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
 </script>
 
 <!-- TEMPORARY CLOSURE BANNER: delete this div after July 11 -->
-<div role="status" style="position:relative;background:#8a5a00;color:#fff;text-align:center;padding:10px 16px;font-size:0.9rem;font-weight:600;line-height:1.5;">
-  <strong style="color:#ffe08a;font-weight:800;letter-spacing:.02em;">WE ARE CLOSED July 5&ndash;11</strong>: No Pickups are available this week. Booking reopens for dates starting July 12th! <a href="#book" style="color:#fff;font-style:italic;font-weight:500;font-size:0.8rem;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;">pre-book now</a>
-  <button type="button" id="close-why-btn" aria-expanded="false" aria-controls="close-why-pop" aria-label="Why are we closed?" onclick="toggleCloseWhy(event)" style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:6px;vertical-align:-1px;border:1.5px solid #fff;border-radius:50%;background:transparent;color:#fff;font-size:0.78rem;font-weight:800;font-family:inherit;line-height:1;cursor:pointer;touch-action:manipulation;">?</button>
-  <div id="close-why-pop" role="dialog" aria-label="Why we're closed" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9500;width:min(340px, calc(100vw - 32px));background:#fff;color:#333;text-align:left;font-weight:400;font-size:0.84rem;line-height:1.55;border:1.5px solid #c9a45a;border-radius:11px;padding:13px 15px;box-shadow:0 8px 26px rgba(0,0,0,.22);">
-    <strong style="display:block;margin-bottom:4px;color:#8a5a00;">Why Are We Closed?</strong>
+<div role="status" style="position:relative;background:#fff;border-top:4px solid #b22234;border-bottom:4px solid #1c2e4a;color:#1c2e4a;text-align:center;padding:11px 16px;font-size:0.9rem;font-weight:500;line-height:1.55;">
+  <strong style="color:#b22234;font-weight:800;letter-spacing:.02em;">We Are Closed July 5&ndash;11</strong> <span style="color:#9aa7ba;">&middot;</span> No pickups are available this week. Booking reopens for dates starting July 12th! <a href="#book" style="color:#1c2e4a;font-weight:700;font-size:0.84rem;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;">pre-book now</a>
+  <button type="button" id="close-why-btn" aria-expanded="false" aria-controls="close-why-pop" aria-label="Why are we closed?" onclick="toggleCloseWhy(event)" style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:6px;vertical-align:-1px;border:1.5px solid #1c2e4a;border-radius:50%;background:transparent;color:#1c2e4a;font-size:0.78rem;font-weight:800;font-family:inherit;line-height:1;cursor:pointer;touch-action:manipulation;">?</button>
+  <div id="close-why-pop" role="dialog" aria-label="Why we're closed" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9500;width:min(340px, calc(100vw - 32px));background:#fff;color:#333;text-align:left;font-weight:400;font-size:0.84rem;line-height:1.55;border:1.5px solid #1c2e4a;border-radius:11px;padding:13px 15px;box-shadow:0 8px 26px rgba(0,0,0,.22);">
+    <strong style="display:block;margin-bottom:4px;color:#b22234;">Why Are We Closed?</strong>
     We're taking this weekend off to honor the Fourth of July. Through the following week, pickups are paused while we process the last few weeks' worth of electronics headed for refurbishment. We're also getting ready to vend the weekend of the 17th: surprise announcement coming soon!
   </div>
 </div>
@@ -394,9 +394,8 @@ document.addEventListener('keydown', function(e){
     <div class="reviewer">&mdash; Gilbert D. &middot; Customer Review Featured in Boulder Daily Camera Article about Juett Tech Rescue</div>
   </div>
   <div style="border:1.5px dashed rgba(255,255,255,.5);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;">
-    <div style="color:rgba(255,255,255,.9);font-size:0.9rem;line-height:1.55;">Had a pickup with us? A quick Google review helps more Boulder neighbors keep their electronics out of the landfill.</div>
-    <!-- TODO: once your Google Business Profile is live, replace the href below with your direct review link (Google Business Profile > Ask for reviews). -->
-    <a href="https://www.google.com/search?q=Juett+Tech+Rescue+Boulder+reviews" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Leave a Google review</a>
+    <div style="color:rgba(255,255,255,.9);font-size:0.9rem;line-height:1.55;">Had a pickup with us? A quick Yelp review helps more Boulder neighbors keep their electronics out of the landfill.</div>
+    <a href="https://www.yelp.com/biz/juett-tech-rescue-boulder-4" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Leave a Yelp review</a>
   </div>
 </div>
 
@@ -469,7 +468,7 @@ document.addEventListener('keydown', function(e){
     <div class="ptier">
       <div class="ptier-name">Small Load Pickup</div>
       <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>25</span><span class="ptier-unit">small load</span></div>
-      <p class="ptier-desc">Cables, cords, phones, tablets, smartwatches, power banks, adapters, or small appliances (toasters, blenders). A load that fits in bags or a box. No TVs or monitors.</p>
+      <p class="ptier-desc">Cables, cords, phones, tablets, smartwatches, power banks, adapters, or small appliances (toasters, blenders). A bag or two, or a box of stuff. No TVs or monitors.</p>
     </div>
     <div class="ptier feat">
       <span class="ptier-tag">Most Common</span>
@@ -701,8 +700,8 @@ document.addEventListener('keydown', function(e){
         <label class="fl">What Type of Pickup?</label>
         <div class="mode-tabs" id="service-tabs" role="group" aria-label="Pickup type">
           <button type="button" class="mtab" id="svc-small" aria-pressed="false" onclick="setService('small')">Small</button>
-          <button type="button" class="mtab on" id="svc-res" aria-pressed="true" onclick="setService('residential')">Residential</button>
-          <button type="button" class="mtab" id="svc-bundle" aria-pressed="false" onclick="setService('bundle')">Bundle (10+)</button>
+          <button type="button" class="mtab on" id="svc-res" aria-pressed="true" onclick="setService('residential')">Standard</button>
+          <button type="button" class="mtab" id="svc-bundle" aria-pressed="false" onclick="setService('bundle')">Bundle</button>
           <button type="button" class="mtab" id="svc-biz" aria-pressed="false" onclick="setService('business')">Commercial</button>
         </div>
         <input type="hidden" id="fservice" value="residential">
@@ -1705,6 +1704,12 @@ body.sprout-open{overflow:hidden;}
       return {a:"At about "+mi+" miles from our Boulder base, your travel fee would be roughly <b>$"+tf.toFixed(2)+"</b> ("+mi+" &times; $0.65/mi) on top of the $50 base. Save your address in the booking form and the exact fee is added to your live estimate; we always confirm the final price before pickup.", go:"#book", label:"Get a live estimate"};
     }
 
+    // Which tier is my load? -> explain the rule, then size their item list
+    if(/small or standard|standard or small|which size|what size|which tier|qualify for small|is my load small|is this load small|count as small|small enough/.test(p)){
+      PENDING={askedItems:true};
+      return {a:"Happy to size it for you! <b>Small ($25)</b> is a bag or two, or a box of small stuff: cables, cords, phones, tablets, smartwatches, adapters, or a small appliance, with no TVs or monitors. <b>Standard ($50)</b> covers everything bigger: towers, printers, consoles, multiple boxes, whole-house cleanouts. List what you have and I'll tell you which tier fits and estimate your price."};
+    }
+
     // Bundle interest without a household count: ask for it
     if(/bundle|hoa\b|group pickup|neighbors? together|whole complex|property manager|our building|our street|split a pickup/.test(p) && !p.match(new RegExp(NUMPAT+" (?:homes|houses|households|units|residences|neighbors|apartments|doors|families)"))){
       PENDING={askedHomes:true};
@@ -1785,28 +1790,22 @@ body.sprout-open{overflow:hidden;}
         var highs=named.filter(function(x){return x.t==="high";});
         var meds=named.filter(function(x){return x.t==="medium";});
         var bits=[];
-        if(haveSig&&!priceSig) bits.push("Sounds great, we can take all of that!");
-        if(highs.length) bits.push("Quick question: "+(highs.length>1||flat+crt+gen>1?"are they":"is it")+" working, even partly? Items like your "+listN(highs)+" are strong refurbishment candidates, and if they qualify we'll refurbish and resell or donate them a second life through our Boulder partners instead of straight recycling.");
-        else if(meds.length) bits.push("Are they working? A "+listN(meds)+" can sometimes qualify for refurbishment depending on age and condition; we check each item at pickup and in the booking form.");
-        else if(flat>0&&crt===0) bits.push("Are they working? Flat-screens and monitors have real refurbishment potential; we determine each one case by case at pickup.");
-        if(tvGen>0 && crt===0 && flatSpec===0){
-          bits.push("Are the TVs flat-screens or older tube (CRT) sets? Flat-screens add <b>+$22</b> each and CRTs <b>+$35</b>: that covers their certified hazardous-glass handling, and we take care of every bit of it from your doorstep.");
-        } else if(flat+crt>0){
-          bits.push("TVs and monitors are the only surcharge (<b>+$22</b> per flat-screen, <b>+$35</b> per CRT) for their certified hazardous-glass handling, and we handle all of that for you from your doorstep; everything else rides in the base fee.");
-        }
-        bits.push("Either way, we cover every piece of the recycling puzzle from your door: pickup, secure data wiping if needed, then on to refurbishment for resale or donation when an item qualifies, or straight to our certified facility when it doesn't. Nothing landfilled.");
-        if(genQty+flat+crt>=10) bits.push("And since that's a big load: if this is for a business or office, we price bulk pickups per job instead, with a Certificate of Recycling available. Pick the Commercial tab in the booking form for a custom quote.");
         var totFlat=50+flat*22+crt*35;
         if(tvGen>0 && crt===0 && flatSpec===0){
           var totCrt=50+(flat-tvGen)*22+(crt+tvGen)*35;
-          bits.push("Depending on the type, your estimate lands around <b>$"+totFlat+"</b> (flat-screens) to <b>$"+totCrt+"</b> (CRTs) before any travel fee ($0.65/mi from Boulder). The booking form asks about each item and shows your exact live price.");
+          bits.push("That'd be a <b>standard $50 pickup</b> covering everything, plus the TV surcharge: <b>+$22</b> per flat-screen or <b>+$35</b> per tube (CRT) set for the certified glass handling. So roughly <b>$"+totFlat+"&ndash;$"+totCrt+"</b> depending on the type, before the travel fee.");
+          bits.push("Is the TV a flat-screen or a tube? And do any of the other items still work? Anything working can qualify for refurbishment, potentially money back in your pocket.");
         } else {
           var parts=["$50 base"];
           if(flat) parts.push(flat+" &times; $22 flat-screen/monitor");
           if(crt) parts.push(crt+" &times; $35 CRT");
-          var extra=(gen>0&&flat+crt>0)?" Your other item"+(gen>1?"s ride":" rides")+" along at no extra charge.":"";
-          bits.push("That puts your estimate around <b>$"+totFlat+"</b> ("+parts.join(" + ")+") before any travel fee ($0.65/mi from Boulder)."+extra+" The booking form asks about each item's condition and shows your exact live price.");
+          var extra=(gen>0&&flat+crt>0)?" Everything else rides along at no extra charge.":"";
+          bits.push("That'd be a <b>standard $50 pickup</b> covering your whole load"+((flat+crt>0)?" plus the TV/monitor surcharge, so around <b>$"+totFlat+"</b> ("+parts.join(" + ")+") before the travel fee.":", around <b>$"+totFlat+"</b> before the travel fee.")+extra);
+          if(highs.length) bits.push((highs.length>1?"Are your "+listN(highs)+" working":"Is your "+listN(highs)+" working")+", even partly? Working items can qualify for refurbishment, potentially money back in your pocket.");
+          else if(meds.length||gen>0) bits.push("Do any of the items still work? Working items can qualify for refurbishment, potentially money back in your pocket.");
         }
+        if(genQty+flat+crt>=10) bits.push("(For a business or office load this size, we quote per job instead: pick the Commercial tab.)");
+        bits.push("You can estimate your exact pickup on the schedule form; it shows your live total as you go.");
         PENDING={flat:flat,crt:crt,gen:gen,tvn:tvGen,askedType:(tvGen>0&&crt===0&&flatSpec===0)};
         return {a:bits.join(" "), go:"#book", label:"Book a pickup"};
       }
@@ -2052,6 +2051,30 @@ body.sprout-open{overflow:hidden;}
     }
     vv.addEventListener("resize", vvPin);
     vv.addEventListener("scroll", vvPin);
+    // Watchdog: some keyboards (e.g. Grammarly) and in-app browsers miss or
+    // misreport viewport events. Re-pin 4x/second; vvPin is a no-op unless
+    // the chat is open on mobile, so this costs nothing the rest of the time.
+    setInterval(vvPin, 250);
+    // Block pinch-zoom gestures entirely while the chat is open (Safari)
+    document.addEventListener("gesturestart", function(e){
+      if(el("sprout-panel").classList.contains("open")) e.preventDefault();
+    });
+    // Some in-app browsers (Instagram, Facebook) re-read the viewport on
+    // input focus; re-assert the zoom lock right before the keyboard opens
+    el("sprout-in").addEventListener("touchstart", function(){
+      var mv=document.querySelector('meta[name="viewport"]');
+      if(mv) mv.setAttribute("content","width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content");
+    }, {passive:true});
+    // Bypass the browser's default tap-to-focus routine (which includes the
+    // auto-zoom and scroll-into-view) and focus the input manually instead,
+    // with scrolling explicitly suppressed.
+    el("sprout-in").addEventListener("touchend", function(e){
+      if(document.activeElement===el("sprout-in")) return; // already focused: allow native caret/selection handling
+      e.preventDefault();
+      try{ el("sprout-in").focus({preventScroll:true}); }catch(err){ el("sprout-in").focus(); }
+      window.scrollTo(0,0);
+      setTimeout(vvPin, 60); setTimeout(vvPin, 260);
+    });
     // Focus/blur fire before the keyboard finishes animating; pin again after
     el("sprout-in").addEventListener("focus", function(){ setTimeout(vvPin, 60); setTimeout(vvPin, 260); });
     el("sprout-in").addEventListener("blur", function(){ setTimeout(vvPin, 60); setTimeout(vvPin, 260); });
@@ -2068,3 +2091,4 @@ body.sprout-open{overflow:hidden;}
 
 </body>
 </html>
+
