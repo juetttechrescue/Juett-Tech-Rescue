@@ -1438,14 +1438,20 @@ body.sprout-open{overflow:hidden;}
   var KB = [
     {kw:["natalie","juett","chief rescue officer","cro","who is natalie","who runs","who started","who founded","who owns","founder name","when did you start","when did you launch","how long","in business","been around","new business","founded"], a:"That's Natalie Juett, the founder and Chief Rescue Officer of Juett Tech Rescue. She's a rising junior at CU Boulder studying economics and political science, and she started the service after learning how much harm improperly disposed electronics do to the environment in a sustainability course. She founded the business in December 2025, spent the winter building the website and refining the idea, and launched pickup operations in March 2026: the first established door-to-door e-waste pickup service in Boulder. There's more on her in the About section.", go:"#about", label:"Read more about Natalie"},
     {kw:["business license","licensed","license","llc","registered","registration","legit","legitimate","real business","incorporated","document number","secretary of state","sos","entity number","verify you","are you a real","are you registered","proof","credential","tax id"], a:"Yes, Juett Tech Rescue is a registered Colorado LLC. You can verify us on the Colorado Secretary of State's business database (<a href='https://www.coloradosos.gov/biz/' target='_blank' rel='noopener'>coloradosos.gov/biz</a>) under document number <b>20261742603</b>. Need anything else for your records? Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#about", label:"About us"},
+    // TEMPORARY CLOSURE INTENT: delete this line after July 11 along with the banner.
+    {kw:["closed","are you open","you open","open this week","this week","vacation","holiday","away","reopen","july 5","july 11","unavailable","out of town","break"], a:"Heads up: <b>we're closed July 5&ndash;11</b>, so no pickups are available this week. Booking reopens for dates starting <b>July 12th</b>, and you can pre-book a post-closure slot right now in the booking form so you're first in line.", go:"#book", label:"Pre-book a pickup"},
+    {kw:["today","tomorrow","same day","asap","urgent","how soon","soonest","earliest","right away","this weekend","quickly","rush"], a:"The earliest open slots show live in the booking form: weekday evenings are one pickup per day, and weekends run 7 AM&ndash;7 PM in 2-hour slots. Grab the soonest date that works, and if it's time-sensitive, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9270</b> and we'll do our best.", go:"#book", label:"See open slots"},
     {kw:["illegal","against the law"," law ","throw away","throw it away","throw in the trash","in the trash","can i trash","just throw","why not trash","banned","not allowed"], a:"In Colorado it's actually illegal to throw electronics in the regular trash, because of the toxic materials inside them like lead and mercury. That's exactly the gap we fill: an easy, certified way to get rid of them responsibly.", go:"#book", label:"Book a pickup"},
     {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: total pickups and pounds of e-waste diverted from landfill. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network.", go:"#impact", label:"See our impact"},
+    {kw:["why recycle","why does it matter","matter","so bad","toxic","lead","mercury","cadmium","harmful","bad for the environment","dangerous","hazard","poison","groundwater","pollut"], a:"Because e-waste is uniquely nasty in a landfill: it's only about 2% of what goes in, but it accounts for roughly 70% of the toxic heavy metals found there. A single CRT television can contain 4 to 8 pounds of lead, and as electronics break down, lead, mercury, and cadmium can leach into soil and groundwater for decades. That's why Colorado made trashing electronics illegal, and why every pickup we do is 100% certified recycling with nothing landfilled.", go:"#impact", label:"See our impact"},
     {kw:["travel fee","mileage","per mile","distance","gas fee","extra for distance","how far","drive fee","trip fee","charge for gas"], a:"Pickups include a small travel fee of <b>$0.65 per mile</b> (the standard commercial mileage rate) based on your distance from our Boulder base. Save your address in the booking form and it's added to your live estimate, and we always confirm the final price before pickup.", go:"#book", label:"Book a pickup"},
     {kw:["certificate of recycling","recycling certificate","proof of recycling","certificate for business","business certificate","certified processing partner"], a:"For business and commercial pickups, a Certificate of Recycling is available on request. For data, we also provide a Certificate of Data Destruction. Just ask when you book, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
     {kw:["instagram","insta","facebook","social media","social","follow you","follow us"," ig "," fb "], a:"We'd love a follow! We're on Instagram at <b>@juetttechrescueboulder_</b> and Facebook as <b>Juett Tech Rescue</b>.", go:"#about", label:"About us"},
     {kw:["daily camera","25","went up","go up","price increase","increase","raised","raise","more expensive","so expensive","higher","why so much","lower figure","not 25"], a:"Fair question. If you saw a lower number (like an earlier figure in the Boulder Daily Camera), that was before we added up what a pickup really costs to do responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run. We moved to clear, upfront pricing so the service stays sustainable. It's a $50 base that covers your whole load, with a surcharge only on TVs and monitors ($22 flat-screen, $35 CRT) for their hazardous-glass handling, and you see your estimate live before you commit. As we secure better facility rates, we pass the savings on.", go:"#pricing", fn:"openDCModal", label:"How our pricing works"},
     {kw:["is it free","it free","is free","pickup free","free pickup","free if","free to donate","free when","cost less","costs less","cheaper if","price adjustment","discount if","still cost","still pay","no charge"], a:"It's still <b>$50</b>. That covers the gas, the time, and the effort of rehoming your tech: we take the whole process off your hands and make sure working items get successfully repurposed. And a percentage of every pickup's profits still goes to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> to extend the impact further.", go:"#pricing", label:"See pricing"},
     {kw:["how much donated","how much has been donated","how much have you donated","how much do you donate","amount donated","total donated","donated so far","how much goes to basel","how much have you given","how much raised","how much do you give"], a:"Great question! We donate to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> on a quarterly basis, and our next donation is coming up in October, so stay tuned! A percentage of every pickup's profits goes toward it.", go:"#about", label:"About us"},
+    {kw:["bundle","neighbor","hoa","apartment","condo","complex","cul de sac","culdesac","group pickup","10 homes","households","property manager","building","split the cost","together"], a:"Our Neighborhood &amp; Complex Bundle is <b>$40 per residence</b> when 10+ households at one location schedule together: a cul-de-sac, condo, or apartment complex. Everyone shares one trip, so there's no individual travel fee, and each home's whole load is covered (TV and monitor surcharges still apply per item). Great for HOAs and property managers: pick the Bundle tab in the booking form or email us to coordinate.", go:"#pricing", label:"See pricing"},
+    {kw:["business","commercial","office","school","bulk","company pickup","corporate","b2b","organization","nonprofit","invoice"], a:"For offices, schools, and bulk volume we price per job with a custom quote, and a <b>Certificate of Recycling</b> is available on request (plus a Certificate of Data Destruction for wiped devices). Pick the Commercial tab in the booking form and describe your load, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> and we'll get you a quote.", go:"#book", label:"Get a quote"},
     {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 base pickup</b> covers your whole load. Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Bundles of 10+ homes are <b>$40 each</b>, businesses get a custom quote. Secure data wiping is <b>$15/device</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
     {kw:["tv","tvs","television","monitor","crt","flat screen","flatscreen","tube","projection","55 inch","65 inch","big tv","large tv","screen size"], a:"TVs and monitors are the only items with a surcharge, because their glass needs certified hazardous handling: <b>+$22</b> per flat-screen TV or monitor, <b>+$35</b> per CRT/tube/projection TV. We take flat-screen TVs up to <b>55 inches</b>. Everything else in your load is included in the base fee.", go:"#pricing", label:"See pricing"},
     {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. A Certificate of Data Destruction is available on request. Secure wiping is $15 per device.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
@@ -1455,14 +1461,17 @@ body.sprout-open{overflow:hidden;}
     {kw:["fit","capacity","cargo","trunk","vehicle","car","space","hold","big enough","all my waste","everything fit","too much","how much can you fit"], a:"Good question. My pickup vehicle holds about <b>59.8 cubic feet</b> of cargo (roughly 42 by 38 by 27 inches), which covers most home loads. You can see this in the <a href='#capacity'>Pickup Capacity</a> section. If you've got a big or bulky haul, just describe it in the booking form and we'll let you know it fits before we head over. If it doesn't all go in one trip, we can schedule another.", go:"#capacity", label:"Pickup capacity"},
     {kw:["area","where","locat","serve","city","zip","boulder","gunbarrel","niwot","louisville","lafayette","superior","erie","broomfield","longmont","lyons","westminster","arvada","golden","near me","range"], a:"We serve Boulder and communities within about a 20-mile radius: Boulder, Gunbarrel, Niwot, Louisville, Lafayette, Superior, Erie, Broomfield, Longmont, Lyons, Westminster, Arvada, and Golden. Not sure you're in range? Pop your address in the booking form, or email us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> for a quick response.", go:"#book", label:"Book a pickup"},
     {kw:["drop it off to you","drop off to you","bring it to you","can i drop","can i bring","do you have a location","drop off location","drop off spot","drop off point","where do i bring","do you have a drop","drop it off with you"], a:"We operate as a pickup service out of our vehicle, so we don't have a drop-off location. If you have a special situation or would like to inquire further, please contact us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
-    {kw:["eco cycle","ecocycle","drop off","dropoff","charm","arapahoe","myself","my own","better than","instead of","direct","cheaper","better","compare"], a:"Great question! Eco-Cycle's CHaRM is a solid drop-off, a lot of e-waste should go there. The difference is we bring it to your door: you skip the drive, the line, and the sorting, we wipe your data in the same stop instead of a separate errand, and anything still working we refurbish, resell, or donate a second life. If you have the time to haul it yourself, doing it direct may or may not cost less with processing fees. If you'd rather it just be handled, that's us.", go:"#tv-example", fn:"openTvExample", label:"See the full comparison"},
+    {kw:["eco cycle","ecocycle","drop off","dropoff","charm","arapahoe","myself","my own","better than","instead of","direct","cheaper","better","compare","do it yourself","diy","haul it myself","take it myself"], a:"Great question! Eco-Cycle's CHaRM is a solid drop-off, a lot of e-waste should go there. Just know that doing it yourself isn't free: facilities bill most waste by the pound (CHaRM is about $0.59/lb), and hazardous items like TVs and monitors carry their own drop-off surcharges for certified glass handling, typically around <b>$15 for a flat-screen</b> and <b>$30+ for a CRT</b> locally. Then it's your gas, your drive, the line, and the sorting. We bring the whole errand to your door: pickup, data wiping in the same stop, and refurbishment or donation for anything still working. If you have the time to haul it yourself, doing it direct may or may not cost less once the fees add up. If you'd rather it just be handled, that's us.", go:"#tv-example", fn:"openTvExample", label:"See the full comparison"},
     {kw:["how do i know if","did my form","my form go","form go through","form went through","went through","go through","did it go through","did i book","did my booking","know if my booking","know if i booked","did you get my","received my","get my submission","did it send","i submitted","get a confirmation","confirmation","booking confirmed","know if it worked"], a:"After you submit the booking form, you should see a message confirming that we've received your submission. If you don't see it or you're not sure it went through, just email us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> and we'll confirm.", go:"#book", label:"Book a pickup"},
+    {kw:["cancel","reschedul","change my","move my","different day","postpone","running late","cant make","can't make","miss my"], a:"No problem, life happens. Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9270</b> with your name and pickup date and we'll reschedule or cancel it for you.", go:"#book", label:"Book a pickup"},
+    {kw:["be home","at home","not home","curbside","porch","leave it out","leave them out","garage","doorstep","contactless","meet you"], a:"Whatever works for you. Many folks meet us at the door, but if you'd rather leave items on the porch or in the garage, just say so in the additional instructions on the booking form and we'll coordinate the details (and confirm your final price) before pickup. If any devices need data wiping or a condition check for resale, being home helps but we can work around it.", go:"#book", label:"Book a pickup"},
     {kw:["book","schedul","pickup","appoint","order","request","sign up","reserve"], a:"Easy. Scroll to the booking form, tell us what you have, and pick a weekday or weekend slot. Your price is calculated live before you submit.", go:"#book", label:"Book a pickup now"},
     {kw:["how does","how it work","process","step","what happen"], a:"Three steps: 1) Book online and tell us what you have. 2) We come to your door, evenings or weekends. 3) We wipe your data, then recycle, refurbish and resell, or donate everything. Nothing landfilled.", go:"#how", label:"How it works"},
     {kw:["recycl","donat","reuse","second life","landfill","where does it go","journey"], a:"Nothing gets landfilled. Electronics with refurbishment potential are refurbished and resold or donated a second life; everything else goes to our certified recycling partner. If your old laptop or phone still works, that resale is handled in the same stop.", go:"#how", label:"See the process"},
     {kw:["pay","venmo","cash","card","money","method"], a:"Pay whatever's easiest: <b>cash at pickup</b>, <b>Venmo</b> (@juetttechrescue), or <b>Cash App</b> ($juetttechrescue). No app required, you can pay when we arrive.", go:"#book", label:"Book a pickup"},
     {kw:["take","accept","what do you","items","collect","gadget","plug","battery"], a:"We'll pick up any e-waste, which we define as anything that plugs in or runs on a battery: phones, laptops, computers, monitors, tablets, cables, printers, small appliances, and more (TVs and monitors add a surcharge). Whether an item can also be refurbished and resold or donated is a separate question that depends on its condition, the highest-potential items are newer phones, working or partly-working laptops and MacBooks, consoles, tablets, and smartwatches. Anything that can't be saved is recycled responsibly.", go:"#pricing", label:"What we take"},
     {kw:["refer","referral","friend","discount","coupon","promo","deal"], a:"Refer a friend with old electronics and get <b>$5 off</b> your pickup, up to 3 referrals for $15 total. It's a win twice over: you save money, and you extend your environmental impact beyond your own pickup by keeping even more e-waste out of the landfill. Just add their name in the booking form.", go:"#book", label:"Book a pickup"},
+    {kw:["job","hiring","work for you","work with you","join the team","internship","partner with","partnership","collaborate","sponsor","press inquiry","media inquiry","interview"], a:"We love hearing from potential partners, press, and folks who want to get involved. Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> with a bit about yourself or your organization and Natalie will get back to you.", go:"#about", label:"About us"},
     {kw:["contact","phone","call","human","talk","speak","reach","email","number"], a:"Happy to help! Call us at <b>(719) 900-9270</b>, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>, or fill out the <a href='#book'>booking form</a> and we'll reach out to confirm.", go:"#book", label:"Book a pickup"},
     {kw:["basel","ban","action network","bael"], a:"The Basel Action Network (<a href='https://www.ban.org' target='_blank' rel='noopener'>BAN</a>) is a nonprofit that fights illegal e-waste dumping and advocates for responsible recycling worldwide. We donate a portion of every pickup's profits to them, and you'll find their link in our About section too.", go:"#about", label:"About us"},
     {kw:["who","about","student","owner","run","behind","company","story","mission"], a:"Juett Tech Rescue is a CU Boulder student-run service, and the only one in Boulder focused specifically on residential e-waste. The goal: make responsible recycling easy, affordable, and convenient.", go:"#about", label:"About us"},
@@ -1558,10 +1567,116 @@ body.sprout-open{overflow:hidden;}
     return {a:txt, go:"#how", label:"See the resale option"};
   }
 
+  // ---- Personalized responders -----------------------------------------
+  // Parses quantities, cities, dates, days, sizes, weights, and distances out
+  // of the question and composes a tailored answer with real numbers computed
+  // from site pricing. Runs before the keyword KB so specific questions beat
+  // generic answers. All figures mirror the live quote calculator.
+  var NUMW={a:1,an:1,one:1,two:2,couple:2,three:3,few:3,several:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,dozen:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fifty:50};
+  var NUMPAT="(\\d+|"+Object.keys(NUMW).join("|")+")";
+  function n2(w){ return /^\d+$/.test(w)?parseInt(w,10):(NUMW[w]||1); }
+  function pnorm(q){ return (" "+q.toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ")+" "); }
+  function countAndStrip(o, words){
+    var total=0;
+    for(var i=0;i<words.length;i++){
+      var re=new RegExp("(?:"+NUMPAT+" )?\\b"+words[i]+"(?:s|es)?\\b","g");
+      o.p=o.p.replace(re,function(mm,num){ if(num){ total+=n2(num); o.q=(o.q||0)+1; } else { total+=1; } return " "; });
+    }
+    return total;
+  }
+  var CITIES=["boulder","gunbarrel","niwot","louisville","lafayette","superior","erie","broomfield","longmont","lyons","westminster","arvada","golden"];
+  var DAYW={monday:1,tuesday:1,wednesday:1,thursday:1,friday:1,saturday:2,sunday:2};
+
+  function personalized(q){
+    var p=pnorm(q), m, i;
+
+    // TEMPORARY CLOSURE DATES: delete this block after July 11 with the banner.
+    m=p.match(/ jul(?:y)? (\d{1,2})\b/);
+    if(m){ var jd=+m[1];
+      if(jd>=5&&jd<=11) return {a:"July "+jd+" falls in our closure week: <b>we're closed July 5&ndash;11</b>, so no pickups that day. Booking reopens for dates starting <b>July 12th</b>, and you can pre-book a post-closure slot right now.", go:"#book", label:"Pre-book a pickup"};
+      if(jd>=12&&jd<=31) return {a:"July "+jd+" works: that's after we reopen on July 12th. Weekday pickups are evenings 5:30&ndash;7:30 PM (one per day), weekends run 7 AM&ndash;7 PM in 2-hour slots. Grab it in the booking form.", go:"#book", label:"Book July "+jd};
+    }
+
+    // Screen size: fits or too big
+    m=p.match(new RegExp(NUMPAT+" ?(?:inch|in\\b)[a-z]* (?:flat ?screen|tv|television|screen|monitor)"));
+    if(m){ var sz=n2(m[1]);
+      if(sz<=55) return {a:"A "+sz+"-inch flat-screen is no problem: we take flat-screen TVs up to <b>55 inches</b>. It adds the <b>+$22</b> flat-screen surcharge for certified glass handling, and the rest of your load rides along in the base fee.", go:"#pricing", label:"See pricing"};
+      return {a:"A "+sz+"-inch screen is over our <b>55-inch</b> flat-screen limit, so it may not fit our vehicle. Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> with the model and we'll see what we can work out; everything else in your load we can take as usual.", go:"#capacity", label:"Pickup capacity"};
+    }
+
+    // Data wiping quantity
+    if(/wip|erase|shred|destroy|clear my data|scrub/.test(p)){
+      var wo={p:p}, wn=countAndStrip(wo,["laptop","phone","iphone","computer","macbook","hard drive","drive","device","tablet","desktop","pc"]);
+      if(wn>=1) return {a:"Yes: secure wiping for "+wn+" device"+(wn>1?"s":"")+" is <b>$"+(wn*15)+"</b> ("+wn+" &times; $15), done during your pickup with no separate trip. We follow NIST 800-88, and a Certificate of Data Destruction is available on request.", go:"#data-security", fn:"openDataSec", label:"How we protect data"};
+    }
+
+    // Bundle group size
+    m=p.match(new RegExp(NUMPAT+" (?:homes|houses|households|units|residences|neighbors|apartments|doors|families)"));
+    if(m){ var g=n2(m[1]);
+      if(g>=10) return {a:"Perfect fit for our Neighborhood &amp; Complex Bundle: "+g+" residences at one location comes to <b>$"+(g*40)+" total</b> ($40 each), all on one shared trip with no individual travel fee. TV and monitor surcharges still apply per item. Pick the Bundle tab in the booking form or email us to coordinate the group.", go:"#book", label:"Book a bundle"};
+      return {a:"The $40-per-residence bundle rate kicks in at <b>10+ households at one location</b>. With "+g+", you could recruit a few more neighbors to hit 10, or book individual residential pickups at $50 each. Either way, every home's whole load is covered.", go:"#pricing", label:"See pricing"};
+    }
+
+    // Referral math
+    m=p.match(new RegExp("refer[a-z]* "+NUMPAT+" (?:friends?|people|neighbors?|referrals?)"));
+    if(m){ var rf=n2(m[1]), rc=Math.min(rf,3);
+      return {a:"Referring "+rf+" friend"+(rf>1?"s":"")+" gets you <b>$"+(rc*5)+" off</b> your pickup ($5 per verified referral, capped at $15 for 3)."+(rf>3?" Referrals beyond 3 don't stack on one pickup, but they still keep more e-waste out of the landfill.":"")+" Just add their name"+(rf>1?"s":"")+" in the booking form.", go:"#book", label:"Book a pickup"};
+    }
+
+    // Weight: DIY by-the-pound comparison
+    m=p.match(new RegExp(NUMPAT+" ?(?:pounds?|lbs?)\\b"));
+    if(m){ var wt=n2(m[1]), diy=(wt*0.59);
+      return {a:"Rough math on "+wt+" lbs: dropping it at CHaRM yourself runs about <b>$"+diy.toFixed(2)+"</b> in by-the-pound fees (about $0.59/lb), plus your gas, the drive, and the line, and hazardous items like TVs carry their own drop-off surcharges. With us it's a flat <b>$50</b> at your door covering the whole load (TVs and monitors extra), with data wiping and refurbishment handled in the same stop.", go:"#tv-example", fn:"openTvExample", label:"See the full comparison"};
+    }
+
+    // Distance: travel fee estimate
+    m=p.match(new RegExp(NUMPAT+" ?miles? (?:away|out|from)"));
+    if(m){ var mi=n2(m[1]), tf=(mi*0.65);
+      return {a:"At about "+mi+" miles from our Boulder base, your travel fee would be roughly <b>$"+tf.toFixed(2)+"</b> ("+mi+" &times; $0.65/mi) on top of the $50 base. Save your address in the booking form and the exact fee is added to your live estimate; we always confirm the final price before pickup.", go:"#book", label:"Get a live estimate"};
+    }
+
+    // City coverage (requires a serve-intent signal so 'Boulder Daily Camera' etc. don't trip it)
+    if(/serve|come to|come out|cover|service area|your area|pick ?up in|live in|located|i m in|im in|reach|deliver|do you go|in range|travel to/.test(p)){
+      for(i=0;i<CITIES.length;i++){ if(p.indexOf(" "+CITIES[i]+" ")!==-1){
+        var cn=CITIES[i].charAt(0).toUpperCase()+CITIES[i].slice(1);
+        if(CITIES[i]==="boulder") return {a:"Yes! Boulder is our home base, so you're squarely in our service area and your travel fee ($0.65/mi from our base) will be minimal. Pop your address in the booking form for a live estimate.", go:"#book", label:"Book a pickup"};
+        return {a:"Yes, we serve "+cn+"! It's within our 20-mile radius around Boulder. Pickups include a travel fee of $0.65 per mile from our Boulder base; save your address in the booking form and the exact amount shows in your live estimate.", go:"#book", label:"Book a pickup"};
+      }}
+    }
+
+    // Day-of-week availability
+    for(var day in DAYW){ if(p.indexOf(" "+day+" ")!==-1 && /come|available|open|book|pickup|slot|work|schedule|free|can you|do you|morning|afternoon|evening|night|good|okay|ok\b|fine/.test(p)){
+      var dn=day.charAt(0).toUpperCase()+day.slice(1);
+      if(DAYW[day]===1) return {a:dn+" works! Weekday pickups run <b>evenings, 5:30&ndash;7:30 PM</b>, and we do one pickup per weekday, so grab your "+dn+" early in the booking form.", go:"#book", label:"Book "+dn};
+      return {a:dn+" works! Weekend pickups run <b>7 AM&ndash;7 PM</b> in 2-hour slots, and you can tell us an estimated arrival time within your window so you're not waiting around.", go:"#book", label:"Book "+dn};
+    }}
+
+    // Itemized price estimate (runs last so specific modules above win first)
+    if(/how much|cost|price|estimate|charge|quote|total|run me|what would/.test(p)){
+      var o={p:p};
+      var crt=countAndStrip(o,["crt","tube tv","tube television","rear projection tv","projection tv","tube"]);
+      var flat=countAndStrip(o,["flat ?screen tv","flat ?screen","monitor","tv","television","display"]);
+      var gen=countAndStrip(o,["laptop","macbook","notebook","phone","iphone","smartphone","computer","desktop","pc","tablet","ipad","printer","console","xbox","playstation","nintendo","keyboard","mouse","speaker","router","modem","camera","cable","cord","charger","microwave","toaster","blender","vacuum","appliance","kindle","smartwatch","box of cables","box"]);
+      if(crt+flat>0 || (gen>0 && o.q)){
+        var tot=50+flat*22+crt*35;
+        var parts=["$50 base"];
+        if(flat) parts.push(flat+" &times; $22 flat-screen/monitor");
+        if(crt) parts.push(crt+" &times; $35 CRT");
+        var extra = gen ? " Your other item"+(gen>1?"s ride":" rides")+" along in the base fee at no extra charge." : "";
+        var sur = (flat+crt)>0 ? "" : " No TVs or monitors means no surcharges at all.";
+        return {a:"For that load you're looking at about <b>$"+tot+"</b> ("+parts.join(" + ")+")."+extra+sur+" A travel fee of $0.65/mi from Boulder applies by distance, and secure data wiping is $15/device if you want it. Punch it into the booking form for your exact live estimate.", go:"#book", label:"Get your live estimate"};
+      }
+    }
+
+    return null;
+  }
+
   function answer(q){
     if(GREET.test(q) && q.trim().split(/\s+/).length<=3){
-      return {a:"Hey! I'm Sprout, the Juett Tech Rescue helper. I can help with pricing, what we take, data security, hours, our service area, or booking a pickup. What do you need?"};
+      return {a:"Hey! I'm Sprout, the Juett Tech Rescue helper. Ask me anything, even specifics like \"how much for 2 TVs and a laptop\", \"do you serve Erie\", or \"can you come Saturday\". Pricing, what we take, data security, hours, booking: I've got it. What do you need?"};
     }
+    var per=personalized(q);
+    if(per) return per;
     var feas=itemFeasibility(q);
     if(feas) return feas;
     var best=null, bestScore=0;
