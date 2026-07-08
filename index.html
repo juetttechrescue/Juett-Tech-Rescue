@@ -123,7 +123,8 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .ptier-amt-word{font-size:1.9rem;}
 .ptier-unit{font-size:0.85rem;color:var(--muted);font-weight:500;}
 .ptier-desc{font-size:0.85rem;color:var(--muted);line-height:1.55;margin:0;}
-@media(min-width:720px){.tier-grid{grid-template-columns:repeat(3,1fr);align-items:stretch;}.ptier{display:flex;flex-direction:column;}}
+@media(min-width:720px){.tier-grid{grid-template-columns:repeat(2,1fr);align-items:stretch;}.ptier{display:flex;flex-direction:column;}}
+@media(min-width:1020px){.tier-grid{grid-template-columns:repeat(4,1fr);}}
 /* ADD-ONS */
 .addons{background:var(--white);border-radius:16px;padding:6px 20px;box-shadow:0 2px 12px rgba(0,0,0,.05);margin-bottom:16px;}
 .addon-row{display:flex;align-items:flex-start;gap:13px;padding:16px 0;border-bottom:1px solid var(--gbg);}
@@ -447,7 +448,7 @@ document.addEventListener('keydown', function(e){
   <div class="ssub">No drop-offs. No hassle. We handle everything from your doorstep to responsible recycling.</div>
   <div class="step-card"><div class="step-num">1</div><h3>Schedule Online</h3><p>Fill out our simple <a href="#book" style="color:var(--gm);font-weight:600;text-decoration:underline;">form</a>, tell us what you have and when works for you.</p></div>
   <div class="step-card"><div class="step-num">2</div><h3>We Come to You</h3><p>We show up at your Boulder address door to door, built around your schedule: after work on weekday evenings (5:30&ndash;7:30 PM) and all day on weekends (7 AM&ndash;7 PM). No taking time off. <a href="#book" style="color:var(--gm);font-weight:600;text-decoration:underline;">Pick a time that fits</a>.</p></div>
-  <div class="step-card"><div class="step-num">3</div><h3>Recycle, Refurbish, or Donate</h3><p>Your data is <a href="#data-security" style="color:var(--gm);font-weight:600;text-decoration:underline;">securely wiped or destroyed</a> first if needed. Then we close the loop: e-waste goes to our certified processing partner for responsible recycling, and electronics with refurbishment potential, at the customer's request, are resold or donated.</p></div>
+  <div class="step-card"><div class="step-num">3</div><h3>Recycle / Refurbish to Resell or Donate</h3><p>Your data is <a href="#data-security" style="color:var(--gm);font-weight:600;text-decoration:underline;">securely wiped or destroyed</a> first if needed. Then we close the loop: e-waste goes to our certified processing partner for responsible recycling, and electronics with refurbishment potential, at the customer's request, are resold or donated.</p></div>
   <div class="step-card"><div class="step-num">4</div><h3>Give Back</h3><p>A percentage of profits from every pickup is donated to Basel Action Network (BAN).</p></div>
   <div class="ban-card" style="justify-content:center;text-align:center;flex-direction:column;align-items:center;padding:20px;">
     <img src="data:image/png;base64,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" alt="Basel Action Network" style="width:72px;height:72px;object-fit:cover;flex-shrink:0;border-radius:4px;">
@@ -460,16 +461,21 @@ document.addEventListener('keydown', function(e){
   <div class="slabel">Pricing &amp; What We Take</div>
   <p class="ssub">We handle the facility fees, the line, and everything e-waste recycling takes, all in one stop: pickup at your door, <a href="#data-security" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">secure data wiping</a> if needed, certified recycling, and <a href="#how" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">refurbishment for resale or donation</a> when possible. We also donate a percentage of our total profits to the <a href="https://www.ban.org" target="_blank" rel="noopener" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">Basel Action Network</a>, a nonprofit that fights illegal e-waste dumping.</p>
   <div class="tier-grid">
+    <div class="ptier">
+      <div class="ptier-name">Small Load Pickup</div>
+      <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>25</span><span class="ptier-unit">small load</span></div>
+      <p class="ptier-desc">Cables, cords, phones, tablets, smartwatches, power banks, adapters, or a small appliance (toaster, blender): a load that fits in one bag or box. No TVs or monitors. Travel fee still applies.</p>
+    </div>
     <div class="ptier feat">
       <span class="ptier-tag">Most Common</span>
-      <div class="ptier-name">Residential</div>
+      <div class="ptier-name">Standard Load Pickup</div>
       <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>50</span><span class="ptier-unit">base pickup</span></div>
-      <p class="ptier-desc">A single base fee for one residence covers your whole load. If it plugs in or runs on a battery, we&rsquo;ll take it. Only TVs and monitors add a surcharge (below).</p>
+      <p class="ptier-desc">Desktop towers, printers, scanners, speakers, gaming consoles, keyboards, multiple tech boxes: one base fee covers your whole load. If it plugs in or runs on a battery, we&rsquo;ll take it. Only TVs and monitors add a surcharge (below).</p>
     </div>
     <div class="ptier">
-      <div class="ptier-name">Neighborhood &amp; Complex Bundle</div>
-      <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>40</span><span class="ptier-unit">per residence</span></div>
-      <p class="ptier-desc">When 10+ households schedule together at one location: a cul-de-sac, condo, or apartment complex.</p>
+      <div class="ptier-name">Neighborhood Bundles</div>
+      <div class="ptier-price"><span class="ptier-amt ptier-amt-word">$5&ndash;10</span><span class="ptier-unit">off per home</span></div>
+      <p class="ptier-desc">Every participating home in one cul-de-sac, condo, block, or complex saves, on one shared trip. <b>5&ndash;10 households:</b> $20 small / $45 standard. <b>10+ households:</b> $20 small / $40 standard.</p>
     </div>
     <div class="ptier">
       <div class="ptier-name">Business &amp; Commercial</div>
@@ -689,11 +695,24 @@ document.addEventListener('keydown', function(e){
       <div class="fg">
         <label class="fl">What Type of Pickup?</label>
         <div class="mode-tabs" id="service-tabs" role="group" aria-label="Pickup type">
+          <button type="button" class="mtab" id="svc-small" aria-pressed="false" onclick="setService('small')">Small</button>
           <button type="button" class="mtab on" id="svc-res" aria-pressed="true" onclick="setService('residential')">Residential</button>
           <button type="button" class="mtab" id="svc-bundle" aria-pressed="false" onclick="setService('bundle')">Bundle (10+)</button>
           <button type="button" class="mtab" id="svc-biz" aria-pressed="false" onclick="setService('business')">Commercial</button>
         </div>
         <input type="hidden" id="fservice" value="residential">
+        <div id="bundle-size-row" style="display:none;margin-top:8px;">
+          <div class="mode-tabs" role="group" aria-label="Bundle group size" style="margin-bottom:6px;">
+            <button type="button" class="mtab" id="bgr-t1" aria-pressed="false" onclick="setBundleGroup('tier1')">5&ndash;10 homes</button>
+            <button type="button" class="mtab on" id="bgr-t2" aria-pressed="true" onclick="setBundleGroup('tier2')">10+ homes</button>
+          </div>
+          <div class="mode-tabs" role="group" aria-label="Bundle load size">
+            <button type="button" class="mtab on" id="bsz-std" aria-pressed="true" onclick="setBundleSize('standard')">Standard load</button>
+            <button type="button" class="mtab" id="bsz-sm" aria-pressed="false" onclick="setBundleSize('small')">Small load</button>
+          </div>
+          <input type="hidden" id="fbundlesize" value="standard">
+          <input type="hidden" id="fbundlegroup" value="tier2">
+        </div>
         <span id="svc-hint" style="display:block;font-size:0.79rem;color:var(--muted);line-height:1.5;margin-top:4px;">$50 base pickup for a single residence &mdash; everything but TVs and monitors is included.</span>
       </div>
       <div class="fg"><label class="fl" for="f-name">Your Name:</label><input type="text" id="f-name" name="name" placeholder="Amazing Customer" required></div>
@@ -1063,11 +1082,26 @@ function setWipe(v){
 
 function setService(v){
   document.getElementById("fservice").value=v;
-  [["svc-res","residential"],["svc-bundle","bundle"],["svc-biz","business"]].forEach(function(x){var el=document.getElementById(x[0]);var on=(v===x[1]);el.classList.toggle("on",on);el.setAttribute("aria-pressed",on);});
+  [["svc-small","small"],["svc-res","residential"],["svc-bundle","bundle"],["svc-biz","business"]].forEach(function(x){var el=document.getElementById(x[0]);var on=(v===x[1]);el.classList.toggle("on",on);el.setAttribute("aria-pressed",on);});
   var h=document.getElementById("svc-hint");
-  if(v==="residential"){ h.textContent="$50 base pickup for a single residence \u2014 everything but TVs and monitors is included."; }
-  else if(v==="bundle"){ h.textContent="$40 per residence when 10+ households at one location schedule together (cul-de-sac, condo, or apartment complex)."; }
+  var bsr=document.getElementById("bundle-size-row");
+  if(bsr) bsr.style.display=(v==="bundle")?"block":"none";
+  if(v==="small"){ h.textContent="$25 for a small load \u2014 cables, phones, tablets, smartwatches, adapters, or a small appliance, in one bag or box. No TVs or monitors. Travel fee still applies."; }
+  else if(v==="residential"){ h.textContent="$50 base pickup for a single residence \u2014 everything but TVs and monitors is included."; }
+  else if(v==="bundle"){ h.textContent="Every home in the group saves, on one shared trip with no travel fee: small loads are $20; standard loads are $45 with 5\u201310 households or $40 with 10+."; }
   else { h.textContent="Offices, schools & bulk volume \u2014 we'll reply with a custom quote. Mention in the instructions below if you need a Certificate of Recycling."; }
+  updateQuote();
+}
+
+function setBundleSize(v){
+  var f=document.getElementById("fbundlesize"); if(f) f.value=v;
+  [["bsz-std","standard"],["bsz-sm","small"]].forEach(function(x){var el=document.getElementById(x[0]);if(!el)return;var on=(v===x[1]);el.classList.toggle("on",on);el.setAttribute("aria-pressed",on);});
+  updateQuote();
+}
+
+function setBundleGroup(v){
+  var f=document.getElementById("fbundlegroup"); if(f) f.value=v;
+  [["bgr-t1","tier1"],["bgr-t2","tier2"]].forEach(function(x){var el=document.getElementById(x[0]);if(!el)return;var on=(v===x[1]);el.classList.toggle("on",on);el.setAttribute("aria-pressed",on);});
   updateQuote();
 }
 
@@ -1154,17 +1188,25 @@ function updateQuote(){
     window._quote="Custom"; window._diy=""; window._travel=""; window._miles="";
     return;
   }
-  var base = (svc==="bundle") ? 40 : 50;
-  // Travel fee applies to a single residential pickup. Bundles share one trip across 10+ homes.
-  var travelApplies = (svc==="residential");
+  // Small loads (individual or in a bundle) can't include TVs/monitors (their
+  // glass handling needs the full trip), so adding a screen automatically
+  // prices as the standard size.
+  var bsz=((document.getElementById("fbundlesize")||{}).value)||"standard";
+  var bgrp=((document.getElementById("fbundlegroup")||{}).value)||"tier2";
+  var isSmall=(svc==="small")||(svc==="bundle"&&bsz==="small");
+  var smallUpgraded=(isSmall && (flat+crt)>0);
+  var bundleStd=(bgrp==="tier1")?45:40;
+  var base = (svc==="bundle") ? ((bsz==="small"&&!smallUpgraded)?20:bundleStd) : (svc==="small"&&!smallUpgraded) ? 25 : 50;
+  // Travel fee applies to single residential and small pickups. Bundles share one trip across 10+ homes.
+  var travelApplies = (svc==="residential" || svc==="small");
   var fee = (travelApplies && _travelState==="ok") ? _mileFee : 0;
   var price = base + flat*22 + crt*35 + fee;
   var priceStr = fee ? "$"+price.toFixed(2) : "$"+price;
   priceEl.textContent=priceStr; window._quote=priceStr;
-  var parts=["$"+base+" base"];
+  var parts=[smallUpgraded ? "$"+base+" base (TVs/monitors need a standard-size pickup)" : "$"+base+" base"];
   if(flat) parts.push(flat+" \u00d7 $22 flat-screen");
   if(crt) parts.push(crt+" \u00d7 $35 CRT");
-  bd.textContent = (flat||crt) ? parts.join(" + ") : ((svc==="bundle"?"per residence":"base pickup")+", everything else included");
+  bd.textContent = (flat||crt) ? parts.join(" + ") : (svc==="small" ? "small load, in one bag or box" : svc==="bundle" ? (bsz==="small"?"per small-load residence ($5 off)":(bgrp==="tier1"?"per standard residence, 5\u201310 homes ($5 off)":"per standard residence, 10+ homes ($10 off)")) : "base pickup, everything else included");
   var ex=[];
   if(wipe) ex.push("+ $15 per device for secure data wiping (confirmed at pickup)");
   if(ref) ex.push("\u2212 $5 per verified referral, up to $15 off");
@@ -1249,6 +1291,8 @@ document.getElementById("pform").addEventListener("submit",async function(e){
     name:this.name.value,address:this.address.value,phone:this.phone.value,
     email:this.email.value,
     service_type:document.getElementById("fservice").value,
+    bundle_size:(document.getElementById("fservice").value==="bundle")?((document.getElementById("fbundlesize")||{}).value||"standard"):"",
+    bundle_group:(document.getElementById("fservice").value==="bundle")?((document.getElementById("fbundlegroup")||{}).value||"tier2"):"",
     electronics:this.electronics.value,condition:this.condition.value,
     tvs_flatscreen:this.tvs_flatscreen.value||"0",
     tvs_crt:this.tvs_crt.value||"0",
@@ -1450,11 +1494,12 @@ body.sprout-open{overflow:hidden;}
     {kw:["daily camera","25","went up","go up","price increase","increase","raised","raise","more expensive","so expensive","higher","why so much","lower figure","not 25"], a:"Fair question. If you saw a lower number (like an earlier figure in the Boulder Daily Camera), that was before we added up what a pickup really costs to do responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run. We moved to clear, upfront pricing so the service stays sustainable. It's a $50 base that covers your whole load, with a surcharge only on TVs and monitors ($22 flat-screen, $35 CRT) for their hazardous-glass handling, and you see your estimate live before you commit. As we secure better facility rates, we pass the savings on.", go:"#pricing", fn:"openDCModal", label:"How our pricing works"},
     {kw:["is it free","it free","is free","pickup free","free pickup","free if","free to donate","free when","cost less","costs less","cheaper if","price adjustment","discount if","still cost","still pay","no charge"], a:"It's still <b>$50</b>. That covers the gas, the time, and the effort of rehoming your tech: we take the whole process off your hands and make sure working items get successfully repurposed. And a percentage of every pickup's profits still goes to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> to extend the impact further.", go:"#pricing", label:"See pricing"},
     {kw:["how much donated","how much has been donated","how much have you donated","how much do you donate","amount donated","total donated","donated so far","how much goes to basel","how much have you given","how much raised","how much do you give"], a:"Great question! We donate to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> on a quarterly basis, and our next donation is coming up in October, so stay tuned! A percentage of every pickup's profits goes toward it.", go:"#about", label:"About us"},
-    {kw:["bundle","neighbor","hoa","apartment","condo","complex","cul de sac","culdesac","group pickup","10 homes","households","property manager","building","split the cost","together"], a:"Our Neighborhood &amp; Complex Bundle is <b>$40 per residence</b> when 10+ households at one location schedule together: a cul-de-sac, condo, or apartment complex. Everyone shares one trip, so there's no individual travel fee, and each home's whole load is covered (TV and monitor surcharges still apply per item). Great for HOAs and property managers: pick the Bundle tab in the booking form or email us to coordinate.", go:"#pricing", label:"See pricing"},
+    {kw:["bundle","neighbor","hoa","apartment","condo","complex","cul de sac","culdesac","group pickup","10 homes","households","property manager","building","split the cost","together"], a:"Our Neighborhood Bundles give a discount to every participating home in a single cul-de-sac, condo, block, or apartment complex, all on one shared trip with no individual travel fee. With <b>5&ndash;10 households</b>: small loads are <b>$20</b> and standard loads <b>$45</b> ($5 off each). With <b>10+ households</b>: small loads stay <b>$20</b> and standard loads drop to <b>$40</b> ($10 off). TV and monitor surcharges still apply per item on standard pickups. Great for HOAs and property managers: pick the Bundle tab in the booking form or email us to coordinate.", go:"#pricing", label:"See pricing"},
     {kw:["business","commercial","office","school","bulk","company pickup","corporate","b2b","organization","nonprofit","invoice"], a:"For offices, schools, and bulk volume we price per job with a custom quote, and a <b>Certificate of Recycling</b> is available on request (plus a Certificate of Data Destruction for wiped devices). Pick the Commercial tab in the booking form and describe your load, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> and we'll get you a quote.", go:"#book", label:"Get a quote"},
-    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 base pickup</b> covers your whole load. Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Bundles of 10+ homes are <b>$40 each</b>, businesses get a custom quote. Secure data wiping is <b>$15/device</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
+    {kw:["small pickup","small load","just a few","couple of items","only have a","one or two items","few small","tiny load","not much stuff","just a phone","just some cables","minimum"], a:"For small loads we have a <b>$25 Small Load Pickup</b>: cables, cords, phones, tablets, smartwatches, power banks, adapters, or a small appliance like a toaster or blender, fitting in one bag or box. No TVs or monitors on this tier, and the travel fee ($0.65/mi from Boulder) still applies. In a neighborhood bundle (5+ households together), small loads drop to <b>$20 each</b>. Pick the Small tab in the booking form!", go:"#pricing", label:"See pricing"},
+    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 standard pickup</b> (desktop towers, printers, consoles, multiple boxes: your whole load), or a <b>$25 Small Load Pickup</b> for cables, phones, tablets, smartwatches, adapters, or a small appliance in one bag or box (no TVs or monitors). Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Neighborhood bundles save every home: 5&ndash;10 households are $20 small / $45 standard, and 10+ households are $20 small / $40 standard. Businesses get a custom quote. Secure data wiping is <b>$15/device</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
     {kw:["tv","tvs","television","monitor","crt","flat screen","flatscreen","tube","projection","55 inch","65 inch","big tv","large tv","screen size"], a:"TVs and monitors are the only items with a surcharge, because their glass needs certified hazardous handling: <b>+$22</b> per flat-screen TV or monitor, <b>+$35</b> per CRT/tube/projection TV. We take flat-screen TVs up to <b>55 inches</b>. Everything else in your load is included in the base fee.", go:"#pricing", label:"See pricing"},
-    {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. A Certificate of Data Destruction is available on request. Secure wiping is $15 per device.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
+    {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","destroy","proof","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. A Certificate of Data Destruction is available on request. Secure wiping is $15 per device.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["fridge","refrigerator","freezer","large appliance","big appliance","air condition","ac unit","freon","washer","washing machine","dryer","dishwasher","oven","stove","range","water heater"], a:"We can't take large appliances: refrigerators, freezers, AC units, washers, dryers, dishwashers, ovens, or anything that size. Those need a specialized facility or hauler. We do take small appliances like toasters, blenders, humidifiers, and coffee makers, plus all your electronics."},
     {kw:["hour","when","time","open","availab","evening","weekend","slot"], a:"We're built around your schedule: <b>weekday evenings, 5:30&ndash;7:30 PM</b> (after work), and <b>all weekend, 7 AM&ndash;7 PM</b>. No taking time off. Weekdays are one pickup per day. On weekends you book a <b>2-hour slot</b>: the two-hour window gives us flexibility, and you can tell us an estimated arrival time within it so you're not left waiting around.", go:"#book", label:"Pick a time"},
     {kw:["resell","resale","refurbish","refurbishable","repair","sell","proceeds","worth","buyback","trade in","fixable","donat","partner","who refurbish","where do you take","qualif","eligible"], a:"It depends on the item's condition. The things most likely to qualify for resale or donation are newer phones, working or partly-working laptops and MacBooks, consoles, tablets, and smartwatches. We work with refurbishers across Boulder, some businesses, some independent: laptops and monitors go to a former CU professor, and consoles and some audio gear go to a partnered CU computer-science student. It's always your call, and we ask about each item's condition at pickup and in the booking form. If you're not sure whether something qualifies, just contact us or note it in the additional instructions on the pickup form. We'll do what we can, and regardless it'll be kept out of the landfill!", go:"#how", label:"See the resale option"},
@@ -1467,7 +1512,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["be home","at home","not home","curbside","porch","leave it out","leave them out","garage","doorstep","contactless","meet you"], a:"Whatever works for you. Many folks meet us at the door, but if you'd rather leave items on the porch or in the garage, just say so in the additional instructions on the booking form and we'll coordinate the details (and confirm your final price) before pickup. If any devices need data wiping or a condition check for resale, being home helps but we can work around it.", go:"#book", label:"Book a pickup"},
     {kw:["book","schedul","pickup","appoint","order","request","sign up","reserve"], a:"Easy. Scroll to the booking form, tell us what you have, and pick a weekday or weekend slot. Your price is calculated live before you submit.", go:"#book", label:"Book a pickup now"},
     {kw:["how does","how it work","process","step","what happen"], a:"Three steps: 1) Book online and tell us what you have. 2) We come to your door, evenings or weekends. 3) We wipe your data, then recycle, refurbish and resell, or donate everything. Nothing landfilled.", go:"#how", label:"How it works"},
-    {kw:["recycl","donat","reuse","second life","landfill","where does it go","journey"], a:"Nothing gets landfilled. Electronics with refurbishment potential are refurbished and resold or donated a second life; everything else goes to our certified recycling partner. If your old laptop or phone still works, that resale is handled in the same stop.", go:"#how", label:"See the process"},
+    {kw:["recycl","donat","reuse","second life","landfill","where does it go","where does","go after","stuff go","what happens to","journey"], a:"Nothing gets landfilled. Electronics with refurbishment potential are refurbished and resold or donated a second life; everything else goes to our certified recycling partner. If your old laptop or phone still works, that resale is handled in the same stop.", go:"#how", label:"See the process"},
     {kw:["pay","venmo","cash","card","money","method"], a:"Pay whatever's easiest: <b>cash at pickup</b>, <b>Venmo</b> (@juetttechrescue), or <b>Cash App</b> ($juetttechrescue). No app required, you can pay when we arrive.", go:"#book", label:"Book a pickup"},
     {kw:["take","accept","what do you","items","collect","gadget","plug","battery"], a:"We'll pick up any e-waste, which we define as anything that plugs in or runs on a battery: phones, laptops, computers, monitors, tablets, cables, printers, small appliances, and more (TVs and monitors add a surcharge). Whether an item can also be refurbished and resold or donated is a separate question that depends on its condition, the highest-potential items are newer phones, working or partly-working laptops and MacBooks, consoles, tablets, and smartwatches. Anything that can't be saved is recycled responsibly.", go:"#pricing", label:"What we take"},
     {kw:["refer","referral","friend","discount","coupon","promo","deal"], a:"Refer a friend with old electronics and get <b>$5 off</b> your pickup, up to 3 referrals for $15 total. It's a win twice over: you save money, and you extend your environmental impact beyond your own pickup by keeping even more e-waste out of the landfill. Just add their name in the booking form.", go:"#book", label:"Book a pickup"},
@@ -1572,7 +1617,7 @@ body.sprout-open{overflow:hidden;}
   // of the question and composes a tailored answer with real numbers computed
   // from site pricing. Runs before the keyword KB so specific questions beat
   // generic answers. All figures mirror the live quote calculator.
-  var NUMW={a:1,an:1,one:1,two:2,couple:2,three:3,few:3,several:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,dozen:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fifty:50};
+  var NUMW={a:1,an:1,one:1,both:2,two:2,couple:2,three:3,few:3,several:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,dozen:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fifty:50};
   var NUMPAT="(\\d+|"+Object.keys(NUMW).join("|")+")";
   function n2(w){ return /^\d+$/.test(w)?parseInt(w,10):(NUMW[w]||1); }
   function pnorm(q){ return (" "+q.toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ")+" "); }
@@ -1586,6 +1631,20 @@ body.sprout-open{overflow:hidden;}
   }
   var CITIES=["boulder","gunbarrel","niwot","louisville","lafayette","superior","erie","broomfield","longmont","lyons","westminster","arvada","golden"];
   var DAYW={monday:1,tuesday:1,wednesday:1,thursday:1,friday:1,saturday:2,sunday:2};
+  var PENDING=null; // one-turn memory: set when Sprout asks a follow-up question
+  var TIER_RANK={high:3,medium:2,low:1};
+
+  function conditionReply(q, t){
+    var p=pnorm(q);
+    var neg=/not working|don t work|dont work|doesn t work|doesnt work|broken|dead|won t turn|wont turn|cracked|smashed|fried|no longer work|( |^)(no|nope|nah)( |$)/.test(p);
+    var p2=p.replace(/not working|don t work|dont work|doesn t work|doesnt work|won t turn|wont turn|no longer work/g," ");
+    var pos=/\bwork(s|ing)?\b|powers? on|turns? on|( |^)(yes|yeah|yep|yup)( |$)/.test(p2);
+    if(!neg && !pos) return null;
+    var sur=(t.flat||t.crt) ? " The glass surcharge applies either way (+$22 per flat-screen or monitor, +$35 per CRT), since certified hazardous handling is needed regardless of condition." : "";
+    if(pos && neg) return {a:"Perfect, we'll sort that right at your door: working items get a condition check and, if they qualify, a second life through our Boulder refurbishment partners via resale or donation. The rest goes straight into certified recycling, nothing landfilled."+sur+" Book your slot and note which is which in the form.", go:"#book", label:"Book a pickup"};
+    if(pos) return {a:"Love to hear it! Anything that powers on gets a condition check at pickup, and qualifying items get a second life through our Boulder refurbishment partners: resold or donated instead of scrapped."+sur+" We handle every step from your doorstep, so just book a slot and note the working condition in the form.", go:"#book", label:"Book a pickup"};
+    return {a:"No problem at all, that's exactly what we're here for. It all goes from your doorstep straight into certified recycling, nothing landfilled, and anything with salvageable parts gets routed accordingly."+sur+" Book whenever you're ready and we'll take it off your hands.", go:"#book", label:"Book a pickup"};
+  }
 
   function personalized(q){
     var p=pnorm(q), m, i;
@@ -1600,7 +1659,7 @@ body.sprout-open{overflow:hidden;}
     // Screen size: fits or too big
     m=p.match(new RegExp(NUMPAT+" ?(?:inch|in\\b)[a-z]* (?:flat ?screen|tv|television|screen|monitor)"));
     if(m){ var sz=n2(m[1]);
-      if(sz<=55) return {a:"A "+sz+"-inch flat-screen is no problem: we take flat-screen TVs up to <b>55 inches</b>. It adds the <b>+$22</b> flat-screen surcharge for certified glass handling, and the rest of your load rides along in the base fee.", go:"#pricing", label:"See pricing"};
+      if(sz<=55){ PENDING={flat:1,crt:0,gen:0,tvn:0,askedType:false}; return {a:"A "+sz+"-inch flat-screen is no problem: we take flat-screen TVs up to <b>55 inches</b>. It adds the <b>+$22</b> flat-screen surcharge for certified glass handling, and the rest of your load rides along in the base fee. Is it working, even partly? If so it gets a refurbishment check at pickup for a possible second life.", go:"#pricing", label:"See pricing"}; }
       return {a:"A "+sz+"-inch screen is over our <b>55-inch</b> flat-screen limit, so it may not fit our vehicle. Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> with the model and we'll see what we can work out; everything else in your load we can take as usual.", go:"#capacity", label:"Pickup capacity"};
     }
 
@@ -1608,13 +1667,18 @@ body.sprout-open{overflow:hidden;}
     if(/wip|erase|shred|destroy|clear my data|scrub/.test(p)){
       var wo={p:p}, wn=countAndStrip(wo,["laptop","phone","iphone","computer","macbook","hard drive","drive","device","tablet","desktop","pc"]);
       if(wn>=1) return {a:"Yes: secure wiping for "+wn+" device"+(wn>1?"s":"")+" is <b>$"+(wn*15)+"</b> ("+wn+" &times; $15), done during your pickup with no separate trip. We follow NIST 800-88, and a Certificate of Data Destruction is available on request.", go:"#data-security", fn:"openDataSec", label:"How we protect data"};
+      if(/can you|do you|need|want|how much|cost|price/.test(p)){
+        PENDING={askedWipeCount:true};
+        return {a:"Absolutely, secure wiping is <b>$15 per device</b>, done during your pickup following NIST 800-88, with a Certificate of Data Destruction available on request. How many devices need wiping? I'll total it up for you."};
+      }
     }
 
     // Bundle group size
     m=p.match(new RegExp(NUMPAT+" (?:homes|houses|households|units|residences|neighbors|apartments|doors|families)"));
     if(m){ var g=n2(m[1]);
-      if(g>=10) return {a:"Perfect fit for our Neighborhood &amp; Complex Bundle: "+g+" residences at one location comes to <b>$"+(g*40)+" total</b> ($40 each), all on one shared trip with no individual travel fee. TV and monitor surcharges still apply per item. Pick the Bundle tab in the booking form or email us to coordinate the group.", go:"#book", label:"Book a bundle"};
-      return {a:"The $40-per-residence bundle rate kicks in at <b>10+ households at one location</b>. With "+g+", you could recruit a few more neighbors to hit 10, or book individual residential pickups at $50 each. Either way, every home's whole load is covered.", go:"#pricing", label:"See pricing"};
+      if(g>=10) return {a:"Perfect fit for our Neighborhood Bundles: with "+g+" households (that's our top tier), every home saves: small loads are <b>$20 each</b> ($5 off) and standard loads <b>$40 each</b> ($10 off), so the group lands between <b>$"+(g*20)+"</b> and <b>$"+(g*40)+"</b> total depending on load sizes, all on one shared trip with no individual travel fee. TV and monitor surcharges still apply per item on standard pickups. Pick the Bundle tab in the booking form or email us to coordinate the group.", go:"#book", label:"Book a bundle"};
+      if(g>=5) return {a:"That qualifies for our Neighborhood Bundle! With "+g+" households (5&ndash;10 tier), every home gets <b>$5 off</b>: small loads are <b>$20 each</b> and standard loads <b>$45 each</b>, so the group lands between <b>$"+(g*20)+"</b> and <b>$"+(g*45)+"</b> total depending on load sizes, all on one shared trip with no individual travel fee. And if you recruit up to 10+, standard loads drop to $40 each. Pick the Bundle tab in the booking form or email us to coordinate.", go:"#book", label:"Book a bundle"};
+      return {a:"Bundle discounts kick in at <b>5+ households at one location</b>: $20 small / $45 standard (5&ndash;10 homes), and $20 small / $40 standard (10+). With "+g+", you could recruit a few more neighbors to hit 5, or book individually at $25 small / $50 standard. Either way, every home's whole load is covered.", go:"#pricing", label:"See pricing"};
     }
 
     // Referral math
@@ -1635,8 +1699,20 @@ body.sprout-open{overflow:hidden;}
       return {a:"At about "+mi+" miles from our Boulder base, your travel fee would be roughly <b>$"+tf.toFixed(2)+"</b> ("+mi+" &times; $0.65/mi) on top of the $50 base. Save your address in the booking form and the exact fee is added to your live estimate; we always confirm the final price before pickup.", go:"#book", label:"Get a live estimate"};
     }
 
+    // Bundle interest without a household count: ask for it
+    if(/bundle|hoa\b|group pickup|neighbors? together|whole complex|property manager|our building|our street|split a pickup/.test(p) && !p.match(new RegExp(NUMPAT+" (?:homes|houses|households|units|residences|neighbors|apartments|doors|families)"))){
+      PENDING={askedHomes:true};
+      return {a:"Our Neighborhood Bundles give every participating home a discount on one shared trip with no individual travel fee: with 5&ndash;10 households it's <b>$20 small / $45 standard</b> per home, and with 10+ it's <b>$20 small / $40 standard</b>. Roughly how many households would join? I'll price it out."};
+    }
+
     // City coverage (requires a serve-intent signal so 'Boulder Daily Camera' etc. don't trip it)
     if(/serve|come to|come out|cover|service area|your area|pick ?up in|live in|located|i m in|im in|reach|deliver|do you go|in range|travel to/.test(p)){
+      var cityFound=false;
+      for(i=0;i<CITIES.length;i++){ if(p.indexOf(" "+CITIES[i]+" ")!==-1){ cityFound=true; break; } }
+      if(!cityFound && /serve|service area|your area|in range|come to me|my area|near me|do you cover/.test(p)){
+        PENDING={askedCity:true};
+        return {a:"We cover Boulder and communities within about a 20-mile radius. Which city or town are you in? I'll check it for you."};
+      }
       for(i=0;i<CITIES.length;i++){ if(p.indexOf(" "+CITIES[i]+" ")!==-1){
         var cn=CITIES[i].charAt(0).toUpperCase()+CITIES[i].slice(1);
         if(CITIES[i]==="boulder") return {a:"Yes! Boulder is our home base, so you're squarely in our service area and your travel fee ($0.65/mi from our base) will be minimal. Pop your address in the booking form for a live estimate.", go:"#book", label:"Book a pickup"};
@@ -1651,27 +1727,146 @@ body.sprout-open{overflow:hidden;}
       return {a:dn+" works! Weekend pickups run <b>7 AM&ndash;7 PM</b> in 2-hour slots, and you can tell us an estimated arrival time within your window so you're not waiting around.", go:"#book", label:"Book "+dn};
     }}
 
-    // Itemized price estimate (runs last so specific modules above win first)
-    if(/how much|cost|price|estimate|charge|quote|total|run me|what would/.test(p)){
+    // Personalized load answers (runs last so specific modules above win first).
+    // Fires on a price question OR an "I have..." inventory statement, then
+    // composes a consultative reply: acknowledges their items, asks the
+    // working/not-working question tied to refurbishment potential, frames the
+    // surcharge as certified glass handling we take care of, and walks the
+    // doorstep-to-facility (or refurbishment) journey before the estimate.
+    var priceSig=/how much|cost|price|estimate|charge|quote|total|run me|what would/.test(p);
+    var haveSig=/\bi have\b|\bwe have\b|i ve got|\bi got\b|got some|got a bunch|getting rid|get rid of|need to recycle|want to recycle|need to dispose|dispose of|cleaning out|clean out|sitting around|sitting in|want gone|recycle my|recycle our|donate my|pick up my|come get my|take my old/.test(p);
+    if(priceSig||haveSig){
       var o={p:p};
       var crt=countAndStrip(o,["crt","tube tv","tube television","rear projection tv","projection tv","tube"]);
-      var flat=countAndStrip(o,["flat ?screen tv","flat ?screen","monitor","tv","television","display"]);
-      var gen=countAndStrip(o,["laptop","macbook","notebook","phone","iphone","smartphone","computer","desktop","pc","tablet","ipad","printer","console","xbox","playstation","nintendo","keyboard","mouse","speaker","router","modem","camera","cable","cord","charger","microwave","toaster","blender","vacuum","appliance","kindle","smartwatch","box of cables","box"]);
-      if(crt+flat>0 || (gen>0 && o.q)){
-        var tot=50+flat*22+crt*35;
-        var parts=["$50 base"];
-        if(flat) parts.push(flat+" &times; $22 flat-screen/monitor");
-        if(crt) parts.push(crt+" &times; $35 CRT");
-        var extra = gen ? " Your other item"+(gen>1?"s ride":" rides")+" along in the base fee at no extra charge." : "";
-        var sur = (flat+crt)>0 ? "" : " No TVs or monitors means no surcharges at all.";
-        return {a:"For that load you're looking at about <b>$"+tot+"</b> ("+parts.join(" + ")+")."+extra+sur+" A travel fee of $0.65/mi from Boulder applies by distance, and secure data wiping is $15/device if you want it. Punch it into the booking form for your exact live estimate.", go:"#book", label:"Get your live estimate"};
+      var flatSpec=countAndStrip(o,["flat ?screen tv","flat ?screen","monitor","display"]);
+      var tvGen=countAndStrip(o,["tv","television"]);
+      var flat=flatSpec+tvGen;
+      // Identify named items via the feasibility database for tier-aware replies
+      var named=[], seen={}, genQty=0;
+      for(i=0;i<ITEMS.length;i++){
+        for(var k2=0;k2<ITEMS[i].kw.length;k2++){
+          var w=ITEMS[i].kw[k2];
+          var re2=new RegExp("(?:"+NUMPAT+" )?\\b"+w+"(?:s|es)?\\b");
+          var mm=o.p.match(re2);
+          if(mm){ if(!seen[ITEMS[i].n]){ named.push(ITEMS[i]); seen[ITEMS[i].n]=1; } genQty+=mm[1]?n2(mm[1]):1; if(mm[1]) o.q=1; o.p=o.p.replace(new RegExp("\\b"+w+"(?:s|es)?\\b","g")," "); break; }
+        }
+      }
+      var gen=named.length + countAndStrip(o,["computer","pc","electronics","gadget","cables","cords","chargers","box of cables","box","appliance"]);
+      if(genQty+flat+crt>=10 && /office|business|company|work|we are|we re|our team|commercial/.test(p)){
+        return {a:"That sounds like a commercial-size load! For offices and bulk volume we price per job with a custom quote, and a <b>Certificate of Recycling</b> is available on request (plus Certificates of Data Destruction for wiped devices). Pick the Commercial tab in the booking form and describe the load, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> and we'll quote it quickly.", go:"#book", label:"Get a quote"};
+      }
+      // Small Load auto-detection: small-category items only, no screens, no bulk words.
+      // Per pricing structure: small = cables, cords, phones, tablets, smartwatches,
+      // power banks, adapters, small appliances. Standard = towers, printers, scanners,
+      // speakers, consoles, keyboards, multiple boxes.
+      var SMALL_OK={"phone":1,"tablet":1,"smartwatch":1,"cable":1,"router":1,"Kindle or e-reader":1,"camera":1,"small appliance":1,"laptop":1,"MacBook":1};
+      var allSmall=named.length>0; for(i=0;i<named.length;i++){ if(!SMALL_OK[named[i].n]){ allSmall=false; break; } }
+      var bulkO={p:o.p}, bulkHits=countAndStrip(bulkO,["box","boxes","bin","bunch","pile","garage","basement","closet full","load","lots","tons"]);
+      if(crt+flat===0 && allSmall && genQty>=1 && genQty<=5 && bulkHits===0 && gen<=named.length){
+        var sHighs=named.filter(function(x){return x.t==="high";});
+        var sBits=["Good news: that qualifies for our <b>$25 Small Load Pickup</b>, for small items like cables, phones, tablets, smartwatches, and adapters that fit in one bag or box. The travel fee ($0.65/mi from Boulder) still applies, and you'll see the exact total live in the booking form under the Small tab."];
+        if(sHighs.length) sBits.push("And is your "+sHighs.map(function(x){return x.n;}).join(" and ")+" working, even partly? Strong refurbishment candidates like that get checked at pickup for a second life through our Boulder partners.");
+        sBits.push("Would a <b>weekday evening</b> (5:30&ndash;7:30 PM) or a <b>weekend slot</b> (7 AM&ndash;7 PM) work better for you?");
+        PENDING={askedDay:true, flat:0, crt:0, gen:genQty, tvn:0, askedType:false};
+        return {a:sBits.join(" "), go:"#book", label:"Book a Small Pickup"};
+      }
+      if(haveSig && crt+flat===0 && named.length===0 && gen===0){
+        PENDING={askedItems:true};
+        return {a:"Happy to help! What do you have? List the items out, something like \"2 laptops, a printer, and a box of cables\", and I'll size up your load and give you a price estimate on the spot."};
+      }
+      if(crt+flat>0 || (gen>0 && (o.q||haveSig))){
+        function listN(arr){ var ns=arr.map(function(x){return x.n;}); return ns.length<2?ns.join(""):ns.length===2?ns.join(" and "):ns.slice(0,-1).join(", ")+", and "+ns[ns.length-1]; }
+        var highs=named.filter(function(x){return x.t==="high";});
+        var meds=named.filter(function(x){return x.t==="medium";});
+        var bits=[];
+        if(haveSig&&!priceSig) bits.push("Sounds great, we can take all of that!");
+        if(highs.length) bits.push("Quick question: "+(highs.length>1||flat+crt+gen>1?"are they":"is it")+" working, even partly? Items like your "+listN(highs)+" are strong refurbishment candidates, and if they qualify we'll refurbish and resell or donate them a second life through our Boulder partners instead of straight recycling.");
+        else if(meds.length) bits.push("Are they working? A "+listN(meds)+" can sometimes qualify for refurbishment depending on age and condition; we check each item at pickup and in the booking form.");
+        else if(flat>0&&crt===0) bits.push("Are they working? Working flat-screens can sometimes have refurbishment potential; we check condition at pickup.");
+        if(tvGen>0 && crt===0 && flatSpec===0){
+          bits.push("Are the TVs flat-screens or older tube (CRT) sets? Flat-screens add <b>+$22</b> each and CRTs <b>+$35</b>: that covers their certified hazardous-glass handling, and we take care of every bit of it from your doorstep.");
+        } else if(flat+crt>0){
+          bits.push("TVs and monitors are the only surcharge (<b>+$22</b> per flat-screen, <b>+$35</b> per CRT) for their certified hazardous-glass handling, and we handle all of that for you from your doorstep; everything else rides in the base fee.");
+        }
+        bits.push("Either way, we cover every piece of the recycling puzzle from your door: pickup, secure data wiping if needed, then on to refurbishment for resale or donation when an item qualifies, or straight to our certified facility when it doesn't. Nothing landfilled.");
+        if(genQty+flat+crt>=10) bits.push("And since that's a big load: if this is for a business or office, we price bulk pickups per job instead, with a Certificate of Recycling available. Pick the Commercial tab in the booking form for a custom quote.");
+        var totFlat=50+flat*22+crt*35;
+        if(tvGen>0 && crt===0 && flatSpec===0){
+          var totCrt=50+(flat-tvGen)*22+(crt+tvGen)*35;
+          bits.push("Depending on the type, your estimate lands around <b>$"+totFlat+"</b> (flat-screens) to <b>$"+totCrt+"</b> (CRTs) before any travel fee ($0.65/mi from Boulder). The booking form asks about each item and shows your exact live price.");
+        } else {
+          var parts=["$50 base"];
+          if(flat) parts.push(flat+" &times; $22 flat-screen/monitor");
+          if(crt) parts.push(crt+" &times; $35 CRT");
+          var extra=(gen>0&&flat+crt>0)?" Your other item"+(gen>1?"s ride":" rides")+" along at no extra charge.":"";
+          bits.push("That puts your estimate around <b>$"+totFlat+"</b> ("+parts.join(" + ")+") before any travel fee ($0.65/mi from Boulder)."+extra+" The booking form asks about each item's condition and shows your exact live price.");
+        }
+        PENDING={flat:flat,crt:crt,gen:gen,tvn:tvGen,askedType:(tvGen>0&&crt===0&&flatSpec===0)};
+        return {a:bits.join(" "), go:"#book", label:"Book a pickup"};
       }
     }
 
     return null;
   }
 
+  // Handles the reply to a question Sprout just asked (working? flat or CRT?
+  // how many devices/homes? which city? weekday or weekend? which items?)
+  function followUp(q, t){
+    var p=pnorm(q), m;
+    if(t.askedWipeCount){
+      m=p.match(new RegExp(NUMPAT));
+      if(m){ var wc=n2(m[1]);
+        return {a:"Secure wiping for "+wc+" device"+(wc>1?"s":"")+" comes to <b>$"+(wc*15)+"</b> ("+wc+" &times; $15), handled during your pickup with no separate trip. Select data wiping in the booking form and note the device count in the instructions.", go:"#book", label:"Book a pickup"};
+      }
+      return null;
+    }
+    if(t.askedHomes){
+      m=p.match(new RegExp(NUMPAT));
+      if(m){ var hg=n2(m[1]);
+        if(hg>=10) return {a:"Perfect: with "+hg+" households (our top tier), small loads are <b>$20 each</b> ($5 off) and standard loads <b>$40 each</b> ($10 off), so your group lands between <b>$"+(hg*20)+"</b> and <b>$"+(hg*40)+"</b> total depending on load sizes, all on one shared trip with no individual travel fee. Pick the Bundle tab in the booking form or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> to coordinate the group.", go:"#book", label:"Book a bundle"};
+        if(hg>=5) return {a:"That qualifies! With "+hg+" households (5&ndash;10 tier), every home gets $5 off: small loads are <b>$20 each</b> and standard loads <b>$45 each</b>, so your group lands between <b>$"+(hg*20)+"</b> and <b>$"+(hg*45)+"</b> total. Recruit up to 10+ and standard loads drop to $40 each. Pick the Bundle tab in the booking form or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> to coordinate.", go:"#book", label:"Book a bundle"};
+        return {a:"Bundle discounts start at <b>5+ households at one location</b>: $20 small / $45 standard, dropping to $40 standard with 10+. With "+hg+", you could recruit a few more neighbors to hit 5, or book individually: $50 standard, or $25 Small Load Pickup for a bag or box of small items.", go:"#pricing", label:"See pricing"};
+      }
+      return null;
+    }
+    if(t.askedCity){
+      for(var ci=0;ci<CITIES.length;ci++){ if(p.indexOf(" "+CITIES[ci]+" ")!==-1){
+        var cn2=CITIES[ci].charAt(0).toUpperCase()+CITIES[ci].slice(1);
+        if(CITIES[ci]==="boulder") return {a:"Yes! Boulder is our home base, so you're squarely in our service area and your travel fee ($0.65/mi from our base) will be minimal. Pop your address in the booking form for a live estimate.", go:"#book", label:"Book a pickup"};
+        return {a:"Yes, we serve "+cn2+"! It's within our 20-mile radius around Boulder. Pickups include a travel fee of $0.65 per mile from our Boulder base; save your address in the booking form and the exact amount shows in your live estimate.", go:"#book", label:"Book a pickup"};
+      }}
+      if(p.trim().split(/\s+/).length<=4) return {a:"Hmm, that may be outside our usual 20-mile radius around Boulder, but it never hurts to ask: email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> with your address and we'll see what we can work out.", go:"#book", label:"Book a pickup"};
+      return null;
+    }
+    if(t.askedDay){
+      if(/satur|sunday|weekend/.test(p)) return {a:"Weekend it is! Weekend pickups run <b>7 AM&ndash;7 PM</b> in 2-hour slots, and you can tell us an estimated arrival time within your window so you're not waiting around. Grab your slot in the booking form.", go:"#book", label:"Book a weekend slot"};
+      if(/monday|tuesday|wednesday|thursday|friday|weekday|evening|after work|week ?night/.test(p)) return {a:"Weekday it is! Weekday pickups run <b>evenings, 5:30&ndash;7:30 PM</b>, one pickup per day, so the sooner you grab your date in the booking form, the better.", go:"#book", label:"Book a weekday evening"};
+      return null;
+    }
+    if(t.askedItems){
+      var lst=personalized("how much for "+q);
+      if(lst) return lst;
+      return null;
+    }
+    if(t.askedType && /flat|crt|tube|projection/.test(p)){
+      var o={p:p};
+      var nc=countAndStrip(o,["crt","tube tv","tube","projection tv","projection"]);
+      var nf=countAndStrip(o,["flat ?screen tv","flat ?screen","flat"]);
+      var flatN, crtN;
+      if(nc>0 && nf===0){ crtN=Math.max(nc,t.tvn); flatN=0; }
+      else if(nf>0 && nc===0){ flatN=Math.max(nf,t.tvn); crtN=0; }
+      else { flatN=nf; crtN=nc; }
+      var est=50+flatN*22+crtN*35;
+      var brk=["$50 base"]; if(flatN) brk.push(flatN+" &times; $22 flat-screen"); if(crtN) brk.push(crtN+" &times; $35 CRT");
+      PENDING={flat:flatN,crt:crtN,gen:t.gen,tvn:0,askedType:false};
+      return {a:"Got it! That puts your estimate around <b>$"+est+"</b> ("+brk.join(" + ")+") before any travel fee. And are they working, even partly? If any power on we'll check refurbishment potential at pickup and route qualifiers to resale or donation; the rest is certified-recycled with all the glass handling covered from your doorstep.", go:"#book", label:"Book a pickup"};
+    }
+    return conditionReply(q, t);
+  }
+
   function answer(q){
+    var pend=PENDING; PENDING=null;
+    if(pend){ var fu=followUp(q, pend); if(fu) return fu; }
     if(GREET.test(q) && q.trim().split(/\s+/).length<=3){
       return {a:"Hey! I'm Sprout, the Juett Tech Rescue helper. Ask me anything, even specifics like \"how much for 2 TVs and a laptop\", \"do you serve Erie\", or \"can you come Saturday\". Pricing, what we take, data security, hours, booking: I've got it. What do you need?"};
     }
@@ -1748,9 +1943,39 @@ body.sprout-open{overflow:hidden;}
     var panel=el("sprout-panel");
     if(!panel.classList.contains("open")) return;
     if(panel.contains(e.target) || el("sprout-launch").contains(e.target)) return;
-    panel.classList.remove("open");
-    var l=el("sprout-launch"); l.classList.remove("hidden"); l.setAttribute("aria-expanded","false");
+    closePanel();
   });
+
+  // ---- Keep the panel pinned when the mobile keyboard opens ----
+  // iOS pans the visual viewport to reveal the focused input, which makes the
+  // chat appear to jump/zoom. While the keyboard is up, we pin the panel to the
+  // visible area (visualViewport) so it stays fixed on screen.
+  if(window.visualViewport){
+    var vv=window.visualViewport;
+    function vvPin(){
+      var panel=el("sprout-panel");
+      if(!panel.classList.contains("open")) return;
+      if(!window.matchMedia("(max-width:700px)").matches){
+        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius="";
+        return;
+      }
+      var kbOpen=(window.innerHeight - vv.height) > 60;
+      if(kbOpen){
+        panel.style.top=vv.offsetTop+"px";
+        panel.style.bottom="auto";
+        panel.style.height=vv.height+"px";
+        panel.style.maxHeight=vv.height+"px";
+        panel.style.borderRadius="0";
+      } else {
+        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius="";
+      }
+      var log=el("sprout-log"); if(log) log.scrollTop=log.scrollHeight;
+    }
+    vv.addEventListener("resize", vvPin);
+    vv.addEventListener("scroll", vvPin);
+    el("sprout-in").addEventListener("focus", function(){ setTimeout(vvPin, 120); });
+    el("sprout-in").addEventListener("blur", function(){ setTimeout(vvPin, 120); });
+  }
 })();
 </script>
 
