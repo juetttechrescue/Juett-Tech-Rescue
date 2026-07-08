@@ -10,7 +10,7 @@
   gtag('config', 'G-CS5PVQZTEQ');
 </script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -58,7 +58,7 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .hero h2{font-family:'Playfair Display',serif;font-size:2.3rem;line-height:1.15;margin-bottom:14px;}
 .hero h2 em{color:var(--gl);font-style:normal;}
 .hero-body{font-size:0.94rem;line-height:1.7;color:rgba(255,255,255,.85);margin-bottom:26px;}
-.hero-btn{display:inline-block;border:2px solid rgba(255,255,255,.45);color:var(--white);padding:13px 26px;border-radius:40px;text-decoration:none;font-weight:600;font-size:0.92rem;margin-bottom:26px;}
+.hero-btn{display:inline-block;background:var(--gm);border:2px solid var(--gm);color:var(--white);padding:14px 30px;border-radius:40px;text-decoration:none;font-weight:800;font-size:0.95rem;margin-bottom:26px;box-shadow:0 5px 18px rgba(0,0,0,.25);}
 .chips{display:flex;flex-direction:column;gap:10px;}
 .chip{display:flex;align-items:center;gap:10px;font-size:0.86rem;color:rgba(255,255,255,.82);}
 
@@ -280,7 +280,7 @@ nav a, .nav-tab-bar a { color: var(--gd) !important; }
 .nav-tab-bar a:hover { color: #fff !important; }
 .nav-cta { color: #fff !important; }
 .hero a { color: #fff !important; }
-.hero-btn { color: #fff !important; }
+.hero a.hero-btn { color: #fff !important; }
 .cashapp-btn { color: #fff !important; }
 .venmo-btn { color: #fff !important; }
 .ig-link { color: var(--text) !important; }
@@ -371,7 +371,7 @@ document.addEventListener('keydown', function(e){
   <div class="hero-badge"><span style="display:inline-flex;align-items:flex-start;gap:5px;line-height:1.5;"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="rgba(255,220,50,0.95)" stroke="none" style="flex-shrink:0;margin-top:1px"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13" stroke="#333" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="#333"/></svg><span><strong>Did You Know?</strong> Throwing electronics in the trash is illegal in Colorado due to their toxic materials.</span></span></div>
   <p style="color:rgba(255,255,255,.65);font-size:0.87rem;margin-bottom:10px;">That's where we come in.</p>
   <h2>Declutter your <em>electronic waste,</em> responsibly.</h2>
-  <p class="hero-body">We come to your door, pick up your old, broken, or unwanted electronics, and make sure they're recycled responsibly, or refurbished and given a second life, instead of landfilled. It's all handled in one stop: we come to you, securely wipe your data if needed, recycle responsibly at a certified facility, and refurbish what we can to resell or donate. With clear, upfront pricing and door-to-door pickups, Juett Tech Rescue makes responsible recycling easy, affordable, and convenient.</p>
+  <p class="hero-body">We come to your door, securely wipe your data if needed, and take your old electronics to a certified recycling facility, with refurbishable items resold or donated instead of shredded. Clear, upfront pricing. One stop, and nothing goes to the landfill.</p>
   <p class="hero-body" style="margin-top:-8px;"><strong style="font-weight:900;font-size:1.06em;">The first established</strong> door-to-door e-waste pickup service in Boulder.</p>
   <a href="#book" class="hero-btn">Schedule a Pickup</a>
   <div class="chips">
@@ -392,6 +392,11 @@ document.addEventListener('keydown', function(e){
     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
     <blockquote>"It was so easy...It's an excellent service!"</blockquote>
     <div class="reviewer">&mdash; Gilbert D. &middot; Customer Review Featured in Boulder Daily Camera Article about Juett Tech Rescue</div>
+  </div>
+  <div style="border:1.5px dashed rgba(255,255,255,.5);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;">
+    <div style="color:rgba(255,255,255,.9);font-size:0.9rem;line-height:1.55;">Had a pickup with us? A quick Google review helps more Boulder neighbors keep their electronics out of the landfill.</div>
+    <!-- TODO: once your Google Business Profile is live, replace the href below with your direct review link (Google Business Profile > Ask for reviews). -->
+    <a href="https://www.google.com/search?q=Juett+Tech+Rescue+Boulder+reviews" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Leave a Google review</a>
   </div>
 </div>
 
@@ -464,7 +469,7 @@ document.addEventListener('keydown', function(e){
     <div class="ptier">
       <div class="ptier-name">Small Load Pickup</div>
       <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>25</span><span class="ptier-unit">small load</span></div>
-      <p class="ptier-desc">Cables, cords, phones, tablets, smartwatches, power banks, adapters, or a small appliance (toaster, blender): a load that fits in one bag or box. No TVs or monitors. Travel fee still applies.</p>
+      <p class="ptier-desc">Cables, cords, phones, tablets, smartwatches, power banks, adapters, or small appliances (toasters, blenders). A load that fits in bags or a box. No TVs or monitors.</p>
     </div>
     <div class="ptier feat">
       <span class="ptier-tag">Most Common</span>
@@ -484,7 +489,7 @@ document.addEventListener('keydown', function(e){
     </div>
   </div>
 
-  <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;margin-top:14px;">Pickups also include a travel fee of $0.65 per mile (the standard commercial mileage rate) based on your distance from our Boulder base. We confirm your final price before pickup, and pass on facility-rate savings as we secure them.</p>
+  <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;margin-top:14px;"><em>Pickups also include a travel fee of $0.65 per mile (the standard commercial mileage rate) based on your distance from our Boulder base. We confirm your final price beforehand on the estimate portion of the pickup form, and pass on facility-rate savings as we secure them! ☺︎</em></p>
 
   <button type="button" class="dc-note" onclick="openDCModal()"><span class="dc-q">?</span>Read about us in the Boulder Daily Camera and curious how our pricing works?</button>
 
@@ -628,7 +633,7 @@ document.addEventListener('keydown', function(e){
 <section class="sec bg-cream" id="schedule">
   <div class="slabel">Get in Touch</div>
   <div class="stitle">Ready to clear out your old tech?</div>
-  <p class="ssub">Fill out the form below ANY TIME and we'll be in touch shortly to confirm your pickup. Or reach out directly, we're happy to answer any questions!</p>
+  <p class="ssub">Fill out the form below ANY TIME and we'll be in touch shortly to confirm your pickup. Or reach out directly, we're happy to answer any questions! And feel free to contact us with feedback on our website or services too; we're always looking to improve.</p>
 
   <div style="background:var(--gbg);border:1.5px solid #c3d6c3;border-radius:14px;padding:13px 15px;margin-bottom:22px;">
     <div style="font-family:'Roboto Mono',monospace;font-size:0.8rem;letter-spacing:.07em;text-transform:uppercase;color:var(--gd);font-weight:700;margin-bottom:9px;">Cities we serve &middot; Boulder &amp; communities around a 20-mile radius</div>
@@ -722,7 +727,7 @@ document.addEventListener('keydown', function(e){
           <input type="text" id="f-address" name="address" placeholder="123 Pearl St, Boulder, CO 80302" required style="flex:1;min-width:0;">
           <button type="button" id="addr-save" onclick="saveAddress()" style="flex:0 0 auto;background:var(--gd);color:var(--white);border:none;border-radius:11px;padding:0 18px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;cursor:pointer;white-space:nowrap;">Save</button>
         </div>
-        <span id="addr-status" style="display:block;font-size:0.76rem;color:var(--muted);line-height:1.5;margin-top:6px;">Enter your address with ZIP code, then tap Save to add travel to your estimate.</span>
+        <span id="addr-status" style="display:block;font-size:0.76rem;color:var(--muted);line-height:1.5;margin-top:6px;">Enter your address with ZIP code.</span>
       </div>
       <div class="fg"><label class="fl" for="f-phone">Phone Number:</label><input type="tel" id="f-phone" name="phone" placeholder="(720) 555-0100" required></div>
       <div class="fg"><label class="fl" for="f-email">Email:</label><input type="email" id="f-email" name="email" placeholder="amazingcustomer@example.com" required></div>
@@ -871,6 +876,7 @@ document.addEventListener('keydown', function(e){
     <p class="atext"><a href="https://www.linkedin.com/in/natalie-juett-723a053ba/" target="_blank" rel="noopener" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">I am</a> a rising junior at CU Boulder studying economics and political science. During my first semester of sophomore year, I took an Environmental Sustainability and Features course, where I learned about the serious effects of e-waste on our environment when electronics are disposed of improperly.</p>
     <p class="atext">After researching what options existed in Boulder, I found a real gap. People are left choosing between hauling all their e-waste to a drop-off facility themselves and paying processing fees, or searching to find the best-priced general junk management service that doesn't even specialize in e-waste recycling to come pick it up. I started Juett Tech Rescue to fill that gap: a simple, transparently priced pickup with certified e-waste recycling, and electronics with refurbishment potential refurbished, resold, or donated instead of shredded, built for Boulder residents. I established the business in December 2025, spent the winter building the website and refining the idea, and launched pickup operations in March 2026. We are proud to be the only waste management service in Boulder focusing specifically on electronic waste management.</p>
     <p class="atext">Everything we do is transparently and fairly priced, and it's built to handle the whole process in one go. If it runs on a battery or plugs in, we pick it up, securely wipe any data that needs wiping, and take everything to a certified processing facility.</p>
+    <p class="atext">I've seen people get into this business solely to chase profits from electronics with refurbishment potential, cherry-picking the valuable items and leaving the rest behind. That's not what Juett Tech Rescue is about. My business is about the full cycle of recycling, and it starts with keeping electronics out of the landfill. That's why we take almost anything that plugs in or runs on a battery, not just what resells, because we care about the environmental impact of every device. We still handle refurbishment; it's one part of the mission, not the whole point.</p>
     <p class="atext">Electronics with refurbishment potential are restored and then donated or resold, your choice. Choosing resale puts a little money back in your pocket and takes the hassle of repairing and reselling off your hands. We do this through a network of local partners: small shops, individual technicians, and trusted vendors. One is a fellow CU Boulder computer science student who refurbishes electronics as our head restoration technician; another is a former CU professor who helps refurbish and rehome old laptops. We also work with local pawn shops and online resale partners to get each item to its best second home.</p>
     <p class="atext">The facts are striking: the world generates over 50 million metric tons of electronic waste every year, making it the fastest-growing solid waste stream on the planet. According to the <a href="https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx" target="_blank" style="color:var(--gm);text-decoration:underline;">Global E-Waste Monitor 2024</a>, only 22.3% of e-waste is formally recycled globally. When electronics end up in landfills, toxic materials such as lead, mercury, and cadmium leach into the soil and groundwater, posing serious risks to both human health and local ecosystems. The <a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)" target="_blank" style="color:var(--gm);text-decoration:underline;">World Health Organization</a> has identified improper e-waste disposal as a growing public health concern, particularly for communities near informal recycling sites. At the same time, rare and valuable metals like gold, silver, and cobalt are permanently lost rather than being recovered and reused.</p>
     <p class="atext">The goal of this business is to make electronic waste recycling accessible for Boulder County residents by tackling the issue head-on and closing the gap in convenience and affordability. I am also committed to giving back: a percentage of profits from every pickup is donated to <a href="https://www.ban.org" target="_blank" style="color:var(--gm);text-decoration:underline;">Basel Action Network (BAN)</a>, a nonprofit dedicated to fighting illegal e-waste dumping and advocating for responsible recycling worldwide.</p>
@@ -1273,7 +1279,7 @@ document.getElementById("f-referral").addEventListener("input",updateQuote);
   if(v!==_lastGeo){
     _miles=null; _mileFee=0; _travelState="idle";
     var s=document.getElementById("addr-status");
-    if(s) s.textContent = v.length ? "Tap Save to update travel on your estimate." : "Enter your address with ZIP code, then tap Save to add travel to your estimate.";
+    if(s) s.textContent = v.length ? "Tap Save to update travel on your estimate." : "Enter your address with ZIP code.";
     updateQuote();
   }
 });}})();
@@ -1424,7 +1430,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 #sprout-launch:hover{background:var(--gm);transform:translateY(-2px);}
 #sprout-launch .sleaf{width:30px;height:30px;background:#fff;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #sprout-launch.hidden{display:none;}
-#sprout-panel{position:fixed;left:0;right:0;bottom:0;z-index:9001;width:auto;height:85dvh;max-height:85dvh;background:var(--white);border-radius:18px 18px 0 0;box-shadow:0 -10px 44px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom);}
+#sprout-panel{position:fixed;left:0;right:0;bottom:0;z-index:9001;width:auto;height:100dvh;max-height:100dvh;background:var(--white);border-radius:0;box-shadow:0 -10px 44px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom);overscroll-behavior:contain;touch-action:manipulation;}
 #sprout-panel.open{display:flex;}
 @media(min-width:701px){#sprout-panel{left:auto;right:24px;bottom:24px;width:400px;height:min(80vh,720px);max-height:min(80vh,720px);border-radius:18px;padding-bottom:0;}}
 body.sprout-open{overflow:hidden;}
@@ -1502,7 +1508,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","destroy","proof","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. A Certificate of Data Destruction is available on request. Secure wiping is $15 per device.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["fridge","refrigerator","freezer","large appliance","big appliance","air condition","ac unit","freon","washer","washing machine","dryer","dishwasher","oven","stove","range","water heater"], a:"We can't take large appliances: refrigerators, freezers, AC units, washers, dryers, dishwashers, ovens, or anything that size. Those need a specialized facility or hauler. We do take small appliances like toasters, blenders, humidifiers, and coffee makers, plus all your electronics."},
     {kw:["hour","when","time","open","availab","evening","weekend","slot"], a:"We're built around your schedule: <b>weekday evenings, 5:30&ndash;7:30 PM</b> (after work), and <b>all weekend, 7 AM&ndash;7 PM</b>. No taking time off. Weekdays are one pickup per day. On weekends you book a <b>2-hour slot</b>: the two-hour window gives us flexibility, and you can tell us an estimated arrival time within it so you're not left waiting around.", go:"#book", label:"Pick a time"},
-    {kw:["resell","resale","refurbish","refurbishable","repair","sell","proceeds","worth","buyback","trade in","fixable","donat","partner","who refurbish","where do you take","qualif","eligible"], a:"It depends on the item's condition. The things most likely to qualify for resale or donation are newer phones, working or partly-working laptops and MacBooks, consoles, tablets, and smartwatches. We work with refurbishers across Boulder, some businesses, some independent: laptops and monitors go to a former CU professor, and consoles and some audio gear go to a partnered CU computer-science student. It's always your call, and we ask about each item's condition at pickup and in the booking form. If you're not sure whether something qualifies, just contact us or note it in the additional instructions on the pickup form. We'll do what we can, and regardless it'll be kept out of the landfill!", go:"#how", label:"See the resale option"},
+    {kw:["resell","resale","refurbish","refurbishable","repair","sell","proceeds","worth","buyback","trade in","fixable","donat","partner","who refurbish","where do you take","qualif","eligible"], a:"We determine every item's refurbishment potential case by case at pickup. Out of residential e-waste, the most likely candidates are phones, laptops and MacBooks, monitors, tablets, smartwatches, and game consoles, especially if they power on and work even partly. We work with refurbishers across Boulder, some businesses, some independent: laptops and monitors go to a former CU professor, and consoles and some audio gear go to a partnered CU computer-science student. It's always your call, and we ask about each item's condition at pickup and in the booking form. If you're not sure whether something qualifies, just contact us or note it in the additional instructions on the pickup form. We'll do what we can, and regardless it'll be kept out of the landfill!", go:"#how", label:"See the resale option"},
     {kw:["fit","capacity","cargo","trunk","vehicle","car","space","hold","big enough","all my waste","everything fit","too much","how much can you fit"], a:"Good question. My pickup vehicle holds about <b>59.8 cubic feet</b> of cargo (roughly 42 by 38 by 27 inches), which covers most home loads. You can see this in the <a href='#capacity'>Pickup Capacity</a> section. If you've got a big or bulky haul, just describe it in the booking form and we'll let you know it fits before we head over. If it doesn't all go in one trip, we can schedule another.", go:"#capacity", label:"Pickup capacity"},
     {kw:["area","where","locat","serve","city","zip","boulder","gunbarrel","niwot","louisville","lafayette","superior","erie","broomfield","longmont","lyons","westminster","arvada","golden","near me","range"], a:"We serve Boulder and communities within about a 20-mile radius: Boulder, Gunbarrel, Niwot, Louisville, Lafayette, Superior, Erie, Broomfield, Longmont, Lyons, Westminster, Arvada, and Golden. Not sure you're in range? Pop your address in the booking form, or email us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> for a quick response.", go:"#book", label:"Book a pickup"},
     {kw:["drop it off to you","drop off to you","bring it to you","can i drop","can i bring","do you have a location","drop off location","drop off spot","drop off point","where do i bring","do you have a drop","drop it off with you"], a:"We operate as a pickup service out of our vehicle, so we don't have a drop-off location. If you have a special situation or would like to inquire further, please contact us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
@@ -1572,7 +1578,7 @@ body.sprout-open{overflow:hidden;}
     {n:"tablet", t:"high", kw:["ipad","tablet"]},
     {n:"game console", t:"high", kw:["playstation","ps4","ps5","xbox","nintendo","game console","gaming console","console"]},
     {n:"smartwatch", t:"high", kw:["smartwatch","smart watch","apple watch","fitbit","wearable"]},
-    {n:"monitor", t:"medium", kw:["computer monitor","monitor","display"]},
+    {n:"monitor", t:"high", kw:["computer monitor","monitor","display"]},
     {n:"desktop computer", t:"medium", kw:["desktop","computer tower","tower","pc","desktop computer","computer"]},
     {n:"piece of audio gear", t:"medium", kw:["speaker","headphone","earbud","soundbar","receiver","amplifier","stereo","audio"]},
     {n:"camera", t:"medium", kw:["dslr","gopro","camera"]},
@@ -1603,11 +1609,11 @@ body.sprout-open{overflow:hidden;}
     if(!hit) return null;
     var n=hit.n, txt;
     if(hit.t==="high"){
-      txt="Good news: a "+n+" is one of the higher-potential items for resale or refurbishment, especially if it still powers on and works (even partly). We check its condition at pickup and in the booking form, and if it qualifies we refurbish and resell or donate it through our Boulder partners. If you're not sure, note it in the additional instructions, we'll do what we can, and regardless it'll be kept out of the landfill!";
+      txt="Good news: a "+n+" is one of the most likely items in residential e-waste to have refurbishment potential, especially if it still powers on and works (even partly). We determine every item case by case at pickup, and if it qualifies we refurbish and resell or donate it through our Boulder partners, your choice. If you're not sure, note it in the additional instructions, we'll do what we can, and regardless it'll be kept out of the landfill!";
     } else if(hit.t==="medium"){
-      txt="A "+n+" can sometimes be refurbished or resold: it depends on the model, age, and whether it still works. We'll check its condition at pickup and in the booking form and route it to our refurbishment partners if it qualifies. If not, it's recycled responsibly. Not sure? Note it in the additional instructions, we'll do what we can, and either way it stays out of the landfill!";
+      txt="A "+n+" can definitely have refurbishment potential: it depends on the model, age, and whether it still works, so we determine every item case by case at pickup. If it qualifies, it goes to our refurbishment partners for resale or donation; if not, it's recycled responsibly. Not sure? Note it in the additional instructions, we'll do what we can, and either way it stays out of the landfill!";
     } else {
-      txt="A "+n+" usually isn't a strong candidate for resale: items like these are most often recycled responsibly rather than refurbished. We'll still take it and keep it out of the landfill, and if any part of it is reusable we'll route it accordingly. If you think it has refurbishment potential, note it in the additional instructions and we'll take a look!";
+      txt="A "+n+" is less commonly refurbished, but we still determine every item case by case at pickup rather than writing anything off. Most items like these are recycled responsibly, and if any part is reusable we route it accordingly. If you think yours has refurbishment potential, note it in the additional instructions and we'll take a look, and either way it stays out of the landfill!";
     }
     return {a:txt, go:"#how", label:"See the resale option"};
   }
@@ -1782,7 +1788,7 @@ body.sprout-open{overflow:hidden;}
         if(haveSig&&!priceSig) bits.push("Sounds great, we can take all of that!");
         if(highs.length) bits.push("Quick question: "+(highs.length>1||flat+crt+gen>1?"are they":"is it")+" working, even partly? Items like your "+listN(highs)+" are strong refurbishment candidates, and if they qualify we'll refurbish and resell or donate them a second life through our Boulder partners instead of straight recycling.");
         else if(meds.length) bits.push("Are they working? A "+listN(meds)+" can sometimes qualify for refurbishment depending on age and condition; we check each item at pickup and in the booking form.");
-        else if(flat>0&&crt===0) bits.push("Are they working? Working flat-screens can sometimes have refurbishment potential; we check condition at pickup.");
+        else if(flat>0&&crt===0) bits.push("Are they working? Flat-screens and monitors have real refurbishment potential; we determine each one case by case at pickup.");
         if(tvGen>0 && crt===0 && flatSpec===0){
           bits.push("Are the TVs flat-screens or older tube (CRT) sets? Flat-screens add <b>+$22</b> each and CRTs <b>+$35</b>: that covers their certified hazardous-glass handling, and we take care of every bit of it from your doorstep.");
         } else if(flat+crt>0){
@@ -1859,7 +1865,7 @@ body.sprout-open{overflow:hidden;}
       var est=50+flatN*22+crtN*35;
       var brk=["$50 base"]; if(flatN) brk.push(flatN+" &times; $22 flat-screen"); if(crtN) brk.push(crtN+" &times; $35 CRT");
       PENDING={flat:flatN,crt:crtN,gen:t.gen,tvn:0,askedType:false};
-      return {a:"Got it! That puts your estimate around <b>$"+est+"</b> ("+brk.join(" + ")+") before any travel fee. And are they working, even partly? If any power on we'll check refurbishment potential at pickup and route qualifiers to resale or donation; the rest is certified-recycled with all the glass handling covered from your doorstep.", go:"#book", label:"Book a pickup"};
+      return {a:"Got it! That puts your estimate around <b>$"+est+"</b> ("+brk.join(" + ")+") before any travel fee. And are they working, even partly? We determine refurbishment potential case by case at pickup and route qualifiers to resale or donation; the rest is certified-recycled with all the glass handling covered from your doorstep.", go:"#book", label:"Book a pickup"};
     }
     return conditionReply(q, t);
   }
@@ -1880,13 +1886,81 @@ body.sprout-open{overflow:hidden;}
       if(s>bestScore){ bestScore=s; best=KB[i]; }
     }
     if(best && bestScore>0) return best;
-    return {a:"I'm not sure I caught that, but here's where you'll find answers: <a href='#pricing'>pricing</a>, <a href='#pricing'>what we take</a>, <a href='#data-security'>data security</a>, <a href='#book'>hours &amp; service area</a>, or <a href='#book'>booking</a>. You can also email us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> for a quick response.", go:"#book", label:"Book a pickup"};
+    return {a:"I'm not sure I caught that, but here's where you'll find answers: <a href='#pricing'>pricing</a>, <a href='#pricing'>what we take</a>, <a href='#data-security'>data security</a>, <a href='#book'>hours &amp; service area</a>, or <a href='#book'>booking</a>. You can also email us at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> for a quick response.", go:"#book", label:"Book a pickup", fb:true};
+  }
+
+  // ---- Live conversation logging ----
+  // Every Q&A pair is sent to the same Google Apps Script the booking form
+  // uses, tagged type:"sprout_log" with a per-visit session id, so real
+  // visitor questions can be reviewed in the Google Sheet and used to
+  // improve Sprout's answers over time.
+  var SPROUT_SID=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);
+  function logChat(q, a){
+    try{
+      if(typeof SCRIPT==="undefined" || !SCRIPT) return;
+      var payload=JSON.stringify({
+        type:"sprout_log",
+        session:SPROUT_SID,
+        question:(q||"").slice(0,500),
+        answer:(a||"").replace(/<[^>]+>/g,"").slice(0,400),
+        page:location.pathname+location.hash,
+        ts:new Date().toISOString()
+      });
+      if(navigator.sendBeacon){ navigator.sendBeacon(SCRIPT, new Blob([payload],{type:"text/plain"})); }
+      else { fetch(SCRIPT,{method:"POST",body:payload,keepalive:true}).catch(function(){}); }
+    }catch(e){}
+  }
+
+  // ---- AI-powered conversational fallback ----
+  // Exact answers (pricing math, availability, policies) still come from the
+  // rule engine above: instant, free, and never wrong. When no rule matches,
+  // the question goes to a real AI model (Claude) through the same Google
+  // Apps Script that handles bookings, which holds the API key server-side
+  // and a system prompt with all JTR knowledge. Falls back to the standard
+  // help message if the AI isn't configured or errors out.
+  var AI_HISTORY=[];
+  function pushHist(role, text){
+    AI_HISTORY.push({role:role, content:String(text||"").replace(/<[^>]+>/g,"").slice(0,600)});
+    if(AI_HISTORY.length>10) AI_HISTORY=AI_HISTORY.slice(-10);
+  }
+  function aiFallback(cb){
+    if(typeof SCRIPT==="undefined" || !SCRIPT){ cb(null); return; }
+    fetch(SCRIPT,{method:"POST",body:JSON.stringify({type:"sprout_ai",session:SPROUT_SID,messages:AI_HISTORY})})
+      .then(function(r){ return r.json(); })
+      .then(function(d){ cb(d && d.reply ? String(d.reply) : null); })
+      .catch(function(){ cb(null); });
+  }
+  function escBot(t){
+    return t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\n/g,"<br>");
   }
 
   function send(q){
     if(!q || !q.trim()) return;
     addMsg(q.replace(/</g,"&lt;"), "user");
     var r=answer(q);
+    pushHist("user", q);
+    if(r.fb){
+      // No rule matched: try the AI, showing a typing indicator meanwhile
+      var log=el("sprout-log");
+      var tip=document.createElement("div");
+      tip.className="sprout-msg bot"; tip.textContent="\u2026";
+      setTimeout(function(){ log.appendChild(tip); log.scrollTop=log.scrollHeight; }, 220);
+      aiFallback(function(reply){
+        if(tip.parentNode) tip.parentNode.removeChild(tip);
+        if(reply){
+          pushHist("assistant", reply);
+          logChat(q, reply+" [AI]");
+          addMsg(escBot(reply), "bot", {go:"#book", label:"Book a pickup"});
+        } else {
+          pushHist("assistant", r.a);
+          logChat(q, r.a);
+          addMsg(r.a, "bot", r);
+        }
+      });
+      return;
+    }
+    pushHist("assistant", r.a);
+    logChat(q, r.a);
     setTimeout(function(){ addMsg(r.a, "bot", r); }, 220);
   }
 
@@ -1947,34 +2021,47 @@ body.sprout-open{overflow:hidden;}
   });
 
   // ---- Keep the panel pinned when the mobile keyboard opens ----
-  // iOS pans the visual viewport to reveal the focused input, which makes the
-  // chat appear to jump/zoom. While the keyboard is up, we pin the panel to the
-  // visible area (visualViewport) so it stays fixed on screen.
+  // Goal: with the chat open, the panel always fills EXACTLY the visible
+  // area. When the keyboard opens, the panel shrinks to precisely the space
+  // above it, to the pixel. Nothing pans, nothing zooms; the browser's
+  // scroll-the-page-to-reveal-the-input behavior is actively cancelled.
   if(window.visualViewport){
     var vv=window.visualViewport;
     function vvPin(){
       var panel=el("sprout-panel");
       if(!panel.classList.contains("open")) return;
       if(!window.matchMedia("(max-width:700px)").matches){
-        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius="";
+        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius=""; panel.style.transform="";
         return;
       }
+      // Cancel any pan iOS attempted (body is frozen, so 0,0 is home)
+      if(window.scrollY!==0 || window.scrollX!==0) window.scrollTo(0,0);
       var kbOpen=(window.innerHeight - vv.height) > 60;
       if(kbOpen){
-        panel.style.top=vv.offsetTop+"px";
-        panel.style.bottom="auto";
+        // Fill exactly the visible area: translate to the visual viewport's
+        // origin and match its height to the pixel.
+        panel.style.top="0"; panel.style.bottom="auto";
         panel.style.height=vv.height+"px";
         panel.style.maxHeight=vv.height+"px";
         panel.style.borderRadius="0";
+        panel.style.transform="translateY("+vv.offsetTop+"px)";
       } else {
-        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius="";
+        panel.style.top=""; panel.style.bottom=""; panel.style.height=""; panel.style.maxHeight=""; panel.style.borderRadius=""; panel.style.transform="";
       }
       var log=el("sprout-log"); if(log) log.scrollTop=log.scrollHeight;
     }
     vv.addEventListener("resize", vvPin);
     vv.addEventListener("scroll", vvPin);
-    el("sprout-in").addEventListener("focus", function(){ setTimeout(vvPin, 120); });
-    el("sprout-in").addEventListener("blur", function(){ setTimeout(vvPin, 120); });
+    // Focus/blur fire before the keyboard finishes animating; pin again after
+    el("sprout-in").addEventListener("focus", function(){ setTimeout(vvPin, 60); setTimeout(vvPin, 260); });
+    el("sprout-in").addEventListener("blur", function(){ setTimeout(vvPin, 60); setTimeout(vvPin, 260); });
+    // While the chat is open, cancel every scroll the browser attempts
+    window.addEventListener("scroll", function(){
+      var panel=el("sprout-panel");
+      if(panel.classList.contains("open") && window.matchMedia("(max-width:700px)").matches && window.scrollY!==0){
+        window.scrollTo(0,0); vvPin();
+      }
+    }, {passive:true});
   }
 })();
 </script>
