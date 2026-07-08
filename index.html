@@ -10,7 +10,7 @@
   gtag('config', 'G-CS5PVQZTEQ');
 </script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -371,7 +371,7 @@ document.addEventListener('keydown', function(e){
   <p style="color:rgba(255,255,255,.65);font-size:0.87rem;margin-bottom:10px;">That's where we come in.</p>
   <h2>Declutter your <em>electronic waste,</em> responsibly.</h2>
   <p class="hero-body">We come to your door, pick up your old, broken, or unwanted electronics, and make sure they're recycled responsibly, or refurbished and given a second life, instead of landfilled. It's all handled in one stop: we come to you, securely wipe your data if needed, recycle responsibly at a certified facility, and refurbish what we can to resell or donate. With clear, upfront pricing and door-to-door pickups, Juett Tech Rescue makes responsible recycling easy, affordable, and convenient.</p>
-  <p class="hero-body" style="margin-top:-8px;"><strong style="font-weight:900;font-size:1.06em;">The first established</strong> door-to-door e-waste pickup service in Boulder. CRT TVs, printers, dead appliances, tangled drawers of cables: we take it all, whether or not it's worth anything. Recycling comes first.</p>
+  <p class="hero-body" style="margin-top:-8px;"><strong style="font-weight:900;font-size:1.06em;">The first established</strong> door-to-door e-waste pickup service in Boulder.</p>
   <a href="#book" class="hero-btn">Schedule a Pickup</a>
   <div class="chips">
     <div class="chip"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.8" style="flex-shrink:0"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Mon&ndash;Fri 5:30&ndash;7:30 PM &amp; Sat&ndash;Sun 7AM&ndash;7PM</span></div>
@@ -458,7 +458,7 @@ document.addEventListener('keydown', function(e){
 <!-- PRICING -->
 <section class="sec bg-gbg" id="pricing">
   <div class="slabel">Pricing &amp; What We Take</div>
-  <p class="ssub">Fair, transparent, and worth it. Our service handles everything in one stop: pickup at your door, <a href="#data-security" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">secure data privacy</a>, certified recycling, and <a href="#how" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">refurbishment for resale or donation</a> at your request. We also donate a percentage of our total profits to the <a href="https://www.ban.org" target="_blank" rel="noopener" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">Basel Action Network</a>, a nonprofit that fights illegal e-waste dumping.</p>
+  <p class="ssub">We handle the facility fees, the line, and everything e-waste recycling takes, all in one stop: pickup at your door, <a href="#data-security" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">secure data wiping</a> if needed, certified recycling, and <a href="#how" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">refurbishment for resale or donation</a> when possible. We also donate a percentage of our total profits to the <a href="https://www.ban.org" target="_blank" rel="noopener" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">Basel Action Network</a>, a nonprofit that fights illegal e-waste dumping.</p>
   <div class="tier-grid">
     <div class="ptier feat">
       <span class="ptier-tag">Most Common</span>
@@ -468,7 +468,7 @@ document.addEventListener('keydown', function(e){
     </div>
     <div class="ptier">
       <div class="ptier-name">Neighborhood &amp; Complex Bundle</div>
-      <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>45</span><span class="ptier-unit">per residence</span></div>
+      <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>40</span><span class="ptier-unit">per residence</span></div>
       <p class="ptier-desc">When 10+ households schedule together at one location: a cul-de-sac, condo, or apartment complex.</p>
     </div>
     <div class="ptier">
@@ -625,7 +625,7 @@ document.addEventListener('keydown', function(e){
   <p class="ssub">Fill out the form below ANY TIME and we'll be in touch shortly to confirm your pickup. Or reach out directly, we're happy to answer any questions!</p>
 
   <div style="background:var(--gbg);border:1.5px solid #c3d6c3;border-radius:14px;padding:13px 15px;margin-bottom:22px;">
-    <div style="font-family:'Roboto Mono',monospace;font-size:0.64rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gm);margin-bottom:9px;">Cities we serve &middot; Boulder &amp; communities around a 20-mile radius</div>
+    <div style="font-family:'Roboto Mono',monospace;font-size:0.8rem;letter-spacing:.07em;text-transform:uppercase;color:var(--gd);font-weight:700;margin-bottom:9px;">Cities we serve &middot; Boulder &amp; communities around a 20-mile radius</div>
     <div style="display:flex;flex-wrap:wrap;gap:7px;">
       <span style="background:var(--white);color:var(--gd);font-size:0.78rem;font-weight:500;padding:5px 12px;border-radius:40px;border:1px solid #c3d6c3;">Boulder</span>
       <span style="background:var(--white);color:var(--gd);font-size:0.78rem;font-weight:500;padding:5px 12px;border-radius:40px;border:1px solid #c3d6c3;">Gunbarrel</span>
@@ -1066,7 +1066,7 @@ function setService(v){
   [["svc-res","residential"],["svc-bundle","bundle"],["svc-biz","business"]].forEach(function(x){var el=document.getElementById(x[0]);var on=(v===x[1]);el.classList.toggle("on",on);el.setAttribute("aria-pressed",on);});
   var h=document.getElementById("svc-hint");
   if(v==="residential"){ h.textContent="$50 base pickup for a single residence \u2014 everything but TVs and monitors is included."; }
-  else if(v==="bundle"){ h.textContent="$45 per residence when 10+ households at one location schedule together (cul-de-sac, condo, or apartment complex)."; }
+  else if(v==="bundle"){ h.textContent="$40 per residence when 10+ households at one location schedule together (cul-de-sac, condo, or apartment complex)."; }
   else { h.textContent="Offices, schools & bulk volume \u2014 we'll reply with a custom quote. Mention in the instructions below if you need a Certificate of Recycling."; }
   updateQuote();
 }
@@ -1154,7 +1154,7 @@ function updateQuote(){
     window._quote="Custom"; window._diy=""; window._travel=""; window._miles="";
     return;
   }
-  var base = (svc==="bundle") ? 45 : 50;
+  var base = (svc==="bundle") ? 40 : 50;
   // Travel fee applies to a single residential pickup. Bundles share one trip across 10+ homes.
   var travelApplies = (svc==="residential");
   var fee = (travelApplies && _travelState==="ok") ? _mileFee : 0;
@@ -1365,14 +1365,26 @@ function closeAccess(){document.getElementById('access-modal').classList.remove(
 function openTvExample(){var d=document.getElementById('tv-example');if(d){d.open=true;setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'center'});},60);}}
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModal();closePrivacy();closeAccess();}});
 </script>
+<script>
+/* iOS only: stop Safari auto-zooming on input focus. Pinch zoom still works (iOS 10+ ignores max-scale for user pinch). */
+(function(){
+  var iOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  if(!iOS) return;
+  var m=document.querySelector('meta[name="viewport"]');
+  if(m && m.content.indexOf("maximum-scale")===-1){ m.content=m.content+", maximum-scale=1"; }
+})();
+</script>
 <!-- ============ SPROUT: SITE HELPER (self-contained, no API key, no backend) ============ -->
 <style>
 #sprout-launch{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:9000;display:flex;align-items:center;gap:9px;background:var(--gd);color:#fff;border:none;border-radius:30px;padding:12px 18px 12px 13px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;box-shadow:0 6px 22px rgba(0,0,0,.22);cursor:pointer;transition:transform .15s ease,background .15s ease;touch-action:manipulation;}
 #sprout-launch:hover{background:var(--gm);transform:translateY(-2px);}
 #sprout-launch .sleaf{width:30px;height:30px;background:#fff;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #sprout-launch.hidden{display:none;}
-#sprout-panel{position:fixed;left:0;right:0;bottom:0;z-index:9001;width:auto;height:50dvh;max-height:50dvh;background:var(--white);border-radius:18px 18px 0 0;box-shadow:0 -10px 44px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom);}
+#sprout-panel{position:fixed;left:0;right:0;bottom:0;z-index:9001;width:auto;height:85dvh;max-height:85dvh;background:var(--white);border-radius:18px 18px 0 0;box-shadow:0 -10px 44px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;font-family:'DM Sans',sans-serif;padding-bottom:env(safe-area-inset-bottom);}
 #sprout-panel.open{display:flex;}
+@media(min-width:701px){#sprout-panel{left:auto;right:24px;bottom:24px;width:400px;height:min(80vh,720px);max-height:min(80vh,720px);border-radius:18px;padding-bottom:0;}}
+body.sprout-open{overflow:hidden;}
+@media(max-width:700px){body.sprout-open{position:fixed;left:0;right:0;width:100%;}}
 .sprout-head{background:var(--gd);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:11px;}
 .sprout-head .sleaf{width:40px;height:40px;background:#fff;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;}.sleaf img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;}
 .sprout-head .st{flex:1;line-height:1.15;}
@@ -1380,7 +1392,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
 .sprout-head .st span{font-size:0.72rem;opacity:.85;}
 .sprout-close{background:transparent;border:none;color:#fff;font-size:1.55rem;line-height:1;cursor:pointer;padding:2px 8px;border-radius:6px;}
 .sprout-close:hover{background:rgba(255,255,255,.15);}
-.sprout-log{flex:1;overflow-y:auto;padding:14px;background:var(--cream);display:flex;flex-direction:column;gap:10px;}
+.sprout-log{flex:1;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:14px;background:var(--cream);display:flex;flex-direction:column;gap:10px;}
 .sprout-msg{max-width:85%;padding:10px 13px;border-radius:15px;font-size:0.88rem;line-height:1.5;}
 .sprout-msg.bot{background:var(--gbg);color:var(--text);align-self:flex-start;border-bottom-left-radius:4px;}
 .sprout-msg.user{background:var(--gd);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;}
@@ -1434,7 +1446,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
     {kw:["daily camera","25","went up","go up","price increase","increase","raised","raise","more expensive","so expensive","higher","why so much","lower figure","not 25"], a:"Fair question. If you saw a lower number (like an earlier figure in the Boulder Daily Camera), that was before we added up what a pickup really costs to do responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run. We moved to clear, upfront pricing so the service stays sustainable. It's a $50 base that covers your whole load, with a surcharge only on TVs and monitors ($22 flat-screen, $35 CRT) for their hazardous-glass handling, and you see your estimate live before you commit. As we secure better facility rates, we pass the savings on.", go:"#pricing", fn:"openDCModal", label:"How our pricing works"},
     {kw:["is it free","it free","is free","pickup free","free pickup","free if","free to donate","free when","cost less","costs less","cheaper if","price adjustment","discount if","still cost","still pay","no charge"], a:"It's still <b>$50</b>. That covers the gas, the time, and the effort of rehoming your tech: we take the whole process off your hands and make sure working items get successfully repurposed. And a percentage of every pickup's profits still goes to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> to extend the impact further.", go:"#pricing", label:"See pricing"},
     {kw:["how much donated","how much has been donated","how much have you donated","how much do you donate","amount donated","total donated","donated so far","how much goes to basel","how much have you given","how much raised","how much do you give"], a:"Great question! We donate to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> on a quarterly basis, and our next donation is coming up in October, so stay tuned! A percentage of every pickup's profits goes toward it.", go:"#about", label:"About us"},
-    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 base pickup</b> covers your whole load. Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Bundles of 10+ homes are <b>$45 each</b>, businesses get a custom quote. Secure data wiping is <b>$15/device</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
+    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 base pickup</b> covers your whole load. Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Bundles of 10+ homes are <b>$40 each</b>, businesses get a custom quote. Secure data wiping is <b>$15/device</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
     {kw:["tv","tvs","television","monitor","crt","flat screen","flatscreen","tube","projection","55 inch","65 inch","big tv","large tv","screen size"], a:"TVs and monitors are the only items with a surcharge, because their glass needs certified hazardous handling: <b>+$22</b> per flat-screen TV or monitor, <b>+$35</b> per CRT/tube/projection TV. We take flat-screen TVs up to <b>55 inches</b>. Everything else in your load is included in the base fee.", go:"#pricing", label:"See pricing"},
     {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. A Certificate of Data Destruction is available on request. Secure wiping is $15 per device.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["fridge","refrigerator","freezer","large appliance","big appliance","air condition","ac unit","freon","washer","washing machine","dryer","dishwasher","oven","stove","range","water heater"], a:"We can't take large appliances: refrigerators, freezers, AC units, washers, dryers, dishwashers, ovens, or anything that size. Those need a specialized facility or hauler. We do take small appliances like toasters, blenders, humidifiers, and coffee makers, plus all your electronics."},
@@ -1585,18 +1597,27 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDCModa
     });
   }
 
+  var sproutScrollY=0;
   function openPanel(){
     el("sprout-panel").classList.add("open");
+    sproutScrollY=window.scrollY||0;
+    document.body.classList.add("sprout-open");
+    if(window.matchMedia("(max-width:700px)").matches){ document.body.style.top=(-sproutScrollY)+"px"; }
     var l=el("sprout-launch"); l.classList.add("hidden"); l.setAttribute("aria-expanded","true");
     if(!welcomed){
       addMsg("Hi, I'm <b>Sprout</b> \uD83D\uDE0A Juett Tech Rescue's handy assistant. I'm here to help answer your questions and clear up any confusion as you navigate the site. Ask me anything, or tap a topic below.", "bot");
       renderChips();
       welcomed=true;
     }
-    setTimeout(function(){ el("sprout-in").focus(); }, 80);
+    if(window.matchMedia("(hover:hover) and (pointer:fine)").matches){
+      setTimeout(function(){ el("sprout-in").focus(); }, 80);
+    }
   }
   function closePanel(){
     el("sprout-panel").classList.remove("open");
+    document.body.classList.remove("sprout-open");
+    document.body.style.top="";
+    window.scrollTo(0,sproutScrollY);
     var l=el("sprout-launch"); l.classList.remove("hidden"); l.setAttribute("aria-expanded","false");
     l.focus();
   }
