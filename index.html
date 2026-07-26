@@ -460,12 +460,12 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
     <div class="ptier">
       <div class="ptier-name">Neighborhood Bundles</div>
       <div class="ptier-price"><span class="ptier-amt ptier-amt-word"><span class="ptier-cur">$</span>5&ndash;10</span><span class="ptier-unit">off per home</span></div>
-      <p class="ptier-desc">Every participating home in one cul-de-sac, condo, block, or complex saves, on one shared trip. <b>5&ndash;10 households:</b> $20 small / $45 standard. <b>10+ households:</b> $20 small / $40 standard.</p>
+      <p class="ptier-desc">Every participating home in one cul-de-sac, condo, block, or complex saves, on one shared trip. <b>5&ndash;10 households:</b> $45 per home. <b>10+ households:</b> $40 per home.</p>
     </div>
     <div class="ptier">
       <div class="ptier-name">Business &amp; Commercial</div>
       <div class="ptier-price"><span class="ptier-amt ptier-amt-word">Custom</span><span class="ptier-unit">quote</span></div>
-      <p class="ptier-desc">Offices, schools &amp; bulk volume, priced per job. Certificate of Recycling available on request.</p>
+      <p class="ptier-desc">Offices, schools &amp; bulk volume, priced per job. Convenient, affordable, highest-grade management brought straight to your business. Certificate of Recycling available on request.</p>
     </div>
   </div>
 
@@ -724,10 +724,6 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
             <button type="button" class="mtab" id="bgr-t1" aria-pressed="false" onclick="setBundleGroup('tier1')">5&ndash;10 homes</button>
             <button type="button" class="mtab on" id="bgr-t2" aria-pressed="true" onclick="setBundleGroup('tier2')">10+ homes</button>
           </div>
-          <div class="mode-tabs" role="group" aria-label="Bundle load size">
-            <button type="button" class="mtab on" id="bsz-std" aria-pressed="true" onclick="setBundleSize('standard')">Standard load</button>
-            <button type="button" class="mtab" id="bsz-sm" aria-pressed="false" onclick="setBundleSize('small')">Small load</button>
-          </div>
           <input type="hidden" id="fbundlesize" value="standard">
           <input type="hidden" id="fbundlegroup" value="tier2">
         </div>
@@ -735,17 +731,22 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       </div>
       <div class="fg"><label class="fl" for="f-name">Your Name:</label><input type="text" id="f-name" name="name" placeholder="Amazing Customer" required></div>
       <div class="fg">
-        <label class="fl" for="f-address">Address:</label>
+        <label class="fl" for="f-address" id="addr-label">Address:</label>
         <div style="display:flex;gap:8px;align-items:stretch;">
           <input type="text" id="f-address" name="address" placeholder="123 Pearl St, Boulder, CO 80302" required style="flex:1;min-width:0;">
           <button type="button" id="addr-save" onclick="saveAddress()" style="flex:0 0 auto;background:var(--gd);color:var(--white);border:none;border-radius:11px;padding:0 18px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;cursor:pointer;white-space:nowrap;">Save</button>
         </div>
         <span id="addr-status" style="display:block;font-size:0.76rem;color:var(--muted);line-height:1.5;margin-top:6px;">Enter your address with ZIP code.</span>
       </div>
+      <div class="fg" id="group-row" style="display:none;">
+        <label class="fl" for="f-group">Tell Us About Your Group:</label>
+        <textarea id="f-group" name="group_details" placeholder="Neighborhood, HOA, apartment building, dorm floor, office park, etc. How many homes are in so far? Is there a shared drop spot, lobby, or parking area we should use?"></textarea>
+        <p style="font-size:0.72rem;color:var(--muted);margin:5px 0 0;line-height:1.4;">The more we know about your group and where everyone is located, the better we can plan the route and timing.</p>
+      </div>
       <div class="fg"><label class="fl" for="f-phone">Phone Number:</label><input type="tel" id="f-phone" name="phone" placeholder="(720) 555-0100" required></div>
       <div class="fg"><label class="fl" for="f-email">Email:</label><input type="email" id="f-email" name="email" placeholder="amazingcustomer@example.com" required></div>
       <div class="fg"><label class="fl" for="f-electronics">What Electronics Do You Have?</label><textarea id="f-electronics" name="electronics" placeholder="Box of wires/cables, old phones, 2 monitors, 30 inch TV"></textarea><p style="font-size:0.72rem;color:var(--muted);margin:5px 0 0;line-height:1.4;">If you are not completely sure or having trouble deciphering what you've got, feel free to <a href="#schedule" style="color:var(--gm);font-weight:600;text-decoration:underline;">contact us</a>.</p></div>
-      <div class="fg">
+      <div class="fg" id="tv-row">
         <label class="fl">Any TVs or Monitors?</label>
         <div style="display:flex;gap:10px;">
           <div style="flex:1;">
@@ -776,7 +777,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
         <textarea id="f-condition" name="condition" placeholder="Is anything working or in good condition? (Optional, but helpful!)"></textarea>
       </div>
 
-      <div class="fg">
+      <div class="fg" id="wipe-row">
         <label class="fl">Are You Requesting Any Data Hard Wiping? (+$15 per device)</label>
         <div class="mode-tabs" role="group" aria-label="Data hard wiping">
           <button type="button" class="mtab" id="wipe-yes" aria-pressed="false" onclick="setWipe('yes')">Yes</button>
@@ -821,7 +822,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
         </div>
       </div>
 
-      <div class="fg"><label class="fl" for="f-referral">Did You Refer a Friend? (Save $5!)</label><input type="text" id="f-referral" name="referral" placeholder="First and last name of the friend you referred (optional)"><span style="display:block;font-size:0.79rem;color:var(--muted);line-height:1.5;margin-top:6px;">Please state the first and last name of the friend you referred. Refer someone with old electronics and get $5 off your pickup, up to 3 referrals for up to $15 total.</span></div>
+      <div class="fg" id="referral-row"><label class="fl" for="f-referral">Did You Refer a Friend? (Save $5!)</label><input type="text" id="f-referral" name="referral" placeholder="First and last name of the friend you referred (optional)"><span style="display:block;font-size:0.79rem;color:var(--muted);line-height:1.5;margin-top:6px;">Please state the first and last name of the friend you referred. Refer someone with old electronics and get $5 off your pickup, up to 3 referrals for up to $15 total.</span></div>
 
       <div class="fg"><label class="fl" for="f-instructions">Additional Instructions:</label><textarea id="f-instructions" name="instructions" placeholder="A preferred estimated arrival time within your slot, gate codes, parking info, where items are located, etc."></textarea></div>
 
@@ -1105,9 +1106,20 @@ function setService(v){
   var h=document.getElementById("svc-hint");
   var bsr=document.getElementById("bundle-size-row");
   if(bsr) bsr.style.display=(v==="bundle")?"block":"none";
+  var isBundle=(v==="bundle");
+  var isBiz=(v==="business");
+  var hideExtras=(isBundle||isBiz);
+  var gr=document.getElementById("group-row"); if(gr) gr.style.display=isBundle?"block":"none";
+  var wr=document.getElementById("wipe-row"); if(wr) wr.style.display=hideExtras?"none":"block";
+  var rr=document.getElementById("referral-row"); if(rr) rr.style.display=hideExtras?"none":"block";
+  var tr=document.getElementById("tv-row"); if(tr) tr.style.display=isBiz?"none":"block";
+  if(isBiz){ var ft=document.querySelector('[name=tvs_flatscreen]'); if(ft) ft.value=""; var ct=document.querySelector('[name=tvs_crt]'); if(ct) ct.value=""; }
+  var al=document.getElementById("addr-label"); if(al) al.textContent=isBundle?"Bundle Pickup Address:":"Address:";
+  var ai=document.getElementById("f-address"); if(ai) ai.placeholder=isBundle?"Where should we meet the group? 123 Pearl St, Boulder, CO 80302":"123 Pearl St, Boulder, CO 80302";
+  if(isBundle||isBiz){ var wf=document.getElementById("fwipe"); if(wf) wf.value="no"; var rf=document.getElementById("f-referral"); if(rf) rf.value=""; }
   if(v==="small"){ h.textContent="$25 for a small load \u2014 cables, phones, tablets, smartwatches, adapters, or a small appliance, in one bag or box. No TVs or monitors."; }
   else if(v==="residential"){ h.textContent="$50 base pickup for a single residence \u2014 everything but TVs and monitors is included."; }
-  else if(v==="bundle"){ h.textContent="Every home in the group saves, on one shared trip with no travel fee: small loads are $20; standard loads are $45 with 5\u201310 households or $40 with 10+."; }
+  else if(v==="bundle"){ h.textContent="Every home in the group saves, on one shared trip with no travel fee: $45 per home with 5\u201310 households, or $40 per home with 10+."; }
   else { h.textContent="Offices, schools & bulk volume \u2014 we'll reply with a custom quote. Mention in the instructions below if you need a Certificate of Recycling."; }
   updateQuote();
 }
@@ -1201,15 +1213,16 @@ function updateQuote(){
   var travelEl=document.getElementById("q-travel");
   if(!priceEl) return;
   if(svc==="business"){
-    priceEl.textContent="Custom";
-    bd.textContent="we\u2019ll reply with a quote for offices, schools & bulk volume";
-    extras.innerHTML=""; if(travelEl) travelEl.innerHTML="";
-    window._quote="Custom"; window._diy=""; window._travel=""; window._miles="";
+    priceEl.textContent="Custom Quote"; priceEl.style.fontSize="1.75rem";
+    bd.textContent="priced per job";
+    extras.innerHTML="We\u2019ll reply with your quote."; if(travelEl) travelEl.innerHTML="";
+    window._quote="Custom Quote"; window._diy=""; window._travel=""; window._miles="";
     return;
   }
   // Small loads (individual or in a bundle) can't include TVs/monitors (their
   // glass handling needs the full trip), so adding a screen automatically
   // prices as the standard size.
+  priceEl.style.fontSize="2.3rem";
   var bsz=((document.getElementById("fbundlesize")||{}).value)||"standard";
   var bgrp=((document.getElementById("fbundlegroup")||{}).value)||"tier2";
   var isSmall=(svc==="small")||(svc==="bundle"&&bsz==="small");
@@ -1314,6 +1327,7 @@ document.getElementById("pform").addEventListener("submit",async function(e){
     service_type:document.getElementById("fservice").value,
     bundle_size:(document.getElementById("fservice").value==="bundle")?((document.getElementById("fbundlesize")||{}).value||"standard"):"",
     bundle_group:(document.getElementById("fservice").value==="bundle")?((document.getElementById("fbundlegroup")||{}).value||"tier2"):"",
+    group_details:(document.getElementById("fservice").value==="bundle")?((document.getElementById("f-group")||{}).value||""):"",
     electronics:this.electronics.value,condition:this.condition.value,
     tvs_flatscreen:this.tvs_flatscreen.value||"0",
     tvs_crt:this.tvs_crt.value||"0",
