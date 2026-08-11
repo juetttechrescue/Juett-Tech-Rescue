@@ -91,6 +91,16 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .nub-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#ffdc32;}
 .nub-short{display:none;}
 @media (max-width:600px){.nub-full{display:none;}.nub-short{display:inline;}}
+.nav-offers{display:flex;align-items:stretch;justify-content:center;width:fit-content;max-width:100%;margin:0 auto 9px;background:var(--gold);color:var(--white);border-radius:999px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:'DM Sans',sans-serif;font-size:0.66rem;font-weight:700;line-height:1;}
+.nav-offer{color:var(--white);text-decoration:none;padding:7px 11px;white-space:nowrap;display:inline-flex;align-items:center;gap:4px;}
+.nav-offer b{font-weight:800;}
+.nav-offer:hover{background:rgba(0,0,0,.12);}
+.nav-offer:focus-visible{outline:3px solid var(--gd);outline-offset:-3px;}
+.nav-offer-sep{width:1px;background:rgba(255,255,255,.45);flex-shrink:0;}
+.no-short{display:none;}
+@media(max-width:430px){.nav-offers{font-size:0.60rem;}.nav-offer{padding:6px 9px;}.no-full{display:none;}.no-short{display:inline;}}
+@media(max-width:720px){.nav-top{margin-bottom:8px;}}
+@media(min-width:721px){.nav-offers{position:absolute;top:calc(40px + env(safe-area-inset-top));right:14px;z-index:101;margin:0;font-size:0.70rem;}}
 @keyframes dwpulse{0%,100%{box-shadow:0 0 0 0 rgba(45,74,45,0);}30%{box-shadow:0 0 0 3px rgba(45,74,45,0.35);}}
 .ilabel{font-size:0.73rem;color:rgba(255,255,255,.62);line-height:1.4;margin-top:10px;text-transform:none;}
 .impact-donate{font-size:0.87rem;color:rgba(255,255,255,.78);line-height:1.7;}
@@ -375,6 +385,11 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <p>Boulder, CO</p>
     </div>
   </div>
+  <div class="nav-offers">
+    <a href="#book" class="nav-offer"><b>5% off</b> <span class="no-full">first-time residents</span><span class="no-short">residential</span></a>
+    <span class="nav-offer-sep" aria-hidden="true"></span>
+    <a href="#commercial-pricing" class="nav-offer" onclick="showBizDeal()"><b>10% off</b> <span class="no-full">first-time commercial</span><span class="no-short">commercial</span></a>
+  </div>
   <div class="nav-tab-bar">
     <a href="#how">How It Works &amp; What You Get</a>
     <a href="#pricing">Pricing &amp; What We Take</a>
@@ -438,7 +453,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Truck / pickup -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
       <div class="inum-row">
-        <span class="inum">65</span>
+        <span class="inum">71</span>
       </div>
       <div class="ilabel">Total Pickups</div>
     </div>
@@ -447,7 +462,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Diversion: recycling arrows (actual divert/recycle symbol) -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><polyline points="1.5 2 1.5 9 8.5 9"/><polyline points="22.5 22 22.5 15 15.5 15"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1.5 9m21 6-4.14 3.36A9 9 0 0 1 3.51 15"/></svg>
       <div class="inum-row">
-        <span class="inum">2,678</span><span class="iunit">lbs</span>
+        <span class="inum">2,813</span><span class="iunit">lbs</span>
       </div>
       <div class="ilabel">E-Waste Diverted from Landfill</div>
     </div>
@@ -514,7 +529,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
     <div class="ptier">
       <div class="ptier-name">Small Load Pickup</div>
       <div class="ptier-price"><span class="ptier-amt"><span class="ptier-cur">$</span>25</span><span class="ptier-unit">small load</span></div>
-      <p class="ptier-desc">A box or a few bags of items (cables, cords, phones, tablets, laptops, smartwatches, power banks, adapters), or a grocery bag of things plus one small appliance like a toaster or blender. No TVs or monitors.</p>
+      <p class="ptier-desc">A box or a few bags of items (cables, cords, phones, tablets, laptops, smartwatches, power banks, adapters), or a grocery bag of things plus one small appliance like a toaster or blender. No TVs or monitors unless that is your only item.</p>
     </div>
     <div class="ptier feat">
       <span class="ptier-tag">Most Common</span>
@@ -527,7 +542,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <div class="ptier-price"><span class="ptier-pre">Up to</span><span class="ptier-amt ptier-amt-pct">10<span class="ptier-pct">%</span></span><span class="ptier-unit">off each home</span></div>
       <p class="ptier-desc">Every participating home in/on one street, block, cul-de-sac, condo, apartment block, or complex saves, on one shared trip. 5&ndash;10 homes save 5% each; 10+ homes save the full 10% each.</p>
     </div>
-    <div class="ptier">
+    <div class="ptier" id="commercial-pricing">
       <button type="button" class="ptier-deal" aria-expanded="false" aria-controls="biz-deal-note" onclick="toggleBizDeal(this)">Deal<span class="dchev" aria-hidden="true">&#9662;</span></button>
       <div class="ptier-name">Business &amp; Commercial</div>
       <div class="ptier-price"><span class="ptier-amt ptier-amt-word">Custom</span><span class="ptier-unit">quote</span></div>
@@ -1590,6 +1605,12 @@ function toggleBizDeal(btn){
   var open=note.classList.toggle('open');
   btn.setAttribute('aria-expanded', open?'true':'false');
 }
+function showBizDeal(){
+  var note=document.getElementById('biz-deal-note');
+  var btn=document.querySelector('.ptier-deal');
+  if(note) note.classList.add('open');
+  if(btn) btn.setAttribute('aria-expanded','true');
+}
 function openDCModal(){document.getElementById('dc-modal').classList.add('show');}
 function openUpdate(){var m=document.getElementById('update-modal');m.classList.add('show');var b=m.querySelector('.dc-close');if(b)b.focus();}
 function closeUpdate(){document.getElementById('update-modal').classList.remove('show');}
@@ -1681,7 +1702,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["closed","are you open","you open","open this week","this week","vacation","holiday","away","reopen","july 5","july 11","unavailable","out of town","break"], a:"We're back! Our short July break (July 5&ndash;11) is over and <b>booking is open</b> for pickup dates starting July 12th. Grab an evening or weekend slot in the booking form.", go:"#book", label:"Book a pickup"},
     {kw:["today","tomorrow","same day","asap","urgent","how soon","soonest","earliest","right away","this weekend","quickly","rush"], a:"The earliest open slots show live in the booking form: weekday evenings are one pickup per day, and weekends run 7 AM&ndash;7 PM in 2-hour slots. Grab the soonest date that works, and if it's time-sensitive, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9720</b> and we'll do our best.", go:"#book", label:"See open slots"},
     {kw:["illegal","against the law"," law ","throw away","throw it away","throw in the trash","in the trash","can i trash","just throw","why not trash","banned","not allowed"], a:"In Colorado it's actually illegal to throw electronics in the regular trash, because of the toxic materials inside them like lead and mercury. The ban has been in place since July 1, 2013 under the Electronic Recycling Jobs Act, for households and businesses alike. That's exactly the gap we fill: an easy, certified way to get rid of them responsibly. The health side is covered in the <a href='https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)' target='_blank' rel='noopener'>WHO fact sheet</a> in <a href='#faq'>Further Reading</a>.", go:"#book", label:"Book a pickup"},
-    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>65 pickups</b> and <b>2,678 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network.", go:"#impact", label:"See our impact"},
+    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>71 pickups</b> and <b>2,813 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network.", go:"#impact", label:"See our impact"},
     {kw:["why recycle","why does it matter","matter","so bad","toxic","lead","mercury","cadmium","harmful","bad for the environment","dangerous","hazard","poison","groundwater","pollut"], a:"Because e-waste is uniquely nasty in a landfill: it's only about 2% of what goes in, but it accounts for roughly 70% of the toxic heavy metals found there. A single CRT television can contain 4 to 8 pounds of lead, and as electronics break down, lead, mercury, and cadmium can leach into soil and groundwater for decades. That's why Colorado made trashing electronics illegal, and why every pickup we do is 100% certified recycling with nothing landfilled.", go:"#impact", label:"See our impact"},
     {kw:["travel fee","mileage","per mile","distance","gas fee","extra for distance","how far","drive fee","trip fee","charge for gas"], a:"Pickups include a small travel fee of <b>$0.65 per mile</b> (the standard commercial mileage rate), charged one way to pickup, based on your distance from our Boulder base. Save your address in the booking form and it's added to your live estimate, and we always confirm the final price before pickup.", go:"#book", label:"Book a pickup"},
     {kw:["certificate of recycling","recycling certificate","proof of recycling","certificate for business","business certificate","certified processing partner"], a:"For business and commercial pickups, a Certificate of Recycling is available on request. For data, we also provide a Certificate of Data Destruction. Just ask when you book, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
@@ -1745,7 +1766,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["what happens next","after i book","confirmation","will you text me","do you call","how will i know","confirm my pickup"], a:"After you submit the form we'll send a confirmation text at most 24 hours before your pickup day, confirming the pickup and asking for your preferred arrival time within your slot. Then we show up at your door, load, handle any wiping, and take payment on the spot.", go:"#book", label:"Book a pickup"},
     {kw:["venmo","cash app","cashapp","handle","username","pay in advance","pay ahead","pay before"], a:"Cash at pickup, Cash App at <b>$juetttechrescue</b>, or Venmo at <b>@juetttechrescue</b>, and you can pay at pickup or in advance on either app. Prefer something else? Mention it when you book and we'll do our best to work with you.", go:"#payment", label:"Payment options"},
     {kw:["only one in boulder","competitors","competition","anyone else","other companies","alternatives","who else does this"], a:"We're the only waste management service in Boulder focused specifically on electronic waste, and the first established door-to-door e-waste pickup here. General recyclers and junk haulers will take a load, but e-waste isn't their focus, so most can't securely wipe your data or route working devices for resale or donation.", go:"#why", label:"How we compare"},
-    {kw:["how much do you divert","2678","2,678","how many pounds","total pounds","how much have you saved"], a:"We're at <b>2,678 lbs</b> diverted from the landfill across <b>65 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
+    {kw:["how much do you divert","2813","2,813","how many pounds","total pounds","how much have you saved"], a:"We're at <b>2,813 lbs</b> diverted from the landfill across <b>71 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
     {kw:["fastest growing","growing","e waste growing","growing waste","waste stream","municipal waste","how fast is it growing"], a:"E-waste is the fastest-growing solid waste stream on the planet, and it's growing far faster than recycling is keeping up: the <a href='https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx' target='_blank' rel='noopener'>Global E-waste Monitor 2024</a> put 2022 at 62 million metric tons with less than 23% formally recycled. That report is in <a href='#faq'>Further Reading</a>.", go:"#faq", label:"Further Reading"},
     {kw:["yelp","leave a review","write a review","how can i help","support you","spread the word"], a:"A Yelp review helps a lot, our page is brand new so each one goes a long way. There's a link near the reviews at the top of this page. Telling a neighbor works too, and referring someone with old electronics gets you $5 off your next pickup.", go:"#reviews", label:"Leave a review"},
     {kw:["certificate of data destruction","cod","proof of destruction","proof of recycling","documentation for my business","compliance"], a:"Both are available on request: a <b>Certificate of Data Destruction</b> for anything we wipe, and a <b>Certificate of Recycling</b> for the disposal itself. Commercial clients usually want both for their records. Just ask when you book.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
