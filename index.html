@@ -267,8 +267,10 @@ nav{background:var(--white);padding:calc(12px + env(safe-area-inset-top)) 16px 0
 .fl{font-size:0.67rem;text-transform:uppercase;letter-spacing:1.3px;font-weight:600;color:var(--muted);display:block;margin-bottom:5px;}
 input[type=text],input[type=tel],input[type=email],input[type=number],select,textarea{width:100%;padding:13px 15px;border:1.5px solid #e0e0d8;border-radius:11px;font-family:'DM Sans',sans-serif;font-size:0.87rem;color:var(--text);background:var(--white);transition:border-color .2s;appearance:none;-webkit-appearance:none;}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+input,select,textarea,button,.mtab,.slt,.sprout-chip,.sprout-go{touch-action:manipulation;}
 input::placeholder,textarea::placeholder{color:#bbb;font-size:0.82rem;}
-inputinput:focus,select:focus,textarea:focus{outline:none;border-color:var(--gm);}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gm);}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px;}
 textarea{resize:vertical;min-height:88px;}
 select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a6a5a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px;}
@@ -428,7 +430,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
   </div>
   <div class="review-card">
     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <blockquote>"I truly appreciate this service. I do my best to recycle, but it isn't always easy. Juett Tech Rescue was affordable, arrived on time, and took my old laptop and a box of chargers and things. These students were a delight to talk to, and they explained the e-waste problem really well to me. It's a growing issue, and they're really tackling it! They're even refurbishing my laptop for donation. Amazing!!"</blockquote>
+    <blockquote>"I truly appreciate this service. I do my best to recycle, but it isn't always easy. Juett Tech Rescue was affordable, arrived on time, and took my old laptop and a box of chargers and things. They were friendly and professional, and explained the e-waste problem clearly. It's a growing issue, and they're really tackling it! They're even refurbishing my laptop for donation. Amazing!!"</blockquote>
     <div class="reviewer">&mdash; Tracy P. &middot; Referred Customer &middot; North Boulder</div>
   </div>
   <div style="border:1.5px dashed rgba(255,255,255,.5);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;">
@@ -448,7 +450,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Truck / pickup -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
       <div class="inum-row">
-        <span class="inum">71</span>
+        <span class="inum">73</span>
       </div>
       <div class="ilabel">Total Pickups</div>
     </div>
@@ -457,7 +459,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Diversion: recycling arrows (actual divert/recycle symbol) -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><polyline points="1.5 2 1.5 9 8.5 9"/><polyline points="22.5 22 22.5 15 15.5 15"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1.5 9m21 6-4.14 3.36A9 9 0 0 1 3.51 15"/></svg>
       <div class="inum-row">
-        <span class="inum">2,813</span><span class="iunit">lbs</span>
+        <span class="inum">2,891</span><span class="iunit">lbs</span>
       </div>
       <div class="ilabel">E-Waste Diverted from Landfill</div>
     </div>
@@ -554,7 +556,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
   <div class="addons">
     <div class="addon-row">
       <div class="addon-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gd)" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-      <div class="addon-txt"><h4>TV &amp; Monitor Surcharge: <span>+$22 Flat-Screen / +$35 CRT</span></h4><p>Covers certified hazardous-glass handling: +$22 per flat-screen TV or monitor, and +$35 per CRT, tube, or rear-projection TV. <strong>All other waste in your pickup is included in the base fee.</strong></p></div>
+      <div class="addon-txt"><h4>TV &amp; Monitor Surcharge: <span>+$10&ndash;22 Flat-Screen / +$22&ndash;35 CRT</span></h4><p>Covers certified hazardous-glass handling, and it scales with the size of the screen. Flat-screen TVs and monitors run <strong>+$10 to +$22</strong> ($10 up to 27&rdquo;, $16 for 28&ndash;42&rdquo;, $22 for 43&ndash;55&rdquo;), and CRT, tube, or rear-projection sets run <strong>+$22 to +$35</strong> ($22 up to 20&rdquo;, $28 for 21&ndash;27&rdquo;, $35 for 28&rdquo; and up or projection). Pick the closest size in the booking form for your estimate; we evaluate the actual size at pickup and confirm the exact surcharge then. <strong>All other waste in your pickup is included in the base fee.</strong></p></div>
     </div>
   </div>
 
@@ -575,7 +577,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
         </div>
         <div class="why-eg-opt hl">
           <div class="why-eg-label">With Juett Tech Rescue</div>
-          <div class="why-eg-cost"><strong>$72</strong>: the $50 base pickup plus the $22 flat-screen TV, at your door in an evening or weekend slot. Hauling, sorting, <a href="#data-security" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">secure data wiping</a>, and refurbishing or donating anything that still works are all built in. One price, one stop, no line, zero of your time.</div>
+          <div class="why-eg-cost"><strong>$60&ndash;72</strong>: the $50 base pickup plus the flat-screen surcharge, which runs $10 to $22 depending on the size of the set and is confirmed at pickup. At your door in an evening or weekend slot. Hauling, sorting, <a href="#data-security" style="color:var(--gm);font-weight:inherit;font-size:inherit;text-decoration:underline;">secure data wiping</a>, and refurbishing or donating anything that still works are all built in. One price, one stop, no line, zero of your time.</div>
         </div>
         <div class="why-eg-foot">Juett Tech Rescue is priced well under general junk haulers: you never have to load and haul anything across town or run a separate errand to wipe your data, and anything still working can get a second life. We also donate a portion of all profits to the <a href="https://www.ban.org" target="_blank" rel="noopener" style="color:var(--gm);text-decoration:underline;">Basel Action Network</a>. The difference: a little more in cost than doing every step yourself, for your afternoon back and everything handled in one place.</div>
       </div>
@@ -586,7 +588,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <p>Wiping a drive on your own usually means its own trip or a business minimum. For comparison:</p>
       <div class="why-eg">
         <div class="why-eg-opt"><div class="why-eg-label">Shredding Services (Boulder &amp; Denver)</div><div class="why-eg-cost"><strong>$12&ndash;$20</strong> per drive, often with a minimum or a separate trip. On-site &ldquo;come-to-you&rdquo; destruction runs 20&ndash;30% more.</div></div>
-        <div class="why-eg-opt hl"><div class="why-eg-label">With Juett Tech Rescue</div><div class="why-eg-cost"><strong>$15</strong> per 2 devices, done during your pickup &mdash; no separate trip, no minimum, Certificate of Data Destruction on request.</div></div>
+        <div class="why-eg-opt hl"><div class="why-eg-label">With Juett Tech Rescue</div><div class="why-eg-cost"><strong>$10</strong> per 2 devices, done during your pickup &mdash; no separate trip, no minimum, Certificate of Data Destruction on request.</div></div>
       </div>
     </div>
   </details>
@@ -601,10 +603,6 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
         <div class="why-eg-opt">
           <div class="why-eg-label">A general junk hauler</div>
           <div class="why-eg-cost"><strong>~$150&ndash;350+</strong>: franchise haulers set a job minimum before they load anything, quote on site so you don&rsquo;t know the real number until the crew is already standing in your office, and add a disposal surcharge for electronics. Nothing gets wiped, and anything still working loses its resale value.</div>
-        </div>
-        <div class="why-eg-opt">
-          <div class="why-eg-label">A national e-waste or ITAD company</div>
-          <div class="why-eg-cost"><strong>Free, if you qualify</strong>: most set a business minimum before they&rsquo;ll dispatch a truck, commonly around 500 lbs or roughly 10 qualifying items. A small office rarely clears that bar, so you&rsquo;re either turned away or quoted a fee to come out for a partial load, and then you wait for their route to reach you.</div>
         </div>
         <div class="why-eg-opt">
           <div class="why-eg-label">Two vendors: shredding, then recycling</div>
@@ -623,7 +621,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
   <div class="addons">
     <div class="addon-row" id="datawipe" style="scroll-margin-top:0;">
       <div class="addon-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gd)" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V5l8-3z"/><polyline points="8.5 11.5 11 14 15.5 9.5"/></svg></div>
-      <div class="addon-txt"><h4>Secure Data Wiping: <span>$15 per 2 devices</span></h4><p>When needed, we&rsquo;ll securely wipe hard drives, factory-reset devices, or physically destroy storage that can&rsquo;t be reliably wiped, before anything is recycled, resold, or donated. The fee is $15 for every 2 devices wiped, so 1 or 2 devices is $15, 3 or 4 is $30, and so on.</p></div>
+      <div class="addon-txt"><h4>Secure Data Wiping: <span>$10 per 2 devices</span></h4><p>When needed, we&rsquo;ll securely wipe hard drives, factory-reset devices, or physically destroy storage that can&rsquo;t be reliably wiped, before anything is recycled, resold, or donated. The fee is $10 for every 2 devices wiped, so 1 or 2 devices is $10, 3 or 4 is $20, and so on.</p></div>
     </div>
   </div>
 
@@ -852,14 +850,37 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <div class="fg"><label class="fl" for="f-electronics">What Electronics Do You Have?</label><textarea id="f-electronics" name="electronics" placeholder="Box of wires/miscellaneous electronics, 2 monitors, 30 inch TV, receiver, old Xbox"></textarea><p style="font-size:0.72rem;color:var(--muted);margin:5px 0 0;line-height:1.4;">If you are not completely sure, having trouble deciphering what you've got, or you'd rather reach out directly and share photos, feel free to <a href="#schedule" style="color:var(--gm);font-weight:600;text-decoration:underline;">contact us</a> for a quick response.</p></div>
       <div class="fg" id="tv-row">
         <label class="fl">Any TVs or Monitors?</label>
-        <div style="display:flex;gap:10px;">
-          <div style="flex:1;">
-            <input type="number" aria-label="Number of flat-screen TVs or monitors" name="tvs_flatscreen" min="0" placeholder="0" inputmode="numeric">
-            <span style="display:block;font-size:0.76rem;color:var(--muted);line-height:1.4;margin-top:5px;">Flat-screen TVs / monitors (+$22 each)</span>
+        <p style="font-size:0.74rem;color:var(--muted);margin:0 0 10px;line-height:1.45;">Screens are the only item with a surcharge, and it scales with size. Pick the closest size below for your estimate &mdash; we confirm the exact size class when we see it at pickup.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <div style="flex:1;min-width:220px;">
+            <div style="font-size:0.8rem;font-weight:600;color:var(--text);margin-bottom:6px;">Flat-screen TVs / monitors</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <input type="number" aria-label="Number of small flat-screen TVs or monitors, up to 27 inches" name="tvs_flat_s" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Small &mdash; up to 27&rdquo; <b style="color:var(--gm);">+$10</b></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <input type="number" aria-label="Number of medium flat-screen TVs, 28 to 42 inches" name="tvs_flat_m" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Medium &mdash; 28&ndash;42&rdquo; <b style="color:var(--gm);">+$16</b></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <input type="number" aria-label="Number of large flat-screen TVs, 43 to 55 inches" name="tvs_flat_l" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Large &mdash; 43&ndash;55&rdquo; <b style="color:var(--gm);">+$22</b></span>
+            </div>
           </div>
-          <div style="flex:1;">
-            <input type="number" aria-label="Number of CRT, tube, or projection TVs" name="tvs_crt" min="0" placeholder="0" inputmode="numeric">
-            <span style="display:block;font-size:0.76rem;color:var(--muted);line-height:1.4;margin-top:5px;">CRT / tube / projection TVs (+$35 each)</span>
+          <div style="flex:1;min-width:220px;">
+            <div style="font-size:0.8rem;font-weight:600;color:var(--text);margin-bottom:6px;">CRT / tube / projection TVs</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <input type="number" aria-label="Number of small CRT or tube TVs, up to 20 inches" name="tvs_crt_s" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Small &mdash; up to 20&rdquo; <b style="color:var(--gm);">+$22</b></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+              <input type="number" aria-label="Number of medium CRT or tube TVs, 21 to 27 inches" name="tvs_crt_m" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Medium &mdash; 21&ndash;27&rdquo; <b style="color:var(--gm);">+$28</b></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <input type="number" aria-label="Number of large CRT, console, or rear-projection TVs, 28 inches and up" name="tvs_crt_l" min="0" placeholder="0" inputmode="numeric" style="width:64px;">
+              <span style="font-size:0.76rem;color:var(--muted);line-height:1.35;">Large &mdash; 28&rdquo;+ / projection <b style="color:var(--gm);">+$35</b></span>
+            </div>
           </div>
         </div>
       </div>
@@ -882,7 +903,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       </div>
 
       <div class="fg" id="wipe-row">
-        <label class="fl">Are You Requesting Any Data Hard Wiping? (+$15 per 2 devices)</label>
+        <label class="fl">Are You Requesting Any Data Hard Wiping? (+$10 per 2 devices)</label>
         <div class="mode-tabs" role="group" aria-label="Data hard wiping">
           <button type="button" class="mtab" id="wipe-yes" aria-pressed="false" onclick="setWipe('yes')">Yes</button>
           <button type="button" class="mtab on" id="wipe-no" aria-pressed="true" onclick="setWipe('no')">No</button>
@@ -1269,7 +1290,7 @@ function setService(v){
   var wr=document.getElementById("wipe-row"); if(wr) wr.style.display=hideExtras?"none":"block";
   var rr=document.getElementById("referral-row"); if(rr) rr.style.display=hideExtras?"none":"block";
   var tr=document.getElementById("tv-row"); if(tr) tr.style.display=isBiz?"none":"block";
-  if(isBiz){ var ft=document.querySelector('[name=tvs_flatscreen]'); if(ft) ft.value=""; var ct=document.querySelector('[name=tvs_crt]'); if(ct) ct.value=""; }
+  if(isBiz){ ["tvs_flat_s","tvs_flat_m","tvs_flat_l","tvs_crt_s","tvs_crt_m","tvs_crt_l"].forEach(function(n){var el=document.querySelector('[name='+n+']'); if(el) el.value="";}); }
   var al=document.getElementById("addr-label"); if(al) al.textContent=isBundle?"Bundle Pickup Address:":"Address:";
   var ai=document.getElementById("f-address"); if(ai) ai.placeholder=isBundle?"Where should we meet the group? 123 Pearl St, Boulder, CO 80302":"123 Pearl St, Boulder, CO 80302";
   if(isBundle||isBiz){ var wf=document.getElementById("fwipe"); if(wf) wf.value="no"; var rf=document.getElementById("f-referral"); if(rf) rf.value=""; }
@@ -1359,8 +1380,11 @@ function saveAddress(){
 // Live price estimate + do-it-yourself comparison
 function updateQuote(){
   var svc=document.getElementById("fservice").value;
-  var flat=parseInt((document.querySelector('[name=tvs_flatscreen]')||{}).value,10)||0;
-  var crt=parseInt((document.querySelector('[name=tvs_crt]')||{}).value,10)||0;
+  var _tvq=function(n){var el=document.querySelector('[name='+n+']');return parseInt((el||{}).value,10)||0;};
+  var fS=_tvq('tvs_flat_s'), fM=_tvq('tvs_flat_m'), fL=_tvq('tvs_flat_l');
+  var cS=_tvq('tvs_crt_s'), cM=_tvq('tvs_crt_m'), cL=_tvq('tvs_crt_l');
+  var flat=fS+fM+fL, crt=cS+cM+cL;
+  var screenFee=fS*10+fM*16+fL*22+cS*22+cM*28+cL*35;
   var wipe=document.getElementById("fwipe").value==="yes";
   var ref=document.getElementById("f-referral").value.trim();
   var priceEl=document.getElementById("q-price");
@@ -1389,15 +1413,20 @@ function updateQuote(){
   // Travel fee applies to single residential and small pickups. Bundles share one trip across 10+ homes.
   var travelApplies = (svc==="residential" || svc==="small");
   var fee = (travelApplies && _travelState==="ok") ? _mileFee : 0;
-  var price = base + flat*22 + crt*35 + fee;
+  var price = base + screenFee + fee;
   var priceStr = (fee || price%1!==0) ? "$"+price.toFixed(2) : "$"+price;
   priceEl.textContent=priceStr; window._quote=priceStr;
   var parts=[smallUpgraded ? "$"+base+" base (TVs/monitors need a standard-size pickup)" : "$"+base+" base"];
-  if(flat) parts.push(flat+" \u00d7 $22 flat-screen");
-  if(crt) parts.push(crt+" \u00d7 $35 CRT");
+  if(fS) parts.push(fS+" \u00d7 $10 small flat-screen");
+  if(fM) parts.push(fM+" \u00d7 $16 medium flat-screen");
+  if(fL) parts.push(fL+" \u00d7 $22 large flat-screen");
+  if(cS) parts.push(cS+" \u00d7 $22 small CRT");
+  if(cM) parts.push(cM+" \u00d7 $28 medium CRT");
+  if(cL) parts.push(cL+" \u00d7 $35 large CRT");
   bd.textContent = (flat||crt) ? parts.join(" + ") : (svc==="small" ? "small load, in one bag or box" : svc==="bundle" ? (bsz==="small"?(bgrp==="tier1"?"per small-load residence, 5\u201310 homes (5% off)":"per small-load residence, 10+ homes (10% off)"):(bgrp==="tier1"?"per standard residence, 5\u201310 homes (5% off)":"per standard residence, 10+ homes (10% off)")) : "base pickup, everything else included");
   var ex=[];
-  if(wipe) ex.push("+ $15 per 2 devices for secure data wiping (confirmed at pickup)");
+  if(flat||crt) ex.push("Screen sizes are confirmed at pickup, so a screen that lands in a different size class shifts its surcharge within the $10\u2013$22 (flat-screen) or $22\u2013$35 (CRT) range.");
+  if(wipe) ex.push("+ $10 per 2 devices for secure data wiping (confirmed at pickup)");
   if(ref) ex.push("\u2212 $5 per verified referral, up to $15 off");
   extras.innerHTML = ex.join("<br>");
   // Travel line
@@ -1454,7 +1483,7 @@ function loadSlots(){
 }
 
 // Live quote: recompute as items / referral change
-["tvs_flatscreen","tvs_crt"].forEach(function(n){var el=document.querySelector('[name='+n+']');if(el)el.addEventListener("input",updateQuote);});
+["tvs_flat_s","tvs_flat_m","tvs_flat_l","tvs_crt_s","tvs_crt_m","tvs_crt_l"].forEach(function(n){var el=document.querySelector('[name='+n+']');if(el)el.addEventListener("input",updateQuote);});
 document.getElementById("f-referral").addEventListener("input",updateQuote);
 // When the address is edited after saving, drop the stale travel fee until re-saved
 (function(){var a=document.getElementById("f-address");if(a){a.addEventListener("input",function(){
@@ -1497,8 +1526,8 @@ document.getElementById("pform").addEventListener("submit",async function(e){
     bundle_group:(document.getElementById("fservice").value==="bundle")?((document.getElementById("fbundlegroup")||{}).value||"tier2"):"",
     group_details:(document.getElementById("fservice").value==="bundle")?((document.getElementById("f-group")||{}).value||""):"",
     electronics:this.electronics.value,condition:this.condition.value,
-    tvs_flatscreen:this.tvs_flatscreen.value||"0",
-    tvs_crt:this.tvs_crt.value||"0",
+    tvs_flatscreen:(function(){var g=function(n){return parseInt((document.querySelector('[name='+n+']')||{}).value,10)||0;};var a=g('tvs_flat_s'),b=g('tvs_flat_m'),c=g('tvs_flat_l');var t=a+b+c;if(!t) return "0";var d=[];if(a)d.push(a+" small (up to 27\")");if(b)d.push(b+" medium (28-42\")");if(c)d.push(c+" large (43-55\")");return t+" ("+d.join(", ")+")";})(),
+    tvs_crt:(function(){var g=function(n){return parseInt((document.querySelector('[name='+n+']')||{}).value,10)||0;};var a=g('tvs_crt_s'),b=g('tvs_crt_m'),c=g('tvs_crt_l');var t=a+b+c;if(!t) return "0";var d=[];if(a)d.push(a+" small (up to 20\")");if(b)d.push(b+" medium (21-27\")");if(c)d.push(c+" large (28\"+/projection)");return t+" ("+d.join(", ")+")";})(),
     instructions:this.instructions.value,
     referral:this.referral.value,
     data_wiping:document.getElementById("fwipe").value,
@@ -1573,7 +1602,7 @@ document.getElementById("pform").addEventListener("submit",async function(e){
     <button type="button" class="dc-close" onclick="closeDCModal()" aria-label="Close">&times;</button>
     <div class="dc-title" id="dc-title">How our pricing works</div>
     <p class="dc-text">If you read about us in the Boulder Daily Camera, you may have seen an earlier, lower figure. As we learned what each pickup actually costs to recycle responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run, we moved to clear, upfront pricing so the service stays sustainable.</p>
-    <p class="dc-text">It&rsquo;s simple: a $50 base pickup covers your whole load, and only TVs and monitors add a surcharge for their certified hazardous-glass handling ($22 flat-screen, $35 CRT). Everything else comes along at no extra charge.</p>
+    <p class="dc-text">It&rsquo;s simple: a $50 base pickup covers your whole load, and only TVs and monitors add a surcharge for their certified hazardous-glass handling, scaled to size ($10&ndash;22 flat-screen, $22&ndash;35 CRT, evaluated at pickup). Everything else comes along at no extra charge.</p>
     <p class="dc-text">You see your estimate live in the booking form before you commit, and as we secure better facility rates, we pass those savings on.</p>
   </div>
 </div>
@@ -1688,7 +1717,12 @@ body.sprout-open{overflow:hidden;}
 .sprout-send:hover{background:var(--gm);}
 .sprout-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
 @media(prefers-reduced-motion:reduce){#sprout-launch{transition:none;}}
-@media(max-width:600px){input[type=text],input[type=tel],input[type=email],input[type=number],select,textarea,#sprout-in{font-size:16px !important;}}
+/* Any touch device (not just narrow ones) needs >=16px fields or iOS zooms the
+   page on focus. Width-based queries missed landscape and tablets. */
+@media (max-width:600px), (hover:none) and (pointer:coarse){
+  input[type=text],input[type=tel],input[type=email],input[type=number],input[type=search],input[type=url],input[type=password],input[type=date],input[type=time],select,textarea,#sprout-in{font-size:16px !important;line-height:1.3;}
+  input::placeholder,textarea::placeholder{font-size:15px;}
+}
 </style>
 
 <button id="sprout-launch" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="sprout-panel">
@@ -1716,8 +1750,8 @@ body.sprout-open{overflow:hidden;}
   var KB = [
     {kw:["save button","tap save","hit save","address save","save my address","travel not showing","travel fee not","no travel fee","fee not showing","estimate not updating","price not updating","quote not updating","won t let me submit","wont let me submit","can t submit","cant submit","form won t","form wont","stuck on address","zip code","zipcode","asking for zip","needs my zip"], a:"That's the address step. After you type your full address <b>including your 5-digit ZIP</b>, tap the green <b>Save</b> button next to the field. That's what calculates your travel fee ($0.65/mi from our Boulder base) and adds it to your live estimate. The form won't submit until you've saved, so if it's blocking you, that's usually why. If your ZIP is outside our usual area it'll say so, and we'll confirm the travel fee with you before pickup.", go:"#book", label:"Book a pickup"},
     {kw:["email rejected","email not accepted","won t accept my email","wont accept my email","invalid email","says my email","real email","email error","enter a real email","email won t work","email wont work"], a:"The form checks for a working email, since that's where your booking confirmation and pickup details go, so placeholder, test, and temporary-inbox addresses get bounced. Use an address you actually check. If a real one still isn't going through, email us directly at <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9720</b> and we'll book it for you.", go:"#schedule", label:"Contact us"},
-    {kw:["shred it","shredding service","shredding cost","cost to shred","shred a drive","per drive","drive destruction cost","destruction cost","cheaper to wipe","cheaper to shred","wiping vs","compare wiping","how much to destroy"], a:"Locally, shredding services run about <b>$12&ndash;$20 per drive</b>, usually with a minimum or a separate trip, and on-site come-to-you destruction adds another 20&ndash;30%. Ours is <b>$15 per 2 devices</b>, done during your pickup: no separate trip, no minimum, and a Certificate of Data Destruction on request. There's a side-by-side in the pricing section.", go:"#tv-example", fn:"openTvExample", label:"See the comparison"},
-    {kw:["small load with a tv","small with a monitor","tv on small","monitor on small","add a tv to small","why did my price change","price went up","jumped to 50","went to 50","why 50 not 25","not 25 anymore","upgraded my"], a:"Good catch: TVs and monitors can't ride on the <b>$25 Small Load</b> tier, because their glass needs the full certified handling run. So adding a screen automatically prices as a <b>$50 Standard</b> pickup plus the surcharge (+$22 flat-screen, +$35 CRT). The booking form does this for you and shows the change live in your estimate.", go:"#pricing", label:"See pricing"},
+    {kw:["shred it","shredding service","shredding cost","cost to shred","shred a drive","per drive","drive destruction cost","destruction cost","cheaper to wipe","cheaper to shred","wiping vs","compare wiping","how much to destroy"], a:"Locally, shredding services run about <b>$12&ndash;$20 per drive</b>, usually with a minimum or a separate trip, and on-site come-to-you destruction adds another 20&ndash;30%. Ours is <b>$10 per 2 devices</b>, done during your pickup: no separate trip, no minimum, and a Certificate of Data Destruction on request. There's a side-by-side in the pricing section.", go:"#tv-example", fn:"openTvExample", label:"See the comparison"},
+    {kw:["small load with a tv","small with a monitor","tv on small","monitor on small","add a tv to small","why did my price change","price went up","jumped to 50","went to 50","why 50 not 25","not 25 anymore","upgraded my"], a:"Good catch: TVs and monitors can't ride on the <b>$25 Small Load</b> tier, because their glass needs the full certified handling run. So adding a screen automatically prices as a <b>$50 Standard</b> pickup plus the surcharge, which scales with size (+$10&ndash;22 flat-screen, +$22&ndash;35 CRT, confirmed at pickup). The booking form does this for you and shows the change live in your estimate.", go:"#pricing", label:"See pricing"},
     {kw:["are you ai","are you a i","are you an ai"," ai ","are you a bot","are you a robot","are you human","are you a human","are you real","are you a real person","are you a person","are you natalie","are you a machine","are you automated","are you alive","are you a computer","chatbot","chat bot","chatgpt","artificial intelligence","talking to a human","talking to a person","talking to a real","talking to a","am i talking","who am i talking to","what are you","who are you","your name","are you sprout","what is sprout","who is sprout","are you a chat","llm"," bot ","is this a bot","is this a real person"], a:"I'm Juett Tech Rescue's handy assistant, here to help you navigate the website and do my best to assist you with any questions you may have. I'm automated, so as always, you can contact the team directly: call or text <a href='tel:+17199009720'>(719) 900-9720</a>, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>, or reach us on <a href='https://instagram.com/juetttechrescueboulder_' target='_blank' rel='noopener'>Instagram</a> or <a href='https://www.facebook.com/people/Juett-Tech-Rescue-Boulder-Colorado-/61568938795569/' target='_blank' rel='noopener'>Facebook</a>.", go:"#schedule", label:"Contact us"},
     {kw:["natalie","juett","chief rescue officer","cro","who is natalie","who runs","who started","who founded","who owns","founder name","when did you start","when did you launch","how long","in business","been around","new business","founded"], a:"That's Natalie Juett, the founder and Chief Rescue Officer of Juett Tech Rescue. She's a junior at CU Boulder studying economics and political science, and she started the service after learning how much harm improperly disposed electronics do to the environment in a sustainability course. She founded the business in December 2025, spent the winter building the website and refining the idea, and launched pickup operations in March 2026: the first established door-to-door e-waste pickup service in Boulder. There's more on her in the About section.", go:"#about", label:"Read more about Natalie"},
     {kw:["chris","lawson","rescue operations associate","who else","anyone else","other team","team member","teammate","employee","staff","runner","who picks up","who will come","who comes to my house","who shows up","second person","two of you"], a:"That's Chris Lawson, our Rescue Operations Associate. He's a sophomore at CU Boulder studying electrical and computer engineering, and he helps run pickup operations for residential clients, sharing the route alongside Natalie so we can cover more of Boulder County each week. There's more on him in the About section.", go:"#about", label:"Meet the team"},
@@ -1726,12 +1760,12 @@ body.sprout-open{overflow:hidden;}
     {kw:["closed","are you open","you open","open this week","this week","vacation","holiday","away","reopen","july 5","july 11","unavailable","out of town","break"], a:"We're back! Our short July break (July 5&ndash;11) is over and <b>booking is open</b> for pickup dates starting July 12th. Grab an evening or weekend slot in the booking form.", go:"#book", label:"Book a pickup"},
     {kw:["today","tomorrow","same day","asap","urgent","how soon","soonest","earliest","right away","this weekend","quickly","rush"], a:"The earliest open slots show live in the booking form: weekday evenings are one pickup per day, and weekends run 7 AM&ndash;7 PM in 2-hour slots. Grab the soonest date that works, and if it's time-sensitive, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9720</b> and we'll do our best.", go:"#book", label:"See open slots"},
     {kw:["illegal","against the law"," law ","throw away","throw it away","throw in the trash","in the trash","can i trash","just throw","why not trash","banned","not allowed"], a:"In Colorado it's actually illegal to throw electronics in the regular trash, because of the toxic materials inside them like lead and mercury. The ban has been in place since July 1, 2013 under the Electronic Recycling Jobs Act, for households and businesses alike. That's exactly the gap we fill: an easy, certified way to get rid of them responsibly. The health side is covered in the <a href='https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)' target='_blank' rel='noopener'>WHO fact sheet</a> in <a href='#faq'>Further Reading</a>.", go:"#book", label:"Book a pickup"},
-    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>71 pickups</b> and <b>2,813 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network.", go:"#impact", label:"See our impact"},
+    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>73 pickups</b> and <b>2,891 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network.", go:"#impact", label:"See our impact"},
     {kw:["why recycle","why does it matter","matter","so bad","toxic","lead","mercury","cadmium","harmful","bad for the environment","dangerous","hazard","poison","groundwater","pollut"], a:"Because e-waste is uniquely nasty in a landfill: it's only about 2% of what goes in, but it accounts for roughly 70% of the toxic heavy metals found there. A single CRT television can contain 4 to 8 pounds of lead, and as electronics break down, lead, mercury, and cadmium can leach into soil and groundwater for decades. That's why Colorado made trashing electronics illegal, and why every pickup we do is 100% certified recycling with nothing landfilled.", go:"#impact", label:"See our impact"},
     {kw:["travel fee","mileage","per mile","distance","gas fee","extra for distance","how far","drive fee","trip fee","charge for gas"], a:"Pickups include a small travel fee of <b>$0.65 per mile</b> (the standard commercial mileage rate), charged one way to pickup, based on your distance from our Boulder base. Save your address in the booking form and it's added to your live estimate, and we always confirm the final price before pickup.", go:"#book", label:"Book a pickup"},
     {kw:["certificate of recycling","recycling certificate","proof of recycling","certificate for business","business certificate","certified processing partner"], a:"For business and commercial pickups, a Certificate of Recycling is available on request. For data, we also provide a Certificate of Data Destruction. Just ask when you book, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
     {kw:["instagram","insta","facebook","social media","social","follow you","follow us"," ig "," fb "], a:"We'd love a follow! We're on Instagram at <b>@juetttechrescueboulder_</b> and Facebook as <b>Juett Tech Rescue</b>.", go:"#about", label:"About us"},
-    {kw:["daily camera","25","went up","go up","price increase","increase","raised","raise","more expensive","so expensive","higher","why so much","lower figure","not 25"], a:"Fair question. If you saw a lower number (like an earlier figure in the Boulder Daily Camera), that was before we added up what a pickup really costs to do responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run. We moved to clear, upfront pricing so the service stays sustainable. It's a $50 base that covers your whole load, with a surcharge only on TVs and monitors ($22 flat-screen, $35 CRT) for their hazardous-glass handling, and you see your estimate live before you commit. As we secure better facility rates, we pass the savings on.", go:"#pricing", fn:"openDCModal", label:"How our pricing works"},
+    {kw:["daily camera","25","went up","go up","price increase","increase","raised","raise","more expensive","so expensive","higher","why so much","lower figure","not 25"], a:"Fair question. If you saw a lower number (like an earlier figure in the Boulder Daily Camera), that was before we added up what a pickup really costs to do responsibly: fuel, certified e-waste processing, hazardous-material handling, and the hours behind every door-to-door run. We moved to clear, upfront pricing so the service stays sustainable. It's a $50 base that covers your whole load, with a surcharge only on TVs and monitors, scaled to size ($10&ndash;22 flat-screen, $22&ndash;35 CRT, evaluated at pickup) for their hazardous-glass handling, and you see your estimate live before you commit. As we secure better facility rates, we pass the savings on.", go:"#pricing", fn:"openDCModal", label:"How our pricing works"},
     {kw:["is it free","it free","is free","pickup free","free pickup","free if","free to donate","free when","cost less","costs less","cheaper if","price adjustment","discount if","still cost","still pay","no charge"], a:"It's still <b>$50</b>. That covers the gas, the time, and the effort of rehoming your tech: we take the whole process off your hands and make sure working items get successfully repurposed. And a percentage of every pickup's profits still goes to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> to extend the impact further.", go:"#pricing", label:"See pricing"},
     {kw:["how much donated","how much has been donated","how much have you donated","how much do you donate","amount donated","total donated","donated so far","how much goes to basel","how much have you given","how much raised","how much do you give"], a:"Great question! We donate to the <a href='https://www.ban.org' target='_blank' rel='noopener'>Basel Action Network</a> on a quarterly basis, and our next donation is coming up in October, so stay tuned! A percentage of every pickup's profits goes toward it.", go:"#about", label:"About us"},
     {kw:["first time","first customer","first time customer","new customer","new client","first pickup","first order","first invoice","first job","commercial deal","business deal","10 percent","percent off","save up to 10","deal"], a:"Two ways to save. If you're a <b>first-time commercial customer</b>, you save <b>up to 10%</b> on your first pickup: tap the gold DEAL badge on the Business &amp; Commercial card, then pick the Commercial tab in the booking form and mention it so we build it into your quote. On the residential side, refer a friend with old electronics and get <b>$5 off</b>, up to 3 referrals for $15 total.", go:"#pricing", label:"See the deal"},
@@ -1751,7 +1785,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["battery","batteries","power bank","lithium","aa","rechargeable","vape","vapes","e-cig","ecig","e-cigarette","disposable vape","puff bar","juul","nicotine device"], a:"Yes on rechargeable batteries, power banks, and disposable vapes, and they matter: a lithium cell crushed in a garbage truck can ignite, which is exactly why they shouldn't go in your bin. Vapes are one of the fastest-growing categories of e-waste and almost nowhere takes them. Bring them out with the rest of your load and we'll handle them.", go:"#take", label:"What we take"},
     {kw:["microwave","coffee maker","toaster","blender","kettle","vacuum","small appliance","kitchen"], a:"Yes. Small appliances like toasters, blenders, coffee makers, and microwaves all count. On a <b>$25 Small Load</b> you can bring a grocery bag of things plus one small appliance; anything more goes in a <b>$50 Standard</b>, which covers the whole load.", go:"#pricing", label:"See pricing"},
     {kw:["ink","toner","cartridge","light bulb","bulb","paint","chemical","hazardous","smoke detector","medical device"], a:"We take electronics: anything that plugs in or runs on a battery. Ink and toner cartridges we can usually take alongside a printer. Things like paint, chemicals, light bulbs, and smoke detectors fall outside e-waste, and Boulder County Hazardous Materials Management is the right place for those. Not sure about an item? Just ask.", go:"#take", label:"What we take"},
-    {kw:["over 55","bigger than 55","65 inch","70 inch","projection tv","rear projection","console tv","big screen"], a:"We list TVs up to 55\" as standard. Larger sets and old rear-projection or console TVs are heavy and awkward, so ask before you book and we'll confirm we can take it and what the surcharge looks like. Flat-screens are +$22; CRT, tube, and rear-projection are +$35.", go:"#pricing", label:"See pricing"},
+    {kw:["over 55","bigger than 55","65 inch","70 inch","projection tv","rear projection","console tv","big screen"], a:"We list TVs up to 55\" as standard. Larger sets and old rear-projection or console TVs are heavy and awkward, so ask before you book and we'll confirm we can take it and what the surcharge looks like. Screens are priced by size: flat-screens run +$10 to +$22, and CRT, tube, and rear-projection run +$22 to +$35, confirmed when we evaluate the set at pickup.", go:"#pricing", label:"See pricing"},
     {kw:["broken","doesn't work","dont work","not working","dead","cracked","smashed","damaged","water damage"], a:"Broken is fine, and broken doesn't always mean worthless. A dead laptop can still hold a good drive, screen, and memory, so we evaluate case by case at pickup rather than writing it off. Either way it stays out of the landfill.", go:"#take", label:"What we take"},
     {kw:["how soon","how fast","next available","same day","tomorrow","this week","asap","urgent","short notice","last minute"], a:"Weekdays we run one pickup slot per evening (5:30&ndash;7:30 PM), first to book gets it, and weekends are 2-hour slots between 7 AM and 7 PM. Open dates show in the booking form; anything already taken is marked unavailable. Need something sooner than the calendar shows? Text us and we'll try to make it work.", go:"#book", label:"Book a pickup"},
     {kw:["reschedule","change my time","move my pickup","different day","push it back"], a:"Just reach out and we'll move it. Text or email works, and there's no fee to reschedule. We also send a confirmation text at most 24 hours before your pickup day, so that's a natural moment to adjust.", go:"#schedule", label:"Contact us"},
@@ -1760,7 +1794,7 @@ body.sprout-open{overflow:hidden;}
     {kw:["apartment","condo","upstairs","stairs","elevator","basement","garage","curb","where should i put"], a:"Doorstep is the default, and stairs, apartments, and basements are all workable. Tell us where the items are in the instructions box when you book, along with any gate code or parking notes, so we show up ready.", go:"#book", label:"Book a pickup"},
     {kw:["receipt","invoice","proof","documentation","paperwork","for my taxes","tax","write off","deduction"], a:"We can provide a receipt for your pickup, a <b>Certificate of Recycling</b> on request, and a <b>Certificate of Data Destruction</b> for anything we wipe. For a donation write-off, talk to your tax preparer about what documentation they need and we'll do our best to provide it.", go:"#schedule", label:"Contact us"},
     {kw:["nist","800-88","standard for wiping","what standard","standard do you","wiping standard","wipe to","sanitiz","how do you wipe","what method","shredos","overwrite","degauss"], a:"We follow <b>NIST SP 800-88</b>, the federal standard for media sanitization. In practice that means securely overwriting drives, factory-resetting devices, or physically destroying storage that can't be reliably wiped. A Certificate of Data Destruction is available on request.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
-    {kw:["remove the drive","take the drive out","keep my hard drive","pull the drive","keep the ssd"], a:"Absolutely, and plenty of people do. Pull the drive before we arrive and keep it, or have us wipe it in the pickup for $15 per 2 devices. Either way the rest of the machine still gets recycled or refurbished properly.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
+    {kw:["remove the drive","take the drive out","keep my hard drive","pull the drive","keep the ssd"], a:"Absolutely, and plenty of people do. Pull the drive before we arrive and keep it, or have us wipe it in the pickup for $10 per 2 devices. Either way the rest of the machine still gets recycled or refurbished properly.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["watch","see it happen","be present","in front of me","witness"], a:"You're welcome to watch. Wiping happens during the pickup at your door, not at some facility later, which is part of why we do it that way. If you'd rather see physical destruction of a drive, ask and we'll walk you through it.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["really gone","actually deleted","can it be recovered","recover my data","trust you with my data","sell my data","privacy"], a:"Fair question to ask anyone. Wiping follows NIST SP 800-88 so data isn't recoverable by normal means, storage that can't be reliably wiped is physically destroyed, and devices routed to our partner DRM fall under their NAID certification and zero-breach record. We never sell or share your personal information; our privacy policy is linked in the footer.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["circular economy","rare earth","minerals","gold","copper","valuable","urban mining","what's inside","materials"], a:"That's the whole point of taking everything rather than cherry-picking. Electronics carry recoverable copper, gold, and rare earth minerals, and a ton of circuit boards holds more gold than a ton of ore from a gold mine. Recycling puts those materials back into the economy instead of leaving them buried and mining fresh ones.", go:"#about", label:"Our mission"},
@@ -1791,14 +1825,14 @@ body.sprout-open{overflow:hidden;}
     {kw:["what happens next","after i book","confirmation","will you text me","do you call","how will i know","confirm my pickup"], a:"After you submit the form we'll send a confirmation text at most 24 hours before your pickup day, confirming the pickup and asking for your preferred arrival time within your slot. Then we show up at your door, load, handle any wiping, and take payment on the spot.", go:"#book", label:"Book a pickup"},
     {kw:["venmo","cash app","cashapp","handle","username","pay in advance","pay ahead","pay before"], a:"Cash at pickup, Cash App at <b>$juetttechrescue</b>, or Venmo at <b>@juetttechrescue</b>, and you can pay at pickup or in advance on either app. Prefer something else? Mention it when you book and we'll do our best to work with you.", go:"#payment", label:"Payment options"},
     {kw:["only one in boulder","competitors","competition","anyone else","other companies","alternatives","who else does this"], a:"We're the only waste management service in Boulder focused specifically on electronic waste, and the first established door-to-door e-waste pickup here. General recyclers and junk haulers will take a load, but e-waste isn't their focus, so most can't securely wipe your data or route working devices for resale or donation.", go:"#tv-example", fn:"openTvExample", label:"How we compare"},
-    {kw:["how much do you divert","2813","2,813","how many pounds","total pounds","how much have you saved"], a:"We're at <b>2,813 lbs</b> diverted from the landfill across <b>71 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
+    {kw:["how much do you divert","2891","2,891","how many pounds","total pounds","how much have you saved"], a:"We're at <b>2,891 lbs</b> diverted from the landfill across <b>73 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
     {kw:["fastest growing","growing","e waste growing","growing waste","waste stream","municipal waste","how fast is it growing"], a:"E-waste is the fastest-growing solid waste stream on the planet, and it's growing far faster than recycling is keeping up: the <a href='https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx' target='_blank' rel='noopener'>Global E-waste Monitor 2024</a> put 2022 at 62 million metric tons with less than 23% formally recycled. That report is in <a href='#faq'>Further Reading</a>.", go:"#faq", label:"Further Reading"},
     {kw:["yelp","leave a review","write a review","how can i help","support you","spread the word"], a:"A Yelp review helps a lot, our page is brand new so each one goes a long way. There's a link near the reviews at the top of this page. Telling a neighbor works too, and referring someone with old electronics gets you $5 off your next pickup.", go:"#reviews", label:"Leave a review"},
     {kw:["certificate of data destruction","cod","proof of destruction","proof of recycling","documentation for my business","compliance"], a:"Both are available on request: a <b>Certificate of Data Destruction</b> for anything we wipe, and a <b>Certificate of Recycling</b> for the disposal itself. Commercial clients usually want both for their records, especially in healthcare, finance, law, and education where retired drives fall under rules like HIPAA, FACTA, and GLBA. Just ask when you book.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["student run","students","cu boulder","university of colorado","support students","local business","small business"], a:"We're CU Boulder student-founded and student-run: Natalie, our founder and Chief Rescue Officer, and Chris, our Rescue Operations Associate. The DRM Worldwide partnership gives us enterprise-grade processing behind a local, student-run operation.", go:"#about", label:"Meet the team"},
-    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 standard pickup</b> (desktop towers, printers, consoles, multiple boxes: your whole load), or a <b>$25 Small Load Pickup</b> for a box or a few bags of items, or a grocery bag of things plus one small appliance (no TVs or monitors). Only TVs and monitors add a surcharge: <b>+$22</b> per flat-screen, <b>+$35</b> per CRT/tube TV. Neighborhood bundles save every home up to 10%: 5&ndash;10 households take <b>5% off</b> each and 10+ households take the full <b>10% off</b> each. Businesses get a custom quote, and first-time commercial clients save up to <b>10%</b>. Secure data wiping is <b>$15 per 2 devices</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
-    {kw:["tv","tvs","television","monitor","crt","flat screen","flatscreen","tube","projection","55 inch","65 inch","big tv","large tv","screen size"], a:"TVs and monitors are the only items with a surcharge, because their glass needs certified hazardous handling: <b>+$22</b> per flat-screen TV or monitor, <b>+$35</b> per CRT/tube/projection TV. We take flat-screen TVs up to <b>55 inches</b>. Everything else in your load is included in the base fee.", go:"#pricing", label:"See pricing"},
-    {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","destroy","proof","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. Devices routed through our partner DRM Worldwide fall under their R2v3, NAID, and ISO 9001, 14001, and 45001 certifications, plus zero-landfill and zero-data-breach policies. A Certificate of Data Destruction is available on request. Secure wiping is $15 per 2 devices.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
+    {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 standard pickup</b> (desktop towers, printers, consoles, multiple boxes: your whole load), or a <b>$25 Small Load Pickup</b> for a box or a few bags of items, or a grocery bag of things plus one small appliance (no TVs or monitors). Only TVs and monitors add a surcharge, and it scales with size: <b>+$10 to +$22</b> per flat-screen or monitor, <b>+$22 to +$35</b> per CRT/tube TV, evaluated at pickup. Neighborhood bundles save every home up to 10%: 5&ndash;10 households take <b>5% off</b> each and 10+ households take the full <b>10% off</b> each. Businesses get a custom quote, and first-time commercial clients save up to <b>10%</b>. Secure data wiping is <b>$10 per 2 devices</b>, and you can refer a friend for $5 off (up to $15). You'll see your exact price live in the booking form.", go:"#pricing", label:"See pricing"},
+    {kw:["tv","tvs","television","monitor","crt","flat screen","flatscreen","tube","projection","55 inch","65 inch","big tv","large tv","screen size"], a:"TVs and monitors are the only items with a surcharge, because their glass needs certified hazardous handling, and it scales with size. Flat-screens and monitors are <b>+$10</b> up to 27&quot;, <b>+$16</b> for 28&ndash;42&quot;, and <b>+$22</b> for 43&ndash;55&quot;. CRT, tube, and projection sets are <b>+$22</b> up to 20&quot;, <b>+$28</b> for 21&ndash;27&quot;, and <b>+$35</b> for 28&quot; and up. Pick the closest size in the booking form for your estimate; we evaluate the actual size at pickup. Everything else in your load is included in the base fee.", go:"#pricing", label:"See pricing"},
+    {kw:["data","wip","privacy","secure","security","hard drive","erase","delete","personal","shred","destruction","destroy","proof","certificate"], a:"Your data is protected on every pickup. We follow NIST 800-88: phones, tablets, and modern computers get a factory reset that destroys the encryption key; hard drives get a secure overwrite; and anything that can't be reliably wiped is physically destroyed. Devices routed through our partner DRM Worldwide fall under their R2v3, NAID, and ISO 9001, 14001, and 45001 certifications, plus zero-landfill and zero-data-breach policies. A Certificate of Data Destruction is available on request. Secure wiping is $10 per 2 devices.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["fridge","refrigerator","freezer","large appliance","big appliance","air condition","ac unit","freon","washer","washing machine","dryer","dishwasher","oven","stove","range","water heater"], a:"We can't take large appliances: refrigerators, freezers, AC units, washers, dryers, dishwashers, ovens, or anything that size. Those need a specialized facility or hauler. We do take small appliances like toasters, blenders, humidifiers, and coffee makers, plus all your electronics."},
     {kw:["hour","when","time","open","availab","evening","weekend","slot"], a:"We're built around your schedule: <b>weekday evenings, 5:30&ndash;7:30 PM</b> (after work), and <b>all weekend, 7 AM&ndash;7 PM</b>. No taking time off. Weekdays are one pickup per day. On weekends you book a <b>2-hour slot</b>: the two-hour window gives us flexibility, and you can tell us an estimated arrival time within it so you're not left waiting around.", go:"#book", label:"Pick a time"},
     {kw:["resell","resale","refurbish","refurbishable","repair","sell","proceeds","worth","buyback","trade in","fixable","donat","partner","who refurbish","where do you take","qualif","eligible"], a:"We determine every item's refurbishment potential case by case at pickup, and nothing is guaranteed, but some items tend to work best: laptops and MacBooks, desktops, Apple devices, phones and tablets, monitors, game consoles, smartwatches, audio equipment, networking and storage gear, and useful peripherals. Age and condition matter, but if it's working and just older, partly working, or simply unwanted, we can most definitely help. Even broken tech with potential is evaluated case by case for parts value. Choosing resale means a percentage of the proceeds goes back into your hands, and we handle everything. There's a full list in our pricing section! We're also officially partnered with DRM Worldwide, a national IT asset disposition company that's R2v3 and NAID certified with ISO 9001, 14001, and 45001, diverting roughly 900,000 lbs of e-waste a year with zero data breaches across their decade-plus in the industry. We also work with refurbishers across Boulder: laptops and monitors go to a former CU professor, and consoles and some audio gear go to a partnered CU computer-science student. It's always your call, and we ask about each item's condition at pickup and in the booking form. Bonus: refurbishable items skip the facility run, which saves us gas and saves you money on pickup, with no commercial gas rate charge for that leg of the trip. And if your tech is simply unwanted and in good condition, you're welcome to use us purely as a source to resell or donate it: email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> for a quick response. Regardless, everything is kept out of the landfill!", go:"#refurb-list", label:"See the full list"},
@@ -1939,7 +1973,7 @@ body.sprout-open{overflow:hidden;}
     var p2=p.replace(/not working|don t work|dont work|doesn t work|doesnt work|won t turn|wont turn|no longer work/g," ");
     var pos=/\bwork(s|ing)?\b|powers? on|turns? on|( |^)(yes|yeah|yep|yup)( |$)/.test(p2);
     if(!neg && !pos) return null;
-    var sur=(t.flat||t.crt) ? " The glass surcharge applies either way (+$22 per flat-screen or monitor, +$35 per CRT), since certified hazardous handling is needed regardless of condition." : "";
+    var sur=(t.flat||t.crt) ? " The glass surcharge applies either way (+$10\u2013$22 per flat-screen or monitor, +$22\u2013$35 per CRT, depending on size), since certified hazardous handling is needed regardless of condition." : "";
     if(pos && neg) return {a:"Perfect, we'll sort that right at your door: working items get a condition check and, if they qualify, a second life through our Boulder refurbishment partners via resale or donation. The rest goes straight into certified recycling, nothing landfilled."+sur+" Book your slot and note which is which in the form.", go:"#book", label:"Book a pickup"};
     if(pos) return {a:"Love to hear it! Anything that powers on gets a condition check at pickup, and qualifying items get a second life through our Boulder refurbishment partners: resold or donated instead of scrapped."+sur+" We handle every step from your doorstep, so just book a slot and note the working condition in the form.", go:"#book", label:"Book a pickup"};
     return {a:"No problem at all, that's exactly what we're here for. Broken tech with potential is evaluated case by case, since it can hold real parts value even when it no longer powers on. Everything else goes from your doorstep straight into certified recycling, nothing landfilled."+sur+" Book whenever you're ready and we'll take it off your hands.", go:"#refurb-list", label:"See what qualifies"};
@@ -1956,7 +1990,7 @@ body.sprout-open{overflow:hidden;}
     // Screen size: fits or too big
     m=p.match(new RegExp(NUMPAT+" ?(?:inch|in\\b)[a-z]* (?:flat ?screen|tv|television|screen|monitor)"));
     if(m){ var sz=n2(m[1]);
-      if(sz<=55){ PENDING={flat:1,crt:0,gen:0,tvn:0,askedType:false}; return {a:"A "+sz+"-inch flat-screen is no problem: we take flat-screen TVs up to <b>55 inches</b>. It adds the <b>+$22</b> flat-screen surcharge for certified glass handling, and the rest of your load rides along in the base fee. Is it working, even partly? If so it gets a refurbishment check at pickup for a possible second life.", go:"#pricing", label:"See pricing"}; }
+      if(sz<=55){ PENDING={flat:1,crt:0,gen:0,tvn:0,askedType:false}; var szFee=(sz<=27)?10:(sz<=42)?16:22; var szLbl=(sz<=27)?"small (up to 27&quot;)":(sz<=42)?"medium (28\u201342&quot;)":"large (43\u201355&quot;)"; return {a:"A "+sz+"-inch flat-screen is no problem: we take flat-screen TVs up to <b>55 inches</b>. That lands in our "+szLbl+" size class, so it adds a <b>+$"+szFee+"</b> surcharge for certified glass handling (we confirm the size class at pickup), and the rest of your load rides along in the base fee. Is it working, even partly? If so it gets a refurbishment check at pickup for a possible second life.", go:"#pricing", label:"See pricing"}; }
       return {a:"A "+sz+"-inch screen is over our <b>55-inch</b> flat-screen limit, so it may not fit our vehicle. Email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> with the model and we'll see what we can work out; everything else in your load we can take as usual.", go:"#capacity", label:"Pickup capacity"};
     }
 
@@ -1964,10 +1998,10 @@ body.sprout-open{overflow:hidden;}
     if(/wip|erase|shred|destroy|clear my data|scrub/.test(p)){
       if(/nist|800|standard|method|protocol|procedure|how do you|what software|keep my|remove the drive|take the drive|watch|witness|recover/.test(p)) return null;
       var wo={p:p}, wn=countAndStrip(wo,["laptop","phone","iphone","computer","macbook","hard drive","drive","device","tablet","desktop","pc"]);
-      if(wn>=1) return {a:"Yes: secure wiping for "+wn+" device"+(wn>1?"s":"")+" is <b>$"+(Math.ceil(wn/2)*15)+"</b> ($15 per 2 devices, so "+Math.ceil(wn/2)+" &times; $15), done during your pickup with no separate trip. We follow NIST 800-88, and a Certificate of Data Destruction is available on request.", go:"#data-security", fn:"openDataSec", label:"How we protect data"};
+      if(wn>=1) return {a:"Yes: secure wiping for "+wn+" device"+(wn>1?"s":"")+" is <b>$"+(Math.ceil(wn/2)*10)+"</b> ($10 per 2 devices, so "+Math.ceil(wn/2)+" &times; $10), done during your pickup with no separate trip. We follow NIST 800-88, and a Certificate of Data Destruction is available on request.", go:"#data-security", fn:"openDataSec", label:"How we protect data"};
       if(/can you|do you|need|want|how much|cost|price/.test(p)){
         PENDING={askedWipeCount:true};
-        return {a:"Absolutely, secure wiping is <b>$15 per 2 devices</b>, done during your pickup following NIST 800-88, with a Certificate of Data Destruction available on request. How many devices need wiping? I'll total it up for you."};
+        return {a:"Absolutely, secure wiping is <b>$10 per 2 devices</b>, done during your pickup following NIST 800-88, with a Certificate of Data Destruction available on request. How many devices need wiping? I'll total it up for you."};
       }
     }
 
@@ -2083,17 +2117,19 @@ body.sprout-open{overflow:hidden;}
         var highs=named.filter(function(x){return x.t==="high";});
         var meds=named.filter(function(x){return x.t==="medium";});
         var bits=[];
-        var totFlat=50+flat*22+crt*35;
+        var loTot=50+flat*10+crt*22;
+        var hiTot=50+flat*22+crt*35;
         if(tvGen>0 && crt===0 && flatSpec===0){
-          var totCrt=50+(flat-tvGen)*22+(crt+tvGen)*35;
-          bits.push("That'd be a <b>standard $50 pickup</b> covering everything, plus the TV surcharge: <b>+$22</b> per flat-screen or <b>+$35</b> per tube (CRT) set for the certified glass handling. So roughly <b>$"+totFlat+"&ndash;$"+totCrt+"</b> depending on the type, before the travel fee.");
-          bits.push("Is the TV a flat-screen or a tube? And do any of the other items still work? Anything working can qualify for refurbishment, potentially money back in your pocket.");
+          var hiCrt=50+(flat-tvGen)*22+(crt+tvGen)*35;
+          bits.push("That'd be a <b>standard $50 pickup</b> covering everything, plus the screen surcharge, which depends on type and size: <b>+$10 to +$22</b> per flat-screen or monitor, <b>+$22 to +$35</b> per tube (CRT) set for the certified glass handling. So roughly <b>$"+loTot+"&ndash;$"+hiCrt+"</b> before the travel fee, and we narrow that once we know the type and size.");
+          bits.push("Is the TV a flat-screen or a tube, and roughly how many inches? And do any of the other items still work? Anything working can qualify for refurbishment, potentially money back in your pocket.");
         } else {
           var parts=["$50 base"];
-          if(flat) parts.push(flat+" &times; $22 flat-screen/monitor");
-          if(crt) parts.push(crt+" &times; $35 CRT");
+          if(flat) parts.push(flat+" &times; $10&ndash;22 flat-screen/monitor");
+          if(crt) parts.push(crt+" &times; $22&ndash;35 CRT");
+          var rangeStr=(loTot===hiTot)?"<b>$"+hiTot+"</b>":"<b>$"+loTot+"&ndash;$"+hiTot+"</b>";
           var extra=(gen>0&&flat+crt>0)?" Everything else rides along at no extra charge.":"";
-          bits.push("That'd be a <b>standard $50 pickup</b> covering your whole load"+((flat+crt>0)?" plus the TV/monitor surcharge, so around <b>$"+totFlat+"</b> ("+parts.join(" + ")+") before the travel fee.":", around <b>$"+totFlat+"</b> before the travel fee.")+extra);
+          bits.push("That'd be a <b>standard $50 pickup</b> covering your whole load"+((flat+crt>0)?" plus the TV/monitor surcharge, which scales with screen size, so around "+rangeStr+" ("+parts.join(" + ")+") before the travel fee. Tell me the screen sizes and I'll narrow it.":", around "+rangeStr+" before the travel fee.")+extra);
           if(highs.length) bits.push((highs.length>1?"Are your "+listN(highs)+" working":"Is your "+listN(highs)+" working")+", even partly? Working items can qualify for refurbishment, potentially money back in your pocket.");
           else if(meds.length||gen>0) bits.push("Do any of the items still work? Working items can qualify for refurbishment, potentially money back in your pocket.");
         }
@@ -2118,7 +2154,7 @@ body.sprout-open{overflow:hidden;}
       if(/\bdo you\b|\bcan i\b|\bwhat\b|\bhow\b|\bwhere\b|\bwhen\b|\bwhy\b|\bare you\b|\bis there\b|\bdoes\b/.test(p)) return null;
       m=p.match(new RegExp(NUMPAT));
       if(m){ var wc=n2(m[1]);
-        return {a:"Secure wiping for "+wc+" device"+(wc>1?"s":"")+" comes to <b>$"+(Math.ceil(wc/2)*15)+"</b> ($15 per 2 devices, so "+Math.ceil(wc/2)+" &times; $15), handled during your pickup with no separate trip. Select data wiping in the booking form and note the device count in the instructions.", go:"#book", label:"Book a pickup"};
+        return {a:"Secure wiping for "+wc+" device"+(wc>1?"s":"")+" comes to <b>$"+(Math.ceil(wc/2)*10)+"</b> ($10 per 2 devices, so "+Math.ceil(wc/2)+" &times; $10), handled during your pickup with no separate trip. Select data wiping in the booking form and note the device count in the instructions.", go:"#book", label:"Book a pickup"};
       }
       return null;
     }
@@ -2165,10 +2201,12 @@ body.sprout-open{overflow:hidden;}
       if(nc>0 && nf===0){ crtN=Math.max(nc,t.tvn); flatN=0; }
       else if(nf>0 && nc===0){ flatN=Math.max(nf,t.tvn); crtN=0; }
       else { flatN=nf; crtN=nc; }
-      var est=50+flatN*22+crtN*35;
-      var brk=["$50 base"]; if(flatN) brk.push(flatN+" &times; $22 flat-screen"); if(crtN) brk.push(crtN+" &times; $35 CRT");
+      var estLo=50+flatN*10+crtN*22;
+      var estHi=50+flatN*22+crtN*35;
+      var estStr=(estLo===estHi)?"<b>$"+estHi+"</b>":"<b>$"+estLo+"&ndash;$"+estHi+"</b>";
+      var brk=["$50 base"]; if(flatN) brk.push(flatN+" &times; $10&ndash;22 flat-screen"); if(crtN) brk.push(crtN+" &times; $22&ndash;35 CRT");
       PENDING={flat:flatN,crt:crtN,gen:t.gen,tvn:0,askedType:false};
-      return {a:"Got it! That puts your estimate around <b>$"+est+"</b> ("+brk.join(" + ")+") before any travel fee. And are they working, even partly? We determine refurbishment potential case by case at pickup and route qualifiers to resale or donation; the rest is certified-recycled with all the glass handling covered from your doorstep.", go:"#book", label:"Book a pickup"};
+      return {a:"Got it! That puts your estimate around "+estStr+" ("+brk.join(" + ")+", depending on screen size, which we confirm at pickup) before any travel fee. And are they working, even partly? We determine refurbishment potential case by case at pickup and route qualifiers to resale or donation; the rest is certified-recycled with all the glass handling covered from your doorstep.", go:"#book", label:"Book a pickup"};
     }
     return conditionReply(q, t);
   }
