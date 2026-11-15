@@ -461,7 +461,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
   </div>
   <div style="border:1.5px dashed rgba(255,255,255,.5);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;">
     <div style="color:rgba(255,255,255,.9);font-size:0.9rem;line-height:1.55;">Had a pickup with us? Reviews are highly appreciated! We originally used Yelp, but some customers&rsquo; reviews were being filtered out due to inactivity on the platform. Any feedback means a lot!</div>
-    <a href="https://g.page/r/CVrEc4bZAPhsECE/review" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Leave a Google review</a>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;"><a href="https://g.page/r/CVrEc4bZAPhsECE/review" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Leave a Google review</a><a href="https://nextdoor.com/page/juett-tech-rescue-boulder-co/" target="_blank" rel="noopener" style="display:inline-block;background:var(--white);color:var(--gd);font-weight:700;font-size:0.85rem;padding:9px 20px;border-radius:30px;text-decoration:none;">Recommend us on Nextdoor</a></div>
   </div>
 </div>
 
@@ -476,7 +476,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Truck / pickup -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
       <div class="inum-row">
-        <span class="inum">95</span>
+        <span class="inum">98</span>
       </div>
       <div class="ilabel">Total Pickups</div>
     </div>
@@ -485,7 +485,7 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
       <!-- Diversion: recycling arrows (actual divert/recycle symbol) -->
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="isvg"><polyline points="1.5 2 1.5 9 8.5 9"/><polyline points="22.5 22 22.5 15 15.5 15"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1.5 9m21 6-4.14 3.36A9 9 0 0 1 3.51 15"/></svg>
       <div class="inum-row">
-        <span class="inum">5,783</span><span class="iunit">lbs</span>
+        <span class="inum">6,033</span><span class="iunit">lbs</span>
       </div>
       <div class="ilabel">E-Waste Diverted from Landfill</div>
     </div>
@@ -1135,55 +1135,54 @@ window.addEventListener('load',function(){setTimeout(function(){window.scrollTo(
 (function(){
   const FACTS = [
     "The world generated a record 62 million metric tons of e-waste in 2022, up 82 percent from 2010.",
-    "Global e-waste is on track to hit 82 million metric tons a year by 2030.",
-    "A single year of the world's e-waste would fill about 1.55 million 40-ton trucks, enough to form a bumper-to-bumper line circling the equator.",
-    "The electronics the world throws out in one year weigh about as much as 107,000 of the largest passenger aircraft ever built.",
-    "Every person on Earth generates an average of about 17 pounds of e-waste a year.",
-    "The world's e-waste pile grows by roughly 2.6 million metric tons every single year.",
-    "Americans throw away an estimated 9.4 million tons of electronics annually.",
-    "E-waste is the fastest-growing solid waste stream on the planet.",
+    "Global e-waste is on track to reach 82 million metric tons a year by 2030.",
+    "One year of the world's e-waste would fill about 1.55 million 40-ton trucks, enough to line up bumper to bumper around the equator.",
+    "The e-waste the world produces in one year weighs about as much as 107,000 of the largest passenger aircraft ever built.",
+    "The average person on Earth produces about 17 pounds of e-waste a year.",
+    "The amount of e-waste the world produces grows by about 2.6 million metric tons every year.",
+    "Americans throw away an estimated 9.4 million tons of electronics every year.",
+    "E-waste is the fastest-growing solid waste stream in the world.",
     "Only 22.3 percent of the world's e-waste was documented as properly collected and recycled in 2022.",
-    "E-waste is piling up about five times faster than documented recycling is keeping up with it.",
-    "On current trends, the share of e-waste that gets formally recycled is expected to fall to around 20 percent by 2030.",
-    "About 14 million metric tons of e-waste went untracked in 2022, most of it landfilled.",
-    "E-waste is only about 3 percent of everything the world throws away, but it carries a wildly outsized share of the toxic load.",
-    "The small IT and telecom gear in the world's junk drawers, the phones, routers, and laptops, added up to 4.6 million metric tons of waste in one year.",
-    "Disposable vapes have become one of the fastest-growing categories of electronic waste.",
-    "E-waste makes up only about 2 percent of what goes into landfills, but accounts for roughly 70 percent of the toxic heavy metals found there.",
+    "The world's e-waste is growing five times faster than e-waste recycling.",
+    "The share of e-waste that gets properly recycled is expected to fall to about 20 percent by 2030.",
+    "About 14 million metric tons of e-waste were thrown in the regular trash in 2022, and most of it ended up in landfills.",
+    "The world produces about 2 metric tons of e-waste every second.",
+    "Small devices like phones, routers, and laptops added up to 4.6 million metric tons of e-waste in 2022.",
+    "Disposable vapes are one of the fastest-growing types of e-waste.",
+    "E-waste makes up only about 2 percent of what goes into landfills, but it accounts for roughly 70 percent of the toxic heavy metals found there.",
     "It has been illegal to throw electronics in the trash in Colorado since July 1, 2013, under the Electronic Recycling Jobs Act.",
-    "Some small appliances like microwaves and coffee makers can still legally go in Colorado trash, but they are still full of recoverable metal.",
+    "Colorado's e-waste landfill ban does not cover every device. Small appliances like microwaves and coffee makers can still go in the trash, but recycling them recovers the metal inside.",
     "Colorado's e-waste landfill ban applies to households and businesses alike.",
-    "Lead, mercury, and cadmium from electronics can leach into soil and groundwater for decades after a device is buried.",
-    "A single CRT tube television can hold 4 to 8 pounds of lead.",
-    "Lead exposure damages the central and peripheral nervous systems, and children are the most vulnerable.",
-    "There is no known safe level of lead exposure for a child.",
-    "Mercury from discarded electronics can damage the human brain and the body's coordination system.",
-    "Cadmium leaches out of buried batteries and circuit boards into soil and water, and once it reaches a person it collects in the kidneys and stays there for decades.",
-    "Flame retardants used in electronics casings persist in soil for years and accumulate in living tissue.",
-    "Heavy metals from buried electronics can move into soil, into crops, and then into the food chain.",
-    "Landfill liners are built to last decades. The heavy metals sealed inside electronics stay toxic far longer than that.",
-    "Groundwater contamination is slow and quiet. By the time heavy metals show up in a well, they have usually been leaching for years.",
+    "Lead, mercury, and cadmium from e-waste can leak into soil and groundwater for decades after a device is buried.",
+    "A single old tube (CRT) television can hold 4 to 8 pounds of lead.",
+    "Lead from e-waste damages the nervous system, and children are the most vulnerable.",
+    "E-waste contains lead, and there is no known safe level of lead exposure for a child.",
+    "Mercury from e-waste can damage the human brain and nervous system.",
+    "Cadmium from e-waste batteries and circuit boards leaks into soil and water. Once it enters the body, it builds up in the kidneys and stays there for decades.",
+    "Flame retardants used in electronics casings stay in soil for years and build up in living tissue.",
+    "Heavy metals from e-waste in landfills can move into soil, then into crops, and then into the food we eat.",
+    "Landfill liners are built to last for decades, but the heavy metals in e-waste stay toxic far longer than that.",
+    "Heavy metals from e-waste leak into groundwater slowly. By the time they show up in a well, they have usually been leaking for years.",
     "Recycling e-waste avoided the need to mine about 900 million metric tons of ore in a single year.",
-    "Every landfilled device takes its metal permanently out of circulation, so the next one has to be mined from scratch.",
-    "E-waste is unusual among household waste: it is hazardous and genuinely valuable at the same time.",
-    "In the time it takes to read this sentence, the world produces more than seven tons of e-waste, about 5,040 smartphones or 3,111 laptops.",
-    "A single year of the world's e-waste now weighs more than the Great Wall of China, the heaviest artificial object humans have ever built.",
-    "Americans throw out roughly 416,000 mobile phones every single day, about 151 million a year.",
-    "Every ton of electronic waste that goes unrecycled carries a carbon footprint of about two tons.",
-    "Between 2014 and 2019 the world's annual e-waste jumped 21 percent, and the curve has not bent since.",
+    "When e-waste goes to a landfill, the metal inside is lost for good, and new metal has to be mined to replace it.",
+    "E-waste is both hazardous and valuable. It contains toxic metals like lead and mercury, and precious metals like gold and copper.",
+    "One year of the world's e-waste weighs more than the Great Wall of China.",
+    "Americans throw away roughly 416,000 mobile phones every day, about 151 million a year.",
+    "Every ton of e-waste that is not recycled accounts for about two tons of carbon emissions.",
+    "The amount of e-waste the world produces each year grew 21 percent between 2014 and 2019.",
     "Only about 1 percent of the world's demand for rare earth elements is met by recycling e-waste.",
-    "A laptop too slow for one household is often exactly right for a student, a nonprofit, or somebody's first computer.",
-    "Old machines that no longer suit daily use still find homes in classrooms, labs, and collections.",
-    "About 88 percent of Americans are holding onto electronics they no longer use, roughly 1.3 billion devices sitting in homes right now.",
-    "Americans throw out about 46 pounds of electronics per person every year, second only to China in total volume.",
-    "Roughly 46 percent of Americans have never recycled a single old phone or gadget.",
-    "About two thirds of people say worry about the data still on a device is what stops them from recycling it.",
-    "Around one in six electrical items in the average household is no longer used.",
-    "Household stockpiles of unused electronics grew from about 20 items to about 30 in only four years.",
-    "The most common reason people hang onto a dead device is thinking they might need it again someday.",
+    "Not every old device is e-waste. A laptop that is too slow for one household can be refurbished and reused by a student or a nonprofit.",
+    "Old electronics that still work can be donated and reused in classrooms, labs, and collections instead of being recycled.",
+    "About 88 percent of Americans are holding onto electronics they no longer use, roughly 1.3 billion devices in total.",
+    "Americans produce about 46 pounds of e-waste per person every year. Only China produces more e-waste in total.",
+    "Roughly 46 percent of Americans have never recycled an old phone or other electronic device.",
+    "About two thirds of people say they have not recycled an old device because they are worried about the data still on it.",
+    "About one in six electrical items in the average household is no longer used.",
+    "The number of unused electronics in the average household grew from about 20 items to about 30 in only four years.",
+    "The most common reason people keep a broken device is that they think they might need it again someday.",
     "Colorado's landfill ban covers televisions, so a property manager cannot legally put a tenant's abandoned TV in the building dumpster.",
-    "In Colorado the landfill ban applies to every disposal channel, including commercial dumpsters and building trash rooms.",
-    "Electronics consumption climbs about 3 percent every year while product lifespans keep shrinking, which is what drives the waste pile up."
+    "Colorado's e-waste landfill ban applies everywhere trash is collected, including commercial dumpsters and building trash rooms.",
+    "People buy about 3 percent more electronics every year while devices last for less time, which is why e-waste keeps growing."
   ];
 
   // Choose the fact by the calendar date in Mountain Time. This rolls over at
@@ -1936,7 +1935,7 @@ input,select,textarea,button,a,label,summary,[role=button],[role=tab]{touch-acti
     {kw:["closed","are you open","you open","open this week","this week","vacation","holiday","away","reopen","july 5","july 11","unavailable","out of town","break"], a:"We're open! <b>Booking is open</b> now for weekday evenings (5:30&ndash;7:30 PM, one pickup per day) and weekends (7 AM&ndash;7 PM, in 2-hour slots). Open dates show live in the booking form, and anything already taken is marked unavailable.", go:"#book", label:"Book a pickup"},
     {kw:["today","tomorrow","same day","asap","urgent","how soon","soonest","earliest","right away","this weekend","quickly","rush"], a:"The earliest open slots show live in the booking form: weekday evenings are one pickup per day, and weekends run 7 AM&ndash;7 PM in 2-hour slots. Grab the soonest date that works, and if it's time-sensitive, email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a> or call <b>(719) 900-9720</b> and we'll do our best.", go:"#book", label:"See open slots"},
     {kw:["illegal","against the law"," law ","throw away","throw it away","throw in the trash","in the trash","can i trash","just throw","why not trash","banned","not allowed"], a:"In Colorado it's actually illegal to throw electronics in the regular trash, because of the toxic materials inside them like lead and mercury. The ban has been in place since July 1, 2013 under the Electronic Recycling Jobs Act, for households and businesses alike. That's exactly the gap we fill: an easy, certified way to get rid of them responsibly. The health side is covered in the <a href='https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)' target='_blank' rel='noopener'>WHO fact sheet</a> in <a href='#faq'>Further Reading</a>.", go:"#book", label:"Book a pickup"},
-    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>95 pickups</b> and <b>5,783 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network. As of November 2026, and until further notice, these donations are instead going to the family of the CU Boulder student who tragically lost his life on Halloween.", go:"#impact", label:"See our impact"},
+    {kw:["impact","how many pickup","pounds","lbs","diverted","stats","statistics","how much e-waste","diversion","kept out of","total recycled","made a difference"], a:"You can see our live totals in the <a href='#impact'>Impact</a> section: we're at <b>98 pickups</b> and <b>6,033 lbs</b> of e-waste diverted from the landfill so far. Every pickup is 100% certified recycling with nothing landfilled, and a percentage of profits goes to the Basel Action Network. As of November 2026, and until further notice, these donations are instead going to the family of the CU Boulder student who tragically lost his life on Halloween.", go:"#impact", label:"See our impact"},
     {kw:["why recycle","why does it matter","matter","so bad","toxic","lead","mercury","cadmium","harmful","bad for the environment","dangerous","hazard","poison","groundwater","pollut"], a:"Because e-waste is uniquely nasty in a landfill: it's only about 2% of what goes in, but it accounts for roughly 70% of the toxic heavy metals found there. A single CRT television can contain 4 to 8 pounds of lead, and as electronics break down, lead, mercury, and cadmium can leach into soil and groundwater for decades. That's why Colorado made trashing electronics illegal, and why every pickup we do is 100% certified recycling with nothing landfilled.", go:"#impact", label:"See our impact"},
     {kw:["travel fee","mileage","per mile","distance","gas fee","extra for distance","how far","drive fee","trip fee","charge for gas"], a:"Pickups include a small travel fee of <b>$0.65 per mile</b> (the standard commercial mileage rate), charged one way to pickup, based on your distance from our Boulder base. Save your address in the booking form and it's added to your live estimate, and your final price is determined at pickup. Neighborhood bundles share one trip, so there's no travel fee on those.", go:"#book", label:"Book a pickup"},
     {kw:["certificate of recycling","recycling certificate","proof of recycling","certificate for business","business certificate","certified processing partner"], a:"For business and commercial pickups, a Certificate of Recycling is available on request. For data, we also provide a Certificate of Data Destruction. Just ask when you book, or email <a href='mailto:juetttechrescue@gmail.com'>juetttechrescue@gmail.com</a>.", go:"#book", label:"Book a pickup"},
@@ -2003,9 +2002,9 @@ input,select,textarea,button,a,label,summary,[role=button],[role=tab]{touch-acti
     {kw:["best buy","bestbuy","big box","big-box","staples","store drop off","drop it at a store","take it to a store","take it to best buy"], a:"Best Buy's program is a real option, and we say so on our About page. The tradeoffs: you load it and drive it there during store hours, they cap how many items they take per household per visit, and their own FAQ says recyclers dismantle the units to separate out commodities like metals, plastics, and glass. Nothing comes back to you, and nothing gets rehomed in the community. We come to you, take the whole load at once, and look for a second life before anything gets broken down.", go:"#about", label:"Read the comparison"},
     {kw:["woman owned","women owned","female owned","woman-owned","who owns","owner","minority owned","support local","student owned","locally owned"], a:"We're <b>woman-owned and CU Boulder student-run</b>. Natalie founded the business and still rides the route herself, and the rest of the team is CU students too. If keeping your money with a local student-run business matters to you, that's us.", go:"#about", label:"Meet the team"},
     {kw:["only one in boulder","competitors","competition","anyone else","other companies","alternatives","who else does this"], a:"We're the only waste management service in Boulder focused specifically on electronic waste, and the first established door-to-door e-waste pickup here. General recyclers and junk haulers will take a load, but e-waste isn't their focus, so most can't securely wipe your data, and none of them can earn you money back through refurbishment.", go:"#tv-example", fn:"openTvExample", label:"How we compare"},
-    {kw:["how much do you divert","5783","5,783","5648","5,648","5553","5,553","5436","5,436","5231","5,231","3821","3,821","3678","3,678","2995","2,995","how many pounds","total pounds","how much have you saved"], a:"We're at <b>5,783 lbs</b> diverted from the landfill across <b>95 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
+    {kw:["how much do you divert","6033","6,033","5783","5,783","5648","5,648","5553","5,553","5436","5,436","5231","5,231","3821","3,821","3678","3,678","2995","2,995","how many pounds","total pounds","how much have you saved"], a:"We're at <b>6,033 lbs</b> diverted from the landfill across <b>98 pickups</b>, with 100% certified recycling and nothing landfilled. Live totals are in the <a href='#impact'>Impact</a> section, along with real examples of tech we rehomed instead of recycling.", go:"#impact", label:"See our impact"},
     {kw:["fastest growing","growing","e waste growing","growing waste","waste stream","municipal waste","how fast is it growing"], a:"E-waste is the fastest-growing solid waste stream on the planet, and it's growing far faster than recycling is keeping up: the <a href='https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx' target='_blank' rel='noopener'>Global E-waste Monitor 2024</a> put 2022 at 62 million metric tons with less than 23% formally recycled. That report is in <a href='#faq'>Further Reading</a>.", go:"#faq", label:"Further Reading"},
-    {kw:["yelp","google review","leave a review","write a review","how can i help","support you","spread the word"], a:"Reviews are highly appreciated, and any feedback means a lot! We now collect them on Google: we originally used Yelp, but some customers' reviews were being filtered out due to inactivity on the platform. There's a link near the reviews at the top of this page. Telling a neighbor works too, and referring someone with old electronics gets you $5 off your next pickup.", go:"#reviews", label:"Leave a review"},
+    {kw:["yelp","google review","leave a review","write a review","how can i help","support you","spread the word"], a:"Reviews are highly appreciated, and any feedback means a lot! We now collect them on Google: we originally used Yelp, but some customers' reviews were being filtered out due to inactivity on the platform. There's a link near the reviews at the top of this page, along with a link to recommend us on <a href='https://nextdoor.com/page/juett-tech-rescue-boulder-co/' target='_blank' rel='noopener'>Nextdoor</a>. Telling a neighbor works too, and referring someone with old electronics gets you $5 off your next pickup.", go:"#reviews", label:"Leave a review"},
     {kw:["certificate of data destruction","cod","proof of destruction","proof of recycling","documentation for my business","compliance"], a:"Both are available on request: a <b>Certificate of Data Destruction</b> for anything we wipe, and a <b>Certificate of Recycling</b> for the disposal itself. Commercial clients usually want both for their records, especially in healthcare, finance, law, and education where retired drives fall under rules like HIPAA, FACTA, and GLBA. Just ask when you book.", go:"#data-security", fn:"openDataSec", label:"How we protect data"},
     {kw:["student run","students","cu boulder","university of colorado","support students","local business","small business"], a:"We're CU Boulder student-founded and student-run: <b>Natalie</b>, our founder and Chief Rescue Officer; <b>Chris</b>, our Rescue Operations Associate; <b>Macey</b>, our Digital Media Specialist; and <b>Whittaker</b>, our Sales &amp; Outreach Associate. The DRM Worldwide partnership gives us enterprise-grade processing behind a local, student-run operation.", go:"#about", label:"Meet the team"},
     {kw:["pric","cost","how much","fee","charge","expensive","rate","quote","afford"], a:"Pricing is simple: a <b>$50 standard pickup</b> (desktop towers, printers, consoles, multiple boxes: your whole load), or a <b>$25 Small Load Pickup</b> for a box or a few bags of items, or a grocery bag of things plus one small appliance (no TVs or monitors unless one is your only item). Only TVs and monitors add a surcharge, and it scales with size: <b>+$5 to +$20</b> per flat-screen or monitor, <b>+$22 to +$35</b> per CRT/tube TV, with the final price determined at pickup. Pickups also include a travel fee of <b>$0.65/mi</b> from our Boulder base. Your <b>first pickup</b> with us is <b>10% off the whole pickup</b>, residential or commercial. Neighborhood bundles give every home the full <b>10% off</b> ($45 standard or $22.50 small per home, no travel fee), with a 5-home minimum. Businesses get a flat rate custom quote. Secure data wiping is <b>$6 for 2 devices</b>, and you can refer a friend for $5 off (up to $15). You'll see your estimate live in the booking form.", go:"#pricing", label:"See pricing"},
